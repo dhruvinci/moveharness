@@ -1,0 +1,17 @@
+# MoveBench v0 reference tool — requirements
+#
+# The MoveBench v0 tool (loader, metrics, evaluate CLI) is implemented in the
+# Python STANDARD LIBRARY ONLY. There are NO third-party runtime dependencies
+# and NO external services are contacted.
+#
+#   * json, argparse, sqlite3, collections, os, re  -> all stdlib
+#
+# Requirements:
+#   - Python >= 3.9  (uses PEP 585 builtin generics: list[dict], set[int], etc.)
+#
+# Optional, for the v1 expansion enumerator only:
+#   - The external instructional clip corpus is a SQLite file read via the
+#     stdlib `sqlite3` module in READ-ONLY mode, by aggregate COUNT ONLY. It is
+#     NOT bundled and NOT redistributed; pass its path explicitly at call time.
+#
+# No `pip install` is required to run the benchmark.

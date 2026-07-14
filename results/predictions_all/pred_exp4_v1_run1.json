@@ -1,0 +1,742 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "exp4_v1_skeleton_run1",
+  "provenance": "honest machine output; Exp4 stage1 v1 skeleton, run1; in-sample",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 7.0,
+      "position": "standing",
+      "labels": [
+        "pre_match_protocol",
+        "referee_instructions"
+      ]
+    },
+    {
+      "start_sec": 7.0,
+      "end_sec": 49.0,
+      "position": "standing",
+      "labels": [
+        "grip_fighting",
+        "stance_work",
+        "feinting",
+        "striking_for_grappling",
+        "distance_management"
+      ]
+    },
+    {
+      "start_sec": 49.0,
+      "end_sec": 61.0,
+      "position": "guard",
+      "labels": [
+        "scramble",
+        "takedown_defense",
+        "guard_entry",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 61.0,
+      "end_sec": 89.0,
+      "position": "guard",
+      "labels": [
+        "guard_retention",
+        "lapel_control",
+        "flexible_guard",
+        "guard_passing_strategy"
+      ]
+    },
+    {
+      "start_sec": 89.0,
+      "end_sec": 100.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 100.0,
+      "end_sec": 120.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 120.0,
+      "end_sec": 125.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 125.0,
+      "end_sec": 130.0,
+      "position": "side_control",
+      "labels": [
+        "side_control_pressure",
+        "wardrobe_malfunction",
+        "positional_control",
+        "referee_stoppage"
+      ]
+    },
+    {
+      "start_sec": 130.0,
+      "end_sec": 145.0,
+      "position": "guard",
+      "labels": [
+        "guard_recovery",
+        "delariva_hooks",
+        "spider_hooks",
+        "guard_retention",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 145.0,
+      "end_sec": 160.0,
+      "position": "scramble",
+      "labels": [
+        "double_overhook_take",
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 160.0,
+      "end_sec": 180.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 180.0,
+      "end_sec": 188.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 188.0,
+      "end_sec": 210.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 210.0,
+      "end_sec": 225.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 225.0,
+      "end_sec": 240.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing_strategy",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 240.0,
+      "end_sec": 255.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 255.0,
+      "end_sec": 270.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 270.0,
+      "end_sec": 285.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 285.0,
+      "end_sec": 300.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 300.0,
+      "end_sec": 315.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 315.0,
+      "end_sec": 330.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing_strategy",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 330.0,
+      "end_sec": 345.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 345.0,
+      "end_sec": 360.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 360.0,
+      "end_sec": 368.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 368.0,
+      "end_sec": 380.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 380.0,
+      "end_sec": 395.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 395.0,
+      "end_sec": 410.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing_strategy",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 410.0,
+      "end_sec": 425.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 425.0,
+      "end_sec": 440.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 440.0,
+      "end_sec": 450.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 450.0,
+      "end_sec": 465.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 465.0,
+      "end_sec": 480.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 480.0,
+      "end_sec": 495.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing_strategy",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 495.0,
+      "end_sec": 510.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 510.0,
+      "end_sec": 525.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 525.0,
+      "end_sec": 540.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 540.0,
+      "end_sec": 555.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 555.0,
+      "end_sec": 570.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 570.0,
+      "end_sec": 585.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing_strategy",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 585.0,
+      "end_sec": 600.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 600.0,
+      "end_sec": 615.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 615.0,
+      "end_sec": 625.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 625.0,
+      "end_sec": 635.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 635.0,
+      "end_sec": 645.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 645.0,
+      "end_sec": 660.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing_strategy",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 660.0,
+      "end_sec": 670.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 670.0,
+      "end_sec": 680.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 680.0,
+      "end_sec": 690.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 690.0,
+      "end_sec": 705.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 705.0,
+      "end_sec": 720.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 720.0,
+      "end_sec": 735.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing_strategy",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 735.0,
+      "end_sec": 750.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 750.0,
+      "end_sec": 765.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 765.0,
+      "end_sec": 775.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 775.0,
+      "end_sec": 785.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 785.0,
+      "end_sec": 800.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 800.0,
+      "end_sec": 815.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing_strategy",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 815.0,
+      "end_sec": 830.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 830.0,
+      "end_sec": 840.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 840.0,
+      "end_sec": 850.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 850.0,
+      "end_sec": 860.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 860.0,
+      "end_sec": 870.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "dynamic_transition"
+      ]
+    },
+    {
+      "start_sec": 870.0,
+      "end_sec": 880.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing_strategy",
+        "flexible_guard"
+      ]
+    },
+    {
+      "start_sec": 880.0,
+      "end_sec": 890.0,
+      "position": "scramble",
+      "labels": [
+        "back_take_attempt",
+        "dynamic_sweeps",
+        "back_control_entry",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 890.0,
+      "end_sec": 900.0,
+      "position": "back_control",
+      "labels": [
+        "back_control_maintenance",
+        "hook_attempts",
+        "choke_setups",
+        "back_control_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 900.0,
+      "end_sec": 910.0,
+      "position": "mount",
+      "labels": [
+        "mount_transition",
+        "arm_isolation",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 910.0,
+      "end_sec": 915.0,
+      "position": "mount",
+      "labels": [
+        "mount_control_pressure",
+        "arm_isolation_attempts",
+        "mount_pressure",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 915.0,
+      "end_sec": 920.0,
+      "position": "scramble",
+      "labels": [
+        "armbar_mechanics",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 920.0,
+      "end_sec": 971.0,
+      "position": "post_match",
+      "labels": [
+        "referee_decision",
+        "sportsmanship",
+        "winner_announcement"
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {}
+}

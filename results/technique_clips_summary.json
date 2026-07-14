@@ -1,0 +1,10 @@
+{
+ "attempted": null,
+ "n_target": 630,
+ "n_downloaded": 498,
+ "n_failed": 2,
+ "elapsed_sec": 3610.4,
+ "stopped_early": "time_cap",
+ "youtube_throttled": false,
+ "block_streak": 0
+}

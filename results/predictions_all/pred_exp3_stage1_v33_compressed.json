@@ -1,0 +1,250 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "exp3_stage1_v33_compressed",
+  "provenance": "honest machine output; Exp3 stage1 v3.3 compressed; in-sample",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 16.0,
+      "position": "standing",
+      "labels": [
+        "collar_ties",
+        "grip_fighting",
+        "takedown_attempt"
+      ]
+    },
+    {
+      "start_sec": 16.0,
+      "end_sec": 30.0,
+      "position": "open_guard",
+      "labels": [
+        "de_la_riva",
+        "takedown_attempt",
+        "guard_pull"
+      ]
+    },
+    {
+      "start_sec": 30.0,
+      "end_sec": 40.0,
+      "position": "open_guard",
+      "labels": [
+        "de_la_riva",
+        "sweep_attempt",
+        "guard_pull"
+      ]
+    },
+    {
+      "start_sec": 40.0,
+      "end_sec": 60.0,
+      "position": "open_guard",
+      "labels": [
+        "de_la_riva",
+        "guard_pass_attempt",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 60.0,
+      "end_sec": 80.0,
+      "position": "open_guard",
+      "labels": [
+        "de_la_riva",
+        "guard_pass_attempt"
+      ]
+    },
+    {
+      "start_sec": 80.0,
+      "end_sec": 100.0,
+      "position": "back_control",
+      "labels": [
+        "hooks_in",
+        "sweep_completed",
+        "leg_entanglement",
+        "back_take"
+      ]
+    },
+    {
+      "start_sec": 100.0,
+      "end_sec": 120.0,
+      "position": "back_control",
+      "labels": [
+        "rear_naked_choke",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 120.0,
+      "end_sec": 130.0,
+      "position": "open_guard",
+      "labels": [
+        "open_guard",
+        "submission_escape",
+        "guard_recovery",
+        "referee_standup"
+      ]
+    },
+    {
+      "start_sec": 130.0,
+      "end_sec": 150.0,
+      "position": "open_guard",
+      "labels": [
+        "x_guard",
+        "pass_attempt"
+      ]
+    },
+    {
+      "start_sec": 150.0,
+      "end_sec": 170.0,
+      "position": "open_guard",
+      "labels": [
+        "x_guard",
+        "pass_attempt",
+        "sweep_attempt"
+      ]
+    },
+    {
+      "start_sec": 170.0,
+      "end_sec": 190.0,
+      "position": "mount",
+      "labels": [
+        "mount",
+        "sweep_completed",
+        "side_control",
+        "mount_achieved"
+      ]
+    },
+    {
+      "start_sec": 190.0,
+      "end_sec": 210.0,
+      "position": "mount",
+      "labels": [
+        "armbar",
+        "submission_defense",
+        "position_improvement"
+      ]
+    },
+    {
+      "start_sec": 210.0,
+      "end_sec": 230.0,
+      "position": "mount",
+      "labels": [
+        "armbar",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 230.0,
+      "end_sec": 250.0,
+      "position": "mount",
+      "labels": [
+        "mount",
+        "side_control",
+        "mount_achieved",
+        "position_improvement"
+      ]
+    },
+    {
+      "start_sec": 250.0,
+      "end_sec": 270.0,
+      "position": "mount",
+      "labels": [
+        "armbar",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 270.0,
+      "end_sec": 290.0,
+      "position": "mount",
+      "labels": [
+        "arm_triangle",
+        "submission_defense",
+        "position_improvement"
+      ]
+    },
+    {
+      "start_sec": 290.0,
+      "end_sec": 310.0,
+      "position": "mount",
+      "labels": [
+        "mount",
+        "position_improvement",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 310.0,
+      "end_sec": 330.0,
+      "position": "mount",
+      "labels": [
+        "mount",
+        "position_escape",
+        "mount_defense"
+      ]
+    },
+    {
+      "start_sec": 330.0,
+      "end_sec": 350.0,
+      "position": "half_guard",
+      "labels": [
+        "half_guard",
+        "mount_escape",
+        "guard_recovery",
+        "pass_attempt"
+      ]
+    },
+    {
+      "start_sec": 350.0,
+      "end_sec": 370.0,
+      "position": "half_guard",
+      "labels": [
+        "half_guard",
+        "pass_attempt",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 370.0,
+      "end_sec": 390.0,
+      "position": "half_guard",
+      "labels": [
+        "half_guard",
+        "pass_attempt",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 390.0,
+      "end_sec": 410.0,
+      "position": "half_guard",
+      "labels": [
+        "half_guard",
+        "pass_attempt",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 410.0,
+      "end_sec": 430.0,
+      "position": "half_guard",
+      "labels": [
+        "half_guard",
+        "pass_attempt",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 430.0,
+      "end_sec": 450.0,
+      "position": "half_guard",
+      "labels": [
+        "half_guard",
+        "pass_attempt",
+        "guard_retention"
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {}
+}

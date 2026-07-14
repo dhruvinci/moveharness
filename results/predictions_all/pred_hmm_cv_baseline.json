@@ -1,0 +1,120 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "hmm_cv_only_baseline",
+  "provenance": "CV-only Gaussian-HMM macro-position decoder over Exp4 stage0 CV anchor features (mb_v0_0001, 194 checkpoints @5s); K=6 states selected by AIC; Viterbi-decoded; state->position by oracle majority-overlap mapping; no VLM, no network, in-sample. T3 labels intentionally empty (CV decoder emits no technique labels). [min-run=2 (10s) smoothed]",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 170.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 170.0,
+      "end_sec": 185.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 185.0,
+      "end_sec": 205.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 205.0,
+      "end_sec": 215.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 215.0,
+      "end_sec": 225.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 225.0,
+      "end_sec": 270.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 270.0,
+      "end_sec": 290.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 290.0,
+      "end_sec": 385.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 385.0,
+      "end_sec": 470.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 470.0,
+      "end_sec": 490.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 490.0,
+      "end_sec": 540.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 540.0,
+      "end_sec": 555.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 555.0,
+      "end_sec": 705.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 705.0,
+      "end_sec": 715.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 715.0,
+      "end_sec": 790.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 790.0,
+      "end_sec": 815.0,
+      "position": "back_control",
+      "labels": []
+    },
+    {
+      "start_sec": 815.0,
+      "end_sec": 960.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 960.0,
+      "end_sec": 970.0333333333333,
+      "position": "escape",
+      "labels": []
+    }
+  ],
+  "transitions": [],
+  "scoring": {
+    "events": []
+  }
+}

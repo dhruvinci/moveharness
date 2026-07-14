@@ -1,0 +1,1377 @@
+{
+  "schema_version": "movebench-sample-0.1.0",
+  "ontology_version": "0.1.0",
+  "sample_id": "mb_v0_0001",
+  "split": "test",
+  "source_type": "competition",
+  "modality": "no_gi",
+  "duration_sec": 959.0,
+  "duration_str": "15:59",
+  "rights_status": "public_seed",
+  "camera_view": "broadcast",
+  "annotation": {
+    "annotator_roles": [
+      "expert_reviewer"
+    ],
+    "n_annotators": 1,
+    "label_source": "human_review",
+    "inter_annotator_agreement": null
+  },
+  "_protocol_excluded": [
+    "pre_match",
+    "match_start"
+  ],
+  "macro_segments": [
+    {
+      "seg_id": "s0",
+      "start_sec": 0.0,
+      "end_sec": 8.0,
+      "start_str": "00:00",
+      "end_str": "00:08",
+      "position": "standing",
+      "sub_position": "grip_fighting",
+      "roles": {
+        "A1": "neutral",
+        "A2": "neutral"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s0.0",
+          "start_sec": 0.0,
+          "end_sec": 2.0,
+          "start_str": "00:00",
+          "end_str": "00:02",
+          "labels": [
+            "pre_match"
+          ],
+          "note": "Both fighters shake hands."
+        },
+        {
+          "sub_id": "s0.1",
+          "start_sec": 2.0,
+          "end_sec": 8.0,
+          "start_str": "00:02",
+          "end_str": "00:08",
+          "labels": [
+            "match_start"
+          ],
+          "note": "Referee announces 'fight' and match starts."
+        }
+      ]
+    },
+    {
+      "seg_id": "s1",
+      "start_sec": 8.0,
+      "end_sec": 50.0,
+      "start_str": "00:08",
+      "end_str": "00:50",
+      "position": "standing",
+      "sub_position": "clinch",
+      "roles": {
+        "A1": "neutral",
+        "A2": "neutral"
+      },
+      "confidence": 0.9,
+      "rating": 2,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s1.0",
+          "start_sec": 8.0,
+          "end_sec": 10.0,
+          "start_str": "00:08",
+          "end_str": "00:10",
+          "labels": [
+            "Standing",
+            "grip_fighting"
+          ],
+          "note": "athlete goes for collar tie, athlete quickly counters with his own. Neither grips get established, athletes circle."
+        },
+        {
+          "sub_id": "s1.1",
+          "start_sec": 10.0,
+          "end_sec": 15.0,
+          "start_str": "00:10",
+          "end_str": "00:15",
+          "labels": [
+            "Standing"
+          ],
+          "note": "No significant action."
+        },
+        {
+          "sub_id": "s1.2",
+          "start_sec": 15.0,
+          "end_sec": 19.0,
+          "start_str": "00:15",
+          "end_str": "00:19",
+          "labels": [
+            "Standing",
+            "grip_fighting"
+          ],
+          "note": "athlete goes for a collar tie again, but athlete quickly counters with a stronger collar tie of his own. athlete maintains strong posture and walks towards athlete to weaken the effects of the tie, but athlete uses the opportunity to go for a foot sweep. The sweep fails and both fighters return to an open position."
+        },
+        {
+          "sub_id": "s1.3",
+          "start_sec": 19.0,
+          "end_sec": 39.0,
+          "start_str": "00:19",
+          "end_str": "00:39",
+          "labels": [
+            "Standing"
+          ],
+          "note": "Equal collar tie attempts, no significant action."
+        },
+        {
+          "sub_id": "s1.4",
+          "start_sec": 39.0,
+          "end_sec": 41.0,
+          "start_str": "00:39",
+          "end_str": "00:41",
+          "labels": [
+            "Standing"
+          ],
+          "note": "athlete goes for the collar tie again and tries a quick snap down, but athlete is strong and his posture does not break. He tries to go for his own collar tie but athlete quickly dodges out of it and circles away back to open position."
+        },
+        {
+          "sub_id": "s1.5",
+          "start_sec": 41.0,
+          "end_sec": 50.0,
+          "start_str": "00:41",
+          "end_str": "00:50",
+          "labels": [
+            "Standing"
+          ],
+          "note": "No significant action"
+        }
+      ]
+    },
+    {
+      "seg_id": "s2",
+      "start_sec": 50.0,
+      "end_sec": 103.0,
+      "start_str": "00:50",
+      "end_str": "01:43",
+      "position": "standing",
+      "sub_position": "takedown",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 2,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s2.0",
+          "start_sec": 50.0,
+          "end_sec": 53.0,
+          "start_str": "00:50",
+          "end_str": "00:53",
+          "labels": [
+            "takedown"
+          ],
+          "note": "athlete attempts a takedown and athlete defends it by maintaining his collar tie and breaking athlete's posture. athlete gets back up into athlete's collar tie."
+        },
+        {
+          "sub_id": "s2.1",
+          "start_sec": 53.0,
+          "end_sec": 60.0,
+          "start_str": "00:53",
+          "end_str": "01:00",
+          "labels": [
+            "Standing"
+          ],
+          "note": "athlete establishes his own collar tie against athlete's and both fighters enter a scrimmage of collar ties. In the end it breaks, and both return to an open position."
+        },
+        {
+          "sub_id": "s2.2",
+          "start_sec": 60.0,
+          "end_sec": 92.0,
+          "start_str": "01:00",
+          "end_str": "01:32",
+          "labels": [
+            "Standing"
+          ],
+          "note": " More displays of equal collar ties with no significant action."
+        },
+        {
+          "sub_id": "s2.3",
+          "start_sec": 92.0,
+          "end_sec": 100.0,
+          "start_str": "01:32",
+          "end_str": "01:40",
+          "labels": [
+            "Standing"
+          ],
+          "note": "With both fighters having collar ties, athlete tries a deep foot sweep, and switches his collar tie into an overhook while trying to break athlete down to the ground. athlete maintains footing and balance and returns back up to his feet into a shallow front headlock position with double underhooks on athlete."
+        },
+        {
+          "sub_id": "s2.4",
+          "start_sec": 100.0,
+          "end_sec": 103.0,
+          "start_str": "01:40",
+          "end_str": "01:43",
+          "labels": [
+            "Guard"
+          ],
+          "note": "athlete weighs down on athlete's underhooks and drops to his hips to pull guard on athlete and chain it into a sweep to come on top."
+        }
+      ]
+    },
+    {
+      "seg_id": "s3",
+      "start_sec": 103.0,
+      "end_sec": 124.0,
+      "start_str": "01:43",
+      "end_str": "02:04",
+      "position": "guard",
+      "sub_position": "closed_guard",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s3.0",
+          "start_sec": 103.0,
+          "end_sec": 104.0,
+          "start_str": "01:43",
+          "end_str": "01:44",
+          "labels": [
+            "lasso_guard"
+          ],
+          "note": "athlete quickly maintains posture and gets back onto his feet while athlete is on the ground and attached to his hands in a pseudo lasso guard around his arms."
+        },
+        {
+          "sub_id": "s3.1",
+          "start_sec": 104.0,
+          "end_sec": 124.0,
+          "start_str": "01:44",
+          "end_str": "02:04",
+          "labels": [
+            "guard_pass",
+            "open_guard"
+          ],
+          "note": "athlete slips his arms out from athlete's guard and quickly attempts to pass his guard with his arms around athlete's legs and at his hips. He tries to stack athlete, who ends up flipping over and getting his legs out to establish open guard."
+        }
+      ]
+    },
+    {
+      "seg_id": "s4",
+      "start_sec": 124.0,
+      "end_sec": 130.0,
+      "start_str": "02:04",
+      "end_str": "02:10",
+      "position": "standing",
+      "sub_position": "standing",
+      "roles": {
+        "A1": "neutral",
+        "A2": "neutral"
+      },
+      "confidence": 0.9,
+      "rating": 3,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s4.0",
+          "start_sec": 124.0,
+          "end_sec": 130.0,
+          "start_str": "02:04",
+          "end_str": "02:10",
+          "labels": [
+            "guard_pass",
+            "open_guard"
+          ],
+          "note": "athlete stands up looking to adjust something on his rash guard, referee intervenes while action is paused. athlete is still down in open guard."
+        }
+      ]
+    },
+    {
+      "seg_id": "s5",
+      "start_sec": 130.0,
+      "end_sec": 165.0,
+      "start_str": "02:10",
+      "end_str": "02:45",
+      "position": "guard",
+      "sub_position": "de_la_riva_guard",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 4,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s5.0",
+          "start_sec": 130.0,
+          "end_sec": 165.0,
+          "start_str": "02:10",
+          "end_str": "02:45",
+          "labels": [
+            "de_la_riva",
+            "headquarters_position"
+          ],
+          "note": "Fight resumes and athlete enters between athlete's legs who establishes de la riva guard. His left leg is in half butterfly, and athlete eventually gets to headquarters position."
+        }
+      ]
+    },
+    {
+      "seg_id": "s6",
+      "start_sec": 165.0,
+      "end_sec": 185.0,
+      "start_str": "02:45",
+      "end_str": "03:05",
+      "position": "sweep",
+      "sub_position": "sweep",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s6.0",
+          "start_sec": 165.0,
+          "end_sec": 180.0,
+          "start_str": "02:45",
+          "end_str": "03:00",
+          "labels": [
+            "headquarters_position",
+            "guard_pass",
+            "guillotine"
+          ],
+          "note": "athlete swivels athlete's hips out of headquarters position and attempts to pass it while threatening a guillotine choke. athlete traps athlete's right leg preventing the successful pass and choke while trying to sweep athlete over, but athlete bails the guillotine and they end up in a dog fight position."
+        },
+        {
+          "sub_id": "s6.1",
+          "start_sec": 180.0,
+          "end_sec": 185.0,
+          "start_str": "03:00",
+          "end_str": "03:05",
+          "labels": [
+            "granby_roll",
+            "back_control"
+          ],
+          "note": "athlete uses a granby roll to get out of the dog fight position, but athlete rolls through to attempt a back take."
+        }
+      ]
+    },
+    {
+      "seg_id": "s7",
+      "start_sec": 185.0,
+      "end_sec": 230.0,
+      "start_str": "03:05",
+      "end_str": "03:50",
+      "position": "back_control",
+      "sub_position": "back_control",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s7.0",
+          "start_sec": 185.0,
+          "end_sec": 195.0,
+          "start_str": "03:05",
+          "end_str": "03:15",
+          "labels": [
+            "body_lock"
+          ],
+          "note": "athlete holds onto the body lock on athlete while he tries to get his back to the mat and escape the back take, but athlete has strong control of athlete's hips. athlete even throws a body triangle around athlete's legs to keep him from escaping. athlete is stuck for a few seconds."
+        },
+        {
+          "sub_id": "s7.1",
+          "start_sec": 195.0,
+          "end_sec": 220.0,
+          "start_str": "03:15",
+          "end_str": "03:40",
+          "labels": [
+            "escaping",
+            "body_lock"
+          ],
+          "note": "athlete reaches for athlete's body triangle leg to pry it open and start escaping. But athlete keeps the body lock tight and continues chasing the back of athlete athlete while he tries to escape. athlete is now stuck for a longer duration."
+        },
+        {
+          "sub_id": "s7.2",
+          "start_sec": 220.0,
+          "end_sec": 230.0,
+          "start_str": "03:40",
+          "end_str": "03:50",
+          "labels": [
+            "escaping",
+            "sweep",
+            "underhooks",
+            "Side Control"
+          ],
+          "note": "athlete tries to build up height to win top position on athlete but athlete moves his body lock up to underhooks on athlete and returns him to the mat with a sweep. athlete finally ends up in side control with underhook and crossface."
+        }
+      ]
+    },
+    {
+      "seg_id": "s8",
+      "start_sec": 230.0,
+      "end_sec": 245.0,
+      "start_str": "03:50",
+      "end_str": "04:05",
+      "position": "escape",
+      "sub_position": "escape",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s8.0",
+          "start_sec": 230.0,
+          "end_sec": 237.0,
+          "start_str": "03:50",
+          "end_str": "03:57",
+          "labels": [
+            "Side Control",
+            "escaping",
+            "knee_shield"
+          ],
+          "note": "athlete tries to hold side control but athlete sneaks in a butterfly hook to retain guard, and athlete works around it to maintain side control. But athlete uses that opportunity to quickly bring in a knee shield."
+        },
+        {
+          "sub_id": "s8.1",
+          "start_sec": 237.0,
+          "end_sec": 245.0,
+          "start_str": "03:57",
+          "end_str": "04:05",
+          "labels": [
+            "Mount"
+          ],
+          "note": "athlete tries to recover guard with his knee shield and leg over athlete to his far hip, but athlete smashes them both to get to mount position."
+        }
+      ]
+    },
+    {
+      "seg_id": "s9",
+      "start_sec": 245.0,
+      "end_sec": 290.0,
+      "start_str": "04:05",
+      "end_str": "04:50",
+      "position": "mount",
+      "sub_position": "mount",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 4,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s9.0",
+          "start_sec": 245.0,
+          "end_sec": 290.0,
+          "start_str": "04:05",
+          "end_str": "04:50",
+          "labels": [
+            "Mount"
+          ],
+          "note": "athlete cooks athlete in mount with shoulder pressure into his chin and neck. athlete is trying to move into a submission while athlete is trying to make some space to escape or recover. "
+        }
+      ]
+    },
+    {
+      "seg_id": "s10",
+      "start_sec": 290.0,
+      "end_sec": 330.0,
+      "start_str": "04:50",
+      "end_str": "05:30",
+      "position": "escape",
+      "sub_position": "escape",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s10.0",
+          "start_sec": 290.0,
+          "end_sec": 330.0,
+          "start_str": "04:50",
+          "end_str": "05:30",
+          "labels": [
+            "Mount"
+          ],
+          "note": "athlete keeps athlete pinned in mount position, trying to keep shoulder pressure in the neck while also trying to isolate an arm of athlete. "
+        }
+      ]
+    },
+    {
+      "seg_id": "s11",
+      "start_sec": 330.0,
+      "end_sec": 360.0,
+      "start_str": "05:30",
+      "end_str": "06:00",
+      "position": "guard",
+      "sub_position": "de_la_riva_guard",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s11.0",
+          "start_sec": 330.0,
+          "end_sec": 349.0,
+          "start_str": "05:30",
+          "end_str": "05:49",
+          "labels": [
+            "Mount",
+            "Side Control"
+          ],
+          "note": "athlete maintains mount while athlete frames at his hip to get some separation. athlete succeeds, forcing athlete to regress into side control."
+        },
+        {
+          "sub_id": "s11.1",
+          "start_sec": 349.0,
+          "end_sec": 360.0,
+          "start_str": "05:49",
+          "end_str": "06:00",
+          "labels": [
+            "Side Control",
+            "butterfly_guard"
+          ],
+          "note": "athlete manages to find more separation when athlete lifts his hips to maintain side control, and uses this opportunity to recover his knees into guard and eventually into butterfly guard."
+        }
+      ]
+    },
+    {
+      "seg_id": "s12",
+      "start_sec": 360.0,
+      "end_sec": 375.0,
+      "start_str": "06:00",
+      "end_str": "06:15",
+      "position": "sweep",
+      "sub_position": "sweep",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s12.0",
+          "start_sec": 360.0,
+          "end_sec": 369.0,
+          "start_str": "06:00",
+          "end_str": "06:09",
+          "labels": [
+            "butterfly_guard",
+            "scramble",
+            "scramble_reversal"
+          ],
+          "note": "athlete continues to off balance athlete from his butterfly guard and scrambles to reverse into top position. "
+        },
+        {
+          "sub_id": "s12.1",
+          "start_sec": 369.0,
+          "end_sec": 375.0,
+          "start_str": "06:09",
+          "end_str": "06:15",
+          "labels": [
+            "open_guard",
+            "toreando_pass"
+          ],
+          "note": "athlete accepts bottom in an open guard position and athlete begins guard passing once more in a toreando style."
+        }
+      ]
+    },
+    {
+      "seg_id": "s13",
+      "start_sec": 375.0,
+      "end_sec": 420.0,
+      "start_str": "06:15",
+      "end_str": "07:00",
+      "position": "side_control",
+      "sub_position": "side_control",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s13.0",
+          "start_sec": 375.0,
+          "end_sec": 381.0,
+          "start_str": "06:15",
+          "end_str": "06:21",
+          "labels": [
+            "headquarters_position",
+            "defensive_turtle",
+            "open_guard"
+          ],
+          "note": "athlete enters headquarters position once again while attempting to pass and athlete uses his butterfly hook to turtle away into a dog fight scenario"
+        },
+        {
+          "sub_id": "s13.1",
+          "start_sec": 381.0,
+          "end_sec": 403.0,
+          "start_str": "06:21",
+          "end_str": "06:43",
+          "labels": [
+            "open_guard",
+            "de_la_riva",
+            "reverse_de_la_riva"
+          ],
+          "note": "athlete falls back down into open guard again and athlete tries to pass using double unders once again. athlete agressively tries passing while athlete switches between de la riva and reverse de la riva positions, keeping athlete from passing and pushing him back into open guard position."
+        },
+        {
+          "sub_id": "s13.2",
+          "start_sec": 403.0,
+          "end_sec": 420.0,
+          "start_str": "06:43",
+          "end_str": "07:00",
+          "labels": [
+            "scramble",
+            "retaining_guard"
+          ],
+          "note": "athlete tries some loose passing while scrambling around athlete's guard, but athlete does a good job of retaining guard."
+        }
+      ]
+    },
+    {
+      "seg_id": "s14",
+      "start_sec": 420.0,
+      "end_sec": 440.0,
+      "start_str": "07:00",
+      "end_str": "07:20",
+      "position": "escape",
+      "sub_position": "escape",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s14.0",
+          "start_sec": 420.0,
+          "end_sec": 440.0,
+          "start_str": "07:00",
+          "end_str": "07:20",
+          "labels": [
+            "open_guard",
+            "scramble",
+            "retaining_guard"
+          ],
+          "note": "athlete continues to try and scramble through athlete's guard, athlete retains his guard."
+        }
+      ]
+    },
+    {
+      "seg_id": "s15",
+      "start_sec": 440.0,
+      "end_sec": 480.0,
+      "start_str": "07:20",
+      "end_str": "08:00",
+      "position": "guard",
+      "sub_position": "de_la_riva_guard",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 2,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s15.0",
+          "start_sec": 440.0,
+          "end_sec": 443.0,
+          "start_str": "07:20",
+          "end_str": "07:23",
+          "labels": [
+            "Standing",
+            "open_guard"
+          ],
+          "note": "athlete tries to wrestle up to a standing position but athlete trips and sweeps him back down into his seated guard."
+        },
+        {
+          "sub_id": "s15.1",
+          "start_sec": 443.0,
+          "end_sec": 480.0,
+          "start_str": "07:23",
+          "end_str": "08:00",
+          "labels": [
+            "open_guard",
+            "headquarters_position",
+            "de_la_riva"
+          ],
+          "note": "The same game continues, athlete trying to pass athlete's guard from open guard to De La Riva to headquarters, while constantly applying top pressure."
+        }
+      ]
+    },
+    {
+      "seg_id": "s16",
+      "start_sec": 480.0,
+      "end_sec": 500.0,
+      "start_str": "08:00",
+      "end_str": "08:20",
+      "position": "sweep",
+      "sub_position": "sweep",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s16.0",
+          "start_sec": 480.0,
+          "end_sec": 500.0,
+          "start_str": "08:00",
+          "end_str": "08:20",
+          "labels": [
+            "headquarters_position",
+            "de_la_riva"
+          ],
+          "note": "athlete continues to apply top pressure to beat athlete's guard. athlete keeps him at bay, switching between De La Riva and Headquarters positions."
+        }
+      ]
+    },
+    {
+      "seg_id": "s17",
+      "start_sec": 500.0,
+      "end_sec": 540.0,
+      "start_str": "08:20",
+      "end_str": "09:00",
+      "position": "side_control",
+      "sub_position": "side_control",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s17.0",
+          "start_sec": 500.0,
+          "end_sec": 540.0,
+          "start_str": "08:20",
+          "end_str": "09:00",
+          "labels": [
+            "scramble",
+            "de_la_riva"
+          ],
+          "note": "athlete continues to try to pass, this time scrambling through some interesting leg entanglements, missing a foot lock attack and once again returning back to the de la riva guard of athlete"
+        }
+      ]
+    },
+    {
+      "seg_id": "s18",
+      "start_sec": 540.0,
+      "end_sec": 580.0,
+      "start_str": "09:00",
+      "end_str": "09:40",
+      "position": "escape",
+      "sub_position": "escape",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s18.0",
+          "start_sec": 540.0,
+          "end_sec": 556.0,
+          "start_str": "09:00",
+          "end_str": "09:16",
+          "labels": [
+            "de_la_riva",
+            "open_guard"
+          ],
+          "note": "athlete keeps his de la riva guard strong to push athlete back away from him into an open guard scenario."
+        },
+        {
+          "sub_id": "s18.1",
+          "start_sec": 556.0,
+          "end_sec": 580.0,
+          "start_str": "09:16",
+          "end_str": "09:40",
+          "labels": [
+            "de_la_riva",
+            "open_guard"
+          ],
+          "note": "athlete once again tries to pass athlete's guard, even attempting to threaten a guillotine, but athlete keeps his guard strong between de la riva and half butterfly to be able to push athlete back once again into open guard."
+        }
+      ]
+    },
+    {
+      "seg_id": "s19",
+      "start_sec": 580.0,
+      "end_sec": 600.0,
+      "start_str": "09:40",
+      "end_str": "10:00",
+      "position": "standing",
+      "sub_position": "standing",
+      "roles": {
+        "A1": "neutral",
+        "A2": "neutral"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s19.0",
+          "start_sec": 580.0,
+          "end_sec": 600.0,
+          "start_str": "09:40",
+          "end_str": "10:00",
+          "labels": [
+            "de_la_riva",
+            "stack_pass"
+          ],
+          "note": "athlete continues applying relentless top pressure on athlete to break through his De La Riva guard and trying to stack athlete, while athlete constantly tries to retain it. Finally it looks like athlete is almost passing it."
+        }
+      ]
+    },
+    {
+      "seg_id": "s20",
+      "start_sec": 600.0,
+      "end_sec": 640.0,
+      "start_str": "10:00",
+      "end_str": "10:40",
+      "position": "guard",
+      "sub_position": "de_la_riva_guard",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s20.0",
+          "start_sec": 600.0,
+          "end_sec": 618.0,
+          "start_str": "10:00",
+          "end_str": "10:18",
+          "labels": [
+            "open_guard",
+            "de_la_riva"
+          ],
+          "note": "athlete quickly retains his guard before athlete can get to side control and the same game repeats with athlete trying to pass between athlete's De La Riva and knee shield, but athlete pushes athlete back into open guard."
+        },
+        {
+          "sub_id": "s20.1",
+          "start_sec": 618.0,
+          "end_sec": 627.0,
+          "start_str": "10:18",
+          "end_str": "10:27",
+          "labels": [
+            "double_leg",
+            "takedown"
+          ],
+          "note": "athlete surprises athlete with a double leg takedown from open guard to take him down to the mat and win top position. He quickly tries to scramble past his guard into side control and mount but athlete does a good job retaining his guard and creating space for separation."
+        },
+        {
+          "sub_id": "s20.2",
+          "start_sec": 627.0,
+          "end_sec": 632.0,
+          "start_str": "10:27",
+          "end_str": "10:32",
+          "labels": [
+            "heel_hook",
+            "escaping",
+            "Half Guard"
+          ],
+          "note": "While athlete tries to scramble out of a passing situation, athlete manages to grab hold of his leg threatening a heel hook, forcing athlete to work on an escape. athlete escapes and puts athlete in half guard."
+        },
+        {
+          "sub_id": "s20.3",
+          "start_sec": 632.0,
+          "end_sec": 640.0,
+          "start_str": "10:32",
+          "end_str": "10:40",
+          "labels": [
+            "half_guard_to_guard",
+            "open_guard",
+            "de_la_riva"
+          ],
+          "note": "athlete works through his half guard to recover open guard and now athlete is in top position working to pass through athlete's De La Riva guard."
+        }
+      ]
+    },
+    {
+      "seg_id": "s21",
+      "start_sec": 640.0,
+      "end_sec": 660.0,
+      "start_str": "10:40",
+      "end_str": "11:00",
+      "position": "sweep",
+      "sub_position": "sweep",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s21.0",
+          "start_sec": 640.0,
+          "end_sec": 653.0,
+          "start_str": "10:40",
+          "end_str": "10:53",
+          "labels": [
+            "stack_pass",
+            "open_guard"
+          ],
+          "note": "athlete tries to dive and pass athlete while stacking him, but athlete recovers open guard."
+        },
+        {
+          "sub_id": "s21.1",
+          "start_sec": 653.0,
+          "end_sec": 660.0,
+          "start_str": "10:53",
+          "end_str": "11:00",
+          "labels": [
+            "Half Guard",
+            "knee_shield"
+          ],
+          "note": "athlete trying to once again pressure pass past athlete's guard ending up in his half guard with a knee shield"
+        }
+      ]
+    },
+    {
+      "seg_id": "s22",
+      "start_sec": 660.0,
+      "end_sec": 710.0,
+      "start_str": "11:00",
+      "end_str": "11:50",
+      "position": "side_control",
+      "sub_position": "side_control",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s22.0",
+          "start_sec": 660.0,
+          "end_sec": 666.0,
+          "start_str": "11:00",
+          "end_str": "11:06",
+          "labels": [
+            "half_guard_to_mount",
+            "guard_pass"
+          ],
+          "note": "athlete passes athlete's half guard and quickly gets to mount position."
+        },
+        {
+          "sub_id": "s22.1",
+          "start_sec": 666.0,
+          "end_sec": 710.0,
+          "start_str": "11:06",
+          "end_str": "11:50",
+          "labels": [
+            "Mount"
+          ],
+          "note": "athlete putting a lot of top pressure in mount on athlete, constantly trying to isolate an arm or apply choking pressure."
+        }
+      ]
+    },
+    {
+      "seg_id": "s23",
+      "start_sec": 710.0,
+      "end_sec": 720.0,
+      "start_str": "11:50",
+      "end_str": "12:00",
+      "position": "escape",
+      "sub_position": "escape",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s23.0",
+          "start_sec": 710.0,
+          "end_sec": 720.0,
+          "start_str": "11:50",
+          "end_str": "12:00",
+          "labels": [
+            "Mount"
+          ],
+          "note": "athlete in top mount, working hard to isolate an arm. "
+        }
+      ]
+    },
+    {
+      "seg_id": "s24",
+      "start_sec": 720.0,
+      "end_sec": 740.0,
+      "start_str": "12:00",
+      "end_str": "12:20",
+      "position": "standing",
+      "sub_position": "standing",
+      "roles": {
+        "A1": "neutral",
+        "A2": "neutral"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s24.0",
+          "start_sec": 720.0,
+          "end_sec": 740.0,
+          "start_str": "12:00",
+          "end_str": "12:20",
+          "labels": [
+            "Mount"
+          ],
+          "note": "athlete making multiple attempts to isolate athlete's arm from top mount position."
+        }
+      ]
+    },
+    {
+      "seg_id": "s25",
+      "start_sec": 740.0,
+      "end_sec": 770.0,
+      "start_str": "12:20",
+      "end_str": "12:50",
+      "position": "guard",
+      "sub_position": "de_la_riva_guard",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s25.0",
+          "start_sec": 740.0,
+          "end_sec": 770.0,
+          "start_str": "12:20",
+          "end_str": "12:50",
+          "labels": [
+            "Mount"
+          ],
+          "note": "athlete putting a ton of pressure in top mount working hard to isolate athlete's arm. athlete working hard to create some separation and work an escape."
+        }
+      ]
+    },
+    {
+      "seg_id": "s26",
+      "start_sec": 770.0,
+      "end_sec": 790.0,
+      "start_str": "12:50",
+      "end_str": "13:10",
+      "position": "sweep",
+      "sub_position": "sweep",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s26.0",
+          "start_sec": 770.0,
+          "end_sec": 790.0,
+          "start_str": "12:50",
+          "end_str": "13:10",
+          "labels": [
+            "Mount",
+            "escaping",
+            "Standing"
+          ],
+          "note": "athlete finally works hard to escape mount from athlete by framing on his hips, and kipping and bucking his hips hard to get athlete off him, and stand back up into a neutral position."
+        }
+      ]
+    },
+    {
+      "seg_id": "s27",
+      "start_sec": 790.0,
+      "end_sec": 830.0,
+      "start_str": "13:10",
+      "end_str": "13:50",
+      "position": "back_control",
+      "sub_position": "back_control",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 2,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s27.0",
+          "start_sec": 790.0,
+          "end_sec": 803.0,
+          "start_str": "13:10",
+          "end_str": "13:23",
+          "labels": [
+            "Standing",
+            "single_leg"
+          ],
+          "note": "Both fighters are back in standing position with some mild grip fighting. athlete attempts a single leg takedown on athlete, fails, and returns back to neutral standing positions."
+        },
+        {
+          "sub_id": "s27.1",
+          "start_sec": 803.0,
+          "end_sec": 817.0,
+          "start_str": "13:23",
+          "end_str": "13:37",
+          "labels": [
+            "Standing",
+            "double_leg",
+            "seat_belt",
+            "back_control",
+            "closed_guard",
+            "triangle"
+          ],
+          "note": "Both fighters are in standing position. athlete attempts a low double leg takedown, but athlete gets on top of athlete's back, establishes a seat belt, and begins taking athlete's back. athlete turns into athlete to prevent the back take and ends up in close guard with a triangle threat."
+        },
+        {
+          "sub_id": "s27.2",
+          "start_sec": 817.0,
+          "end_sec": 830.0,
+          "start_str": "13:37",
+          "end_str": "13:50",
+          "labels": [
+            "triangle",
+            "armbar",
+            "stack_pass"
+          ],
+          "note": "athlete stands up to get out of athlete's triangle, and as athlete slips out athlete switches to threaten the armbar, but athlete escapes by stacking athlete. "
+        }
+      ]
+    },
+    {
+      "seg_id": "s28",
+      "start_sec": 830.0,
+      "end_sec": 840.0,
+      "start_str": "13:50",
+      "end_str": "14:00",
+      "position": "escape",
+      "sub_position": "escape",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s28.0",
+          "start_sec": 830.0,
+          "end_sec": 840.0,
+          "start_str": "13:50",
+          "end_str": "14:00",
+          "labels": [
+            "stack_pass",
+            "open_guard"
+          ],
+          "note": "athlete continues to attempt to stack pass athlete, but he pushes athlete back away into an open giard scenario."
+        }
+      ]
+    },
+    {
+      "seg_id": "s29",
+      "start_sec": 840.0,
+      "end_sec": 880.0,
+      "start_str": "14:00",
+      "end_str": "14:40",
+      "position": "guard",
+      "sub_position": "de_la_riva_guard",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s29.0",
+          "start_sec": 840.0,
+          "end_sec": 860.0,
+          "start_str": "14:00",
+          "end_str": "14:20",
+          "labels": [
+            "Standing",
+            "grip_fighting"
+          ],
+          "note": "athlete stands back up to wrestle athlete and both fighters begin their scrimmage of grip fighting."
+        },
+        {
+          "sub_id": "s29.1",
+          "start_sec": 860.0,
+          "end_sec": 875.0,
+          "start_str": "14:20",
+          "end_str": "14:35",
+          "labels": [
+            "ankle_pick",
+            "Standing"
+          ],
+          "note": "athlete shoots low and gets an ankle pick, but athlete rolls out of it, and both fighters return back to standing position beginning to wrestle again."
+        },
+        {
+          "sub_id": "s29.2",
+          "start_sec": 875.0,
+          "end_sec": 880.0,
+          "start_str": "14:35",
+          "end_str": "14:40",
+          "labels": [
+            "pull_guard"
+          ],
+          "note": "athlete jumps through to pull guard from standing position but ends up in bottom half guard, putting athlete in top passing territory."
+        }
+      ]
+    },
+    {
+      "seg_id": "s30",
+      "start_sec": 880.0,
+      "end_sec": 900.0,
+      "start_str": "14:40",
+      "end_str": "15:00",
+      "position": "sweep",
+      "sub_position": "sweep",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s30.0",
+          "start_sec": 880.0,
+          "end_sec": 888.0,
+          "start_str": "14:40",
+          "end_str": "14:48",
+          "labels": [
+            "Side Control",
+            "kesa_gatame"
+          ],
+          "note": "athlete is able to pass athlete's guard by stacking him and getting to side control with a deep underhook and goes to kesa gatame."
+        },
+        {
+          "sub_id": "s30.1",
+          "start_sec": 888.0,
+          "end_sec": 900.0,
+          "start_str": "14:48",
+          "end_str": "15:00",
+          "labels": [
+            "kesa_gatame",
+            "Side Control",
+            "knee_on_belly"
+          ],
+          "note": "athlete progresses up from kesa gatame to side control to a knee on belly position, while athlete is trying to find frames and separation from bottom positions."
+        }
+      ]
+    },
+    {
+      "seg_id": "s31",
+      "start_sec": 900.0,
+      "end_sec": 959.0,
+      "start_str": "15:00",
+      "end_str": "15:59",
+      "position": "side_control",
+      "sub_position": "side_control",
+      "roles": {
+        "A1": "top",
+        "A2": "bottom"
+      },
+      "confidence": 0.9,
+      "rating": 1,
+      "ambiguous": false,
+      "subsegments": [
+        {
+          "sub_id": "s31.0",
+          "start_sec": 900.0,
+          "end_sec": 917.0,
+          "start_str": "15:00",
+          "end_str": "15:17",
+          "labels": [
+            "armbar",
+            "match_end"
+          ],
+          "note": "athlete swivels around for a final armbar attempt but athlete defends it and almost comes up when the referee ends the match because the clock runs out."
+        },
+        {
+          "sub_id": "s31.1",
+          "start_sec": 917.0,
+          "end_sec": 959.0,
+          "start_str": "15:17",
+          "end_str": "15:59",
+          "labels": [
+            "match_end"
+          ],
+          "note": "Both fighters hug, audience cheers.\nathlete is declared the winner."
+        }
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {
+    "ruleset": "adcc",
+    "events": [],
+    "totals": {
+      "A1": 0,
+      "A2": 0
+    }
+  },
+  "coaching_refs": [],
+  "privacy_note": "Anonymized seed. No athlete names, video URL/id, gym names, annotator id, or local paths. Athletes are A1/A2; the match is referenced by sample_id only. Free-text notes were scrubbed."
+}

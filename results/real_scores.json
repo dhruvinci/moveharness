@@ -1,0 +1,971 @@
+{
+  "benchmark": "MoveBench v0",
+  "gt_path": "data/v0/mb_v0_0001.json",
+  "n_samples": 1,
+  "gt_macro_segments": 32,
+  "iou_threshold": 0.3,
+  "regimes": {
+    "strict": "identity (lowercase) position/label matching; ontology NOT consulted; raw exact-string floor",
+    "semantic": "ontology alias-folding normalization + abstain-aware (drop predicted 'unknown' positions); ontology-violation tracked"
+  },
+  "ontology_version": "0.1.0",
+  "results": [
+    {
+      "system": "exp2_multipass_pass1_enhanced",
+      "pred_file": "pred_exp2_pass1_enhanced.json",
+      "provenance": "honest machine output; Exp2 multi-pass, pass1 enhanced; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 121,
+      "oversegmentation_ratio": 3.7812,
+      "coverage_fraction": 0.5787,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 121,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0084,
+        "duration_weighted_macro_f1": 0.0222,
+        "temporal_iou_mean_matched": 0.625,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0427,
+        "label_macro_f1": 0.0091,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 121,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0084,
+        "duration_weighted_macro_f1": 0.0222,
+        "temporal_iou_mean_matched": 0.625,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0621,
+        "label_macro_f1": 0.0118,
+        "ontology_violation_rate": 0.5489,
+        "ontology_violations": 73
+      },
+      "pooled_token_f1_strict": {
+        "tp": 34,
+        "fp": 642,
+        "fn": 99,
+        "precision": 0.0503,
+        "recall": 0.2556,
+        "f1": 0.0841
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 35,
+        "fp": 641,
+        "fn": 98,
+        "precision": 0.0518,
+        "recall": 0.2632,
+        "f1": 0.0865
+      },
+      "pooled_token_f1_gap": 0.0024,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0194
+    },
+    {
+      "system": "exp2_multipass_pass1_fixed",
+      "pred_file": "pred_exp2_pass1_fixed.json",
+      "provenance": "honest machine output; Exp2 multi-pass, pass1 fixed (241 micro-segs); in-sample",
+      "gt_segments": 32,
+      "pred_segments": 241,
+      "oversegmentation_ratio": 7.5312,
+      "coverage_fraction": 1.0,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 241,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0042,
+        "duration_weighted_macro_f1": 0.0164,
+        "temporal_iou_mean_matched": 0.625,
+        "matched_positions": 1,
+        "label_micro_f1": 0.042,
+        "label_macro_f1": 0.0078,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 241,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0042,
+        "duration_weighted_macro_f1": 0.0164,
+        "temporal_iou_mean_matched": 0.625,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0633,
+        "label_macro_f1": 0.0106,
+        "ontology_violation_rate": 0.5839,
+        "ontology_violations": 80
+      },
+      "pooled_token_f1_strict": {
+        "tp": 50,
+        "fp": 1254,
+        "fn": 83,
+        "precision": 0.0383,
+        "recall": 0.3759,
+        "f1": 0.0696
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 52,
+        "fp": 1252,
+        "fn": 81,
+        "precision": 0.0399,
+        "recall": 0.391,
+        "f1": 0.0724
+      },
+      "pooled_token_f1_gap": 0.0028,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0213
+    },
+    {
+      "system": "exp2_multipass_pass3_synthesis",
+      "pred_file": "pred_exp2_pass3_synthesis.json",
+      "provenance": "honest machine output; Exp2 multi-pass, pass3 synthesized timeline; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 14,
+      "oversegmentation_ratio": 0.4375,
+      "coverage_fraction": 0.3754,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 14,
+        "abstain_dropped": 0,
+        "macro_f1": 0.022,
+        "duration_weighted_macro_f1": 0.0444,
+        "temporal_iou_mean_matched": 0.5333,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0,
+        "label_macro_f1": 0.0,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 14,
+        "abstain_dropped": 0,
+        "macro_f1": 0.022,
+        "duration_weighted_macro_f1": 0.0444,
+        "temporal_iou_mean_matched": 0.5333,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0,
+        "label_macro_f1": 0.0,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "pooled_token_f1_strict": {
+        "tp": 10,
+        "fp": 7,
+        "fn": 123,
+        "precision": 0.5882,
+        "recall": 0.0752,
+        "f1": 0.1333
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 13,
+        "fp": 4,
+        "fn": 120,
+        "precision": 0.7647,
+        "recall": 0.0977,
+        "f1": 0.1733
+      },
+      "pooled_token_f1_gap": 0.04,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0
+    },
+    {
+      "system": "exp3_stage1_cv_cached_timeline",
+      "pred_file": "pred_exp3_stage1.json",
+      "provenance": "honest machine output; Exp3 stage1 CV-cached single-pass timeline; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 58,
+      "oversegmentation_ratio": 1.8125,
+      "coverage_fraction": 1.0,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 58,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0991,
+        "duration_weighted_macro_f1": 0.1223,
+        "temporal_iou_mean_matched": 0.4627,
+        "matched_positions": 5,
+        "label_micro_f1": 0.0225,
+        "label_macro_f1": 0.007,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 58,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0991,
+        "duration_weighted_macro_f1": 0.1223,
+        "temporal_iou_mean_matched": 0.4627,
+        "matched_positions": 5,
+        "label_micro_f1": 0.0305,
+        "label_macro_f1": 0.009,
+        "ontology_violation_rate": 0.6104,
+        "ontology_violations": 47
+      },
+      "pooled_token_f1_strict": {
+        "tp": 32,
+        "fp": 143,
+        "fn": 101,
+        "precision": 0.1829,
+        "recall": 0.2406,
+        "f1": 0.2078
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 32,
+        "fp": 143,
+        "fn": 101,
+        "precision": 0.1829,
+        "recall": 0.2406,
+        "f1": 0.2078
+      },
+      "pooled_token_f1_gap": 0.0,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.008
+    },
+    {
+      "system": "exp3_stage1_v33_compressed",
+      "pred_file": "pred_exp3_stage1_v33_compressed.json",
+      "provenance": "honest machine output; Exp3 stage1 v3.3 compressed; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 24,
+      "oversegmentation_ratio": 0.75,
+      "coverage_fraction": 0.4692,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 24,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0564,
+        "duration_weighted_macro_f1": 0.0548,
+        "temporal_iou_mean_matched": 0.4722,
+        "matched_positions": 2,
+        "label_micro_f1": 0.0135,
+        "label_macro_f1": 0.0033,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 24,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0564,
+        "duration_weighted_macro_f1": 0.0548,
+        "temporal_iou_mean_matched": 0.4722,
+        "matched_positions": 2,
+        "label_micro_f1": 0.0561,
+        "label_macro_f1": 0.0171,
+        "ontology_violation_rate": 0.5694,
+        "ontology_violations": 41
+      },
+      "pooled_token_f1_strict": {
+        "tp": 31,
+        "fp": 65,
+        "fn": 102,
+        "precision": 0.3229,
+        "recall": 0.2331,
+        "f1": 0.2707
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 34,
+        "fp": 62,
+        "fn": 99,
+        "precision": 0.3542,
+        "recall": 0.2556,
+        "f1": 0.2969
+      },
+      "pooled_token_f1_gap": 0.0262,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0426
+    },
+    {
+      "system": "exp3_stage1_v33_pass1",
+      "pred_file": "pred_exp3_stage1_v33_pass1.json",
+      "provenance": "honest machine output; Exp3 stage1 v3.3 pass1; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 49,
+      "oversegmentation_ratio": 1.5312,
+      "coverage_fraction": 0.4484,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 49,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0119,
+        "duration_weighted_macro_f1": 0.0148,
+        "temporal_iou_mean_matched": 0.5,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0761,
+        "label_macro_f1": 0.0114,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 49,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0119,
+        "duration_weighted_macro_f1": 0.0148,
+        "temporal_iou_mean_matched": 0.5,
+        "matched_positions": 1,
+        "label_micro_f1": 0.1053,
+        "label_macro_f1": 0.0134,
+        "ontology_violation_rate": 0.6145,
+        "ontology_violations": 51
+      },
+      "pooled_token_f1_strict": {
+        "tp": 32,
+        "fp": 148,
+        "fn": 101,
+        "precision": 0.1778,
+        "recall": 0.2406,
+        "f1": 0.2045
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 32,
+        "fp": 148,
+        "fn": 101,
+        "precision": 0.1778,
+        "recall": 0.2406,
+        "f1": 0.2045
+      },
+      "pooled_token_f1_gap": 0.0,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0292
+    },
+    {
+      "system": "exp3_stage3_merged_timeline",
+      "pred_file": "pred_exp3_stage3_v33.json",
+      "provenance": "honest machine output; Exp3 stage3 merged/validated timeline; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 48,
+      "oversegmentation_ratio": 1.5,
+      "coverage_fraction": 0.438,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 48,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0111,
+        "duration_weighted_macro_f1": 0.0155,
+        "temporal_iou_mean_matched": 0.5,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0773,
+        "label_macro_f1": 0.012,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 48,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0111,
+        "duration_weighted_macro_f1": 0.0155,
+        "temporal_iou_mean_matched": 0.5,
+        "matched_positions": 1,
+        "label_micro_f1": 0.1069,
+        "label_macro_f1": 0.0139,
+        "ontology_violation_rate": 0.625,
+        "ontology_violations": 50
+      },
+      "pooled_token_f1_strict": {
+        "tp": 33,
+        "fp": 135,
+        "fn": 100,
+        "precision": 0.1964,
+        "recall": 0.2481,
+        "f1": 0.2193
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 33,
+        "fp": 135,
+        "fn": 100,
+        "precision": 0.1964,
+        "recall": 0.2481,
+        "f1": 0.2193
+      },
+      "pooled_token_f1_gap": 0.0,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0296
+    },
+    {
+      "system": "exp4_combined_stage1_stage2",
+      "pred_file": "pred_exp4_combined.json",
+      "provenance": "honest machine output; Exp4 combined stage1+stage2 composite; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 69,
+      "oversegmentation_ratio": 2.1562,
+      "coverage_fraction": 1.0,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 69,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0774,
+        "duration_weighted_macro_f1": 0.1079,
+        "temporal_iou_mean_matched": 0.6476,
+        "matched_positions": 4,
+        "label_micro_f1": 0.009,
+        "label_macro_f1": 0.0081,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 69,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0774,
+        "duration_weighted_macro_f1": 0.1079,
+        "temporal_iou_mean_matched": 0.6476,
+        "matched_positions": 4,
+        "label_micro_f1": 0.0183,
+        "label_macro_f1": 0.0145,
+        "ontology_violation_rate": 0.9333,
+        "ontology_violations": 112
+      },
+      "pooled_token_f1_strict": {
+        "tp": 30,
+        "fp": 288,
+        "fn": 103,
+        "precision": 0.0943,
+        "recall": 0.2256,
+        "f1": 0.133
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 30,
+        "fp": 288,
+        "fn": 103,
+        "precision": 0.0943,
+        "recall": 0.2256,
+        "f1": 0.133
+      },
+      "pooled_token_f1_gap": 0.0,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0093
+    },
+    {
+      "system": "exp4_v1_skeleton_run1",
+      "pred_file": "pred_exp4_v1_run1.json",
+      "provenance": "honest machine output; Exp4 stage1 v1 skeleton, run1; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 69,
+      "oversegmentation_ratio": 2.1562,
+      "coverage_fraction": 1.0,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 69,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0774,
+        "duration_weighted_macro_f1": 0.1079,
+        "temporal_iou_mean_matched": 0.6476,
+        "matched_positions": 4,
+        "label_micro_f1": 0.009,
+        "label_macro_f1": 0.0081,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 69,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0774,
+        "duration_weighted_macro_f1": 0.1079,
+        "temporal_iou_mean_matched": 0.6476,
+        "matched_positions": 4,
+        "label_micro_f1": 0.0183,
+        "label_macro_f1": 0.0145,
+        "ontology_violation_rate": 0.9333,
+        "ontology_violations": 112
+      },
+      "pooled_token_f1_strict": {
+        "tp": 30,
+        "fp": 288,
+        "fn": 103,
+        "precision": 0.0943,
+        "recall": 0.2256,
+        "f1": 0.133
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 30,
+        "fp": 288,
+        "fn": 103,
+        "precision": 0.0943,
+        "recall": 0.2256,
+        "f1": 0.133
+      },
+      "pooled_token_f1_gap": 0.0,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0093
+    },
+    {
+      "system": "exp4_v1_skeleton_run2",
+      "pred_file": "pred_exp4_v1_run2.json",
+      "provenance": "honest machine output; Exp4 stage1 v1 skeleton, run2; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 157,
+      "oversegmentation_ratio": 4.9062,
+      "coverage_fraction": 1.0,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 157,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0171,
+        "duration_weighted_macro_f1": 0.0239,
+        "temporal_iou_mean_matched": 0.875,
+        "matched_positions": 1,
+        "label_micro_f1": 0.009,
+        "label_macro_f1": 0.0069,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 157,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0171,
+        "duration_weighted_macro_f1": 0.0239,
+        "temporal_iou_mean_matched": 0.875,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0172,
+        "label_macro_f1": 0.0142,
+        "ontology_violation_rate": 0.877,
+        "ontology_violations": 107
+      },
+      "pooled_token_f1_strict": {
+        "tp": 33,
+        "fp": 727,
+        "fn": 100,
+        "precision": 0.0434,
+        "recall": 0.2481,
+        "f1": 0.0739
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 39,
+        "fp": 721,
+        "fn": 94,
+        "precision": 0.0513,
+        "recall": 0.2932,
+        "f1": 0.0873
+      },
+      "pooled_token_f1_gap": 0.0134,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0082
+    },
+    {
+      "system": "exp4_v1_skeleton_run3",
+      "pred_file": "pred_exp4_v1_run3.json",
+      "provenance": "honest machine output; Exp4 stage1 v1 skeleton, run3; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 25,
+      "oversegmentation_ratio": 0.7812,
+      "coverage_fraction": 1.0,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 25,
+        "abstain_dropped": 0,
+        "macro_f1": 0.1331,
+        "duration_weighted_macro_f1": 0.1646,
+        "temporal_iou_mean_matched": 0.6661,
+        "matched_positions": 5,
+        "label_micro_f1": 0.0102,
+        "label_macro_f1": 0.0078,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 25,
+        "abstain_dropped": 0,
+        "macro_f1": 0.1331,
+        "duration_weighted_macro_f1": 0.1646,
+        "temporal_iou_mean_matched": 0.6661,
+        "matched_positions": 5,
+        "label_micro_f1": 0.0206,
+        "label_macro_f1": 0.0227,
+        "ontology_violation_rate": 0.8333,
+        "ontology_violations": 100
+      },
+      "pooled_token_f1_strict": {
+        "tp": 26,
+        "fp": 119,
+        "fn": 107,
+        "precision": 0.1793,
+        "recall": 0.1955,
+        "f1": 0.1871
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 29,
+        "fp": 116,
+        "fn": 104,
+        "precision": 0.2,
+        "recall": 0.218,
+        "f1": 0.2086
+      },
+      "pooled_token_f1_gap": 0.0215,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0104
+    },
+    {
+      "system": "exp4_v2_skeleton_run1",
+      "pred_file": "pred_exp4_v2_run1.json",
+      "provenance": "honest machine output; Exp4 stage1 v2 skeleton, run1; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 24,
+      "oversegmentation_ratio": 0.75,
+      "coverage_fraction": 0.9447,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 24,
+        "abstain_dropped": 0,
+        "macro_f1": 0.165,
+        "duration_weighted_macro_f1": 0.2208,
+        "temporal_iou_mean_matched": 0.6183,
+        "matched_positions": 6,
+        "label_micro_f1": 0.0106,
+        "label_macro_f1": 0.0055,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 24,
+        "abstain_dropped": 0,
+        "macro_f1": 0.165,
+        "duration_weighted_macro_f1": 0.2208,
+        "temporal_iou_mean_matched": 0.6183,
+        "matched_positions": 6,
+        "label_micro_f1": 0.0213,
+        "label_macro_f1": 0.0163,
+        "ontology_violation_rate": 0.8393,
+        "ontology_violations": 94
+      },
+      "pooled_token_f1_strict": {
+        "tp": 21,
+        "fp": 115,
+        "fn": 112,
+        "precision": 0.1544,
+        "recall": 0.1579,
+        "f1": 0.1561
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 22,
+        "fp": 114,
+        "fn": 111,
+        "precision": 0.1618,
+        "recall": 0.1654,
+        "f1": 0.1636
+      },
+      "pooled_token_f1_gap": 0.0075,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0107
+    },
+    {
+      "system": "exp4_v2_skeleton_run2",
+      "pred_file": "pred_exp4_v2_run2.json",
+      "provenance": "honest machine output; Exp4 stage1 v2 skeleton, run2; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 22,
+      "oversegmentation_ratio": 0.6875,
+      "coverage_fraction": 1.0,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 22,
+        "abstain_dropped": 0,
+        "macro_f1": 0.1888,
+        "duration_weighted_macro_f1": 0.2305,
+        "temporal_iou_mean_matched": 0.5276,
+        "matched_positions": 6,
+        "label_micro_f1": 0.0,
+        "label_macro_f1": 0.0,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 22,
+        "abstain_dropped": 0,
+        "macro_f1": 0.1888,
+        "duration_weighted_macro_f1": 0.2305,
+        "temporal_iou_mean_matched": 0.5276,
+        "matched_positions": 6,
+        "label_micro_f1": 0.0,
+        "label_macro_f1": 0.0,
+        "ontology_violation_rate": 0.8824,
+        "ontology_violations": 105
+      },
+      "pooled_token_f1_strict": {
+        "tp": 21,
+        "fp": 120,
+        "fn": 112,
+        "precision": 0.1489,
+        "recall": 0.1579,
+        "f1": 0.1533
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 21,
+        "fp": 120,
+        "fn": 112,
+        "precision": 0.1489,
+        "recall": 0.1579,
+        "f1": 0.1533
+      },
+      "pooled_token_f1_gap": 0.0,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0
+    },
+    {
+      "system": "exp4_v3_skeleton_run1",
+      "pred_file": "pred_exp4_v3_run1.json",
+      "provenance": "honest machine output; Exp4 stage1 v3 skeleton (CV-grounded), run1; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 15,
+      "oversegmentation_ratio": 0.4688,
+      "coverage_fraction": 1.0,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 15,
+        "abstain_dropped": 0,
+        "macro_f1": 0.1317,
+        "duration_weighted_macro_f1": 0.1663,
+        "temporal_iou_mean_matched": 0.3901,
+        "matched_positions": 4,
+        "label_micro_f1": 0.0301,
+        "label_macro_f1": 0.0135,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 15,
+        "abstain_dropped": 0,
+        "macro_f1": 0.1317,
+        "duration_weighted_macro_f1": 0.1663,
+        "temporal_iou_mean_matched": 0.3901,
+        "matched_positions": 4,
+        "label_micro_f1": 0.0625,
+        "label_macro_f1": 0.0378,
+        "ontology_violation_rate": 0.8118,
+        "ontology_violations": 69
+      },
+      "pooled_token_f1_strict": {
+        "tp": 19,
+        "fp": 81,
+        "fn": 114,
+        "precision": 0.19,
+        "recall": 0.1429,
+        "f1": 0.1631
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 19,
+        "fp": 81,
+        "fn": 114,
+        "precision": 0.19,
+        "recall": 0.1429,
+        "f1": 0.1631
+      },
+      "pooled_token_f1_gap": 0.0,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0324
+    },
+    {
+      "system": "exp4_v3_skeleton_run2",
+      "pred_file": "pred_exp4_v3_run2.json",
+      "provenance": "honest machine output; Exp4 stage1 v3 skeleton (CV-grounded), run2; in-sample",
+      "gt_segments": 32,
+      "pred_segments": 25,
+      "oversegmentation_ratio": 0.7812,
+      "coverage_fraction": 1.0,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 25,
+        "abstain_dropped": 0,
+        "macro_f1": 0.1361,
+        "duration_weighted_macro_f1": 0.1999,
+        "temporal_iou_mean_matched": 0.7229,
+        "matched_positions": 6,
+        "label_micro_f1": 0.0195,
+        "label_macro_f1": 0.0034,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 25,
+        "abstain_dropped": 0,
+        "macro_f1": 0.1361,
+        "duration_weighted_macro_f1": 0.1999,
+        "temporal_iou_mean_matched": 0.7229,
+        "matched_positions": 6,
+        "label_micro_f1": 0.0364,
+        "label_macro_f1": 0.0088,
+        "ontology_violation_rate": 0.7422,
+        "ontology_violations": 95
+      },
+      "pooled_token_f1_strict": {
+        "tp": 32,
+        "fp": 121,
+        "fn": 101,
+        "precision": 0.2092,
+        "recall": 0.2406,
+        "f1": 0.2238
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 34,
+        "fp": 119,
+        "fn": 99,
+        "precision": 0.2222,
+        "recall": 0.2556,
+        "f1": 0.2378
+      },
+      "pooled_token_f1_gap": 0.014,
+      "strict_to_semantic_macro_f1_gap": 0.0,
+      "strict_to_semantic_label_f1_gap": 0.0169
+    },
+    {
+      "system": "naive_single_pass_holistic",
+      "pred_file": "pred_naive_pass1.json",
+      "provenance": "honest machine output; single-pass holistic VLM (no CV grounding); in-sample",
+      "gt_segments": 32,
+      "pred_segments": 26,
+      "oversegmentation_ratio": 0.8125,
+      "coverage_fraction": 0.7247,
+      "strict": {
+        "regime": "strict",
+        "pred_segments_scored": 26,
+        "abstain_dropped": 0,
+        "macro_f1": 0.0152,
+        "duration_weighted_macro_f1": 0.0282,
+        "temporal_iou_mean_matched": 0.875,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0,
+        "label_macro_f1": 0.0,
+        "ontology_violation_rate": 0.0,
+        "ontology_violations": 0
+      },
+      "semantic": {
+        "regime": "semantic",
+        "pred_segments_scored": 25,
+        "abstain_dropped": 1,
+        "macro_f1": 0.0165,
+        "duration_weighted_macro_f1": 0.0282,
+        "temporal_iou_mean_matched": 0.875,
+        "matched_positions": 1,
+        "label_micro_f1": 0.0,
+        "label_macro_f1": 0.0,
+        "ontology_violation_rate": 0.9231,
+        "ontology_violations": 12
+      },
+      "pooled_token_f1_strict": {
+        "tp": 13,
+        "fp": 26,
+        "fn": 120,
+        "precision": 0.3333,
+        "recall": 0.0977,
+        "f1": 0.1512
+      },
+      "pooled_token_f1_semantic": {
+        "tp": 19,
+        "fp": 20,
+        "fn": 114,
+        "precision": 0.4872,
+        "recall": 0.1429,
+        "f1": 0.2209
+      },
+      "pooled_token_f1_gap": 0.0697,
+      "strict_to_semantic_macro_f1_gap": 0.0013,
+      "strict_to_semantic_label_f1_gap": 0.0
+    }
+  ],
+  "group_summary_semantic_T1": [
+    {
+      "group": "Naive (no CV grounding)",
+      "n_runs": 1,
+      "best_semantic_macro_f1": 0.0165,
+      "mean_semantic_macro_f1": 0.0165,
+      "best_mean_matched_iou": 0.875,
+      "max_matched_positions": 1
+    },
+    {
+      "group": "Exp2 multi-pass",
+      "n_runs": 3,
+      "best_semantic_macro_f1": 0.022,
+      "mean_semantic_macro_f1": 0.0115,
+      "best_mean_matched_iou": 0.625,
+      "max_matched_positions": 1
+    },
+    {
+      "group": "Exp3 (CV-cached)",
+      "n_runs": 4,
+      "best_semantic_macro_f1": 0.0991,
+      "mean_semantic_macro_f1": 0.0446,
+      "best_mean_matched_iou": 0.5,
+      "max_matched_positions": 5
+    },
+    {
+      "group": "Exp4 v1",
+      "n_runs": 3,
+      "best_semantic_macro_f1": 0.1331,
+      "mean_semantic_macro_f1": 0.0759,
+      "best_mean_matched_iou": 0.875,
+      "max_matched_positions": 5
+    },
+    {
+      "group": "Exp4 v2",
+      "n_runs": 2,
+      "best_semantic_macro_f1": 0.1888,
+      "mean_semantic_macro_f1": 0.1769,
+      "best_mean_matched_iou": 0.6183,
+      "max_matched_positions": 6
+    },
+    {
+      "group": "Exp4 v3 (CV-grounded)",
+      "n_runs": 2,
+      "best_semantic_macro_f1": 0.1361,
+      "mean_semantic_macro_f1": 0.1339,
+      "best_mean_matched_iou": 0.7229,
+      "max_matched_positions": 6
+    },
+    {
+      "group": "Exp4 composite",
+      "n_runs": 1,
+      "best_semantic_macro_f1": 0.0774,
+      "mean_semantic_macro_f1": 0.0774,
+      "best_mean_matched_iou": 0.6476,
+      "max_matched_positions": 4
+    }
+  ],
+  "headline": {
+    "contrast_a_naive_vs_cv_grounded": {
+      "naive_single_pass": {
+        "semantic_T1_macro_f1": 0.0165,
+        "matched_positions": "1/32",
+        "mean_matched_iou": 0.875
+      },
+      "best_cv_grounded": {
+        "system": "exp4_v2_skeleton_run2",
+        "semantic_T1_macro_f1": 0.1888,
+        "matched_positions": "6/32",
+        "mean_matched_iou": 0.5276
+      },
+      "relative_improvement_x": 11.4,
+      "note": "CV-grounded pipelines match up to 6/32 GT positions vs 1/32 for naive single-pass; position macro-F1 rises ~11x."
+    },
+    "contrast_b_strict_to_semantic_gap": {
+      "measure": "alignment-free pooled position+label token micro-F1",
+      "max_underCount_system": "naive_single_pass_holistic",
+      "max_underCount_pct": 31.6,
+      "mean_underCount_pct": 6.6,
+      "note": "Exact-string matching under-counts correctness by up to 31.6% (system naive_single_pass_holistic), mean 6.6% across systems, recovered by ontology alias-folding (mixed-case 'Mount'->'mount'; surface forms 'de_la_riva'->'de_la_riva_guard', 'guard_pass'->'passing_guard'). On the IoU-matched T1 position axis the gap is near-zero because both the v0 GT macro-position field and the pipeline outputs already use canonical lowercase tokens; the gap is concentrated on the technique-label axis."
+    },
+    "oversegmentation": {
+      "min": {
+        "system": "exp2_multipass_pass3_synthesis",
+        "ratio": 0.4375
+      },
+      "max": {
+        "system": "exp2_multipass_pass1_fixed",
+        "ratio": 7.5312
+      },
+      "note": "pred_segs/gt_segs; exp2 pass1_fixed emits 241 segments = 7.53x the 32 GT macro segments (a pathology MoveBench surfaces)."
+    }
+  }
+}

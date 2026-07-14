@@ -1,0 +1,283 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "exp4_v2_skeleton_run2",
+  "provenance": "honest machine output; Exp4 stage1 v2 skeleton, run2; in-sample",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 94.0,
+      "position": "standing",
+      "labels": [
+        "hand_fighting",
+        "collar_tie",
+        "feeling_out",
+        "distance_management",
+        "takedown_setup"
+      ]
+    },
+    {
+      "start_sec": 94.0,
+      "end_sec": 105.0,
+      "position": "scramble",
+      "labels": [
+        "takedown_attempt",
+        "sprawl",
+        "flying_submission",
+        "takedown_defense",
+        "submission_chaining",
+        "scramble_dynamics"
+      ]
+    },
+    {
+      "start_sec": 105.0,
+      "end_sec": 128.0,
+      "position": "guard",
+      "labels": [
+        "submission_defense",
+        "stack_pass_attempt",
+        "guard_recovery",
+        "stacking_defense",
+        "guard_retention",
+        "frame_usage"
+      ]
+    },
+    {
+      "start_sec": 128.0,
+      "end_sec": 190.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing",
+        "de_la_riva",
+        "pressure_passing",
+        "open_guard_passing",
+        "guard_retention",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 190.0,
+      "end_sec": 208.0,
+      "position": "scramble",
+      "labels": [
+        "inversion",
+        "back_take_attempt",
+        "rolling_transition",
+        "guard_inversion",
+        "back_take_setup",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 208.0,
+      "end_sec": 225.0,
+      "position": "back_control",
+      "labels": [
+        "body_lock_control",
+        "back_defense",
+        "back_control_maintenance",
+        "hand_fighting_defense"
+      ]
+    },
+    {
+      "start_sec": 225.0,
+      "end_sec": 245.0,
+      "position": "mount",
+      "labels": [
+        "transition",
+        "side_control_to_mount",
+        "positional_advancement",
+        "mount_entry",
+        "hip_switching",
+        "positional_chaining"
+      ]
+    },
+    {
+      "start_sec": 245.0,
+      "end_sec": 320.0,
+      "position": "mount",
+      "labels": [
+        "mount_control",
+        "arm_triangle_setup",
+        "pressure",
+        "mount_pressure",
+        "submission_setup",
+        "crossface"
+      ]
+    },
+    {
+      "start_sec": 320.0,
+      "end_sec": 366.0,
+      "position": "mount",
+      "labels": [
+        "mount_attack",
+        "armbar_threat",
+        "mount_defense",
+        "mount_escapes",
+        "submission_defense",
+        "arm_isolation"
+      ]
+    },
+    {
+      "start_sec": 366.0,
+      "end_sec": 375.0,
+      "position": "scramble",
+      "labels": [
+        "mount_escape",
+        "upa_escape",
+        "reversal",
+        "explosive_escapes",
+        "hip_bridge",
+        "scrambling"
+      ]
+    },
+    {
+      "start_sec": 375.0,
+      "end_sec": 410.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing",
+        "guard_retention",
+        "open_guard_passing",
+        "framing",
+        "hip_mobility"
+      ]
+    },
+    {
+      "start_sec": 410.0,
+      "end_sec": 443.0,
+      "position": "scramble",
+      "labels": [
+        "inversion",
+        "leg_attack_setup",
+        "scramble",
+        "guard_inversion",
+        "leg_entanglement_entry"
+      ]
+    },
+    {
+      "start_sec": 443.0,
+      "end_sec": 550.0,
+      "position": "scramble",
+      "labels": [
+        "leg_entanglement",
+        "50_50",
+        "sweep_attempts",
+        "passing_attempts",
+        "leg_lock_defense",
+        "50_50_scenarios",
+        "scramble_offense"
+      ]
+    },
+    {
+      "start_sec": 550.0,
+      "end_sec": 605.0,
+      "position": "guard",
+      "labels": [
+        "guard_pass",
+        "knee_slice",
+        "pass_to_mount",
+        "diving_pass",
+        "guard_passing_speed",
+        "mount_transition"
+      ]
+    },
+    {
+      "start_sec": 605.0,
+      "end_sec": 665.0,
+      "position": "mount",
+      "labels": [
+        "mount_control",
+        "heavy_pressure",
+        "submission_hunting",
+        "mount_pressure",
+        "crossface",
+        "arm_isolation"
+      ]
+    },
+    {
+      "start_sec": 665.0,
+      "end_sec": 725.0,
+      "position": "mount",
+      "labels": [
+        "high_mount",
+        "armbar_setup",
+        "s_mount_threat",
+        "high_mount_control",
+        "armbar_from_mount",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 725.0,
+      "end_sec": 810.0,
+      "position": "mount",
+      "labels": [
+        "positional_control",
+        "mount_maintenance",
+        "mount_retention",
+        "patience",
+        "energy_conservation"
+      ]
+    },
+    {
+      "start_sec": 810.0,
+      "end_sec": 820.0,
+      "position": "scramble",
+      "labels": [
+        "takedown_counter",
+        "snap_down",
+        "triangle_entry",
+        "front_headlock_counter",
+        "submission_entry"
+      ]
+    },
+    {
+      "start_sec": 820.0,
+      "end_sec": 865.0,
+      "position": "guard",
+      "labels": [
+        "triangle_choke_attack",
+        "submission_attempt",
+        "defense",
+        "triangle_setup",
+        "submission_finishing",
+        "choke_defense"
+      ]
+    },
+    {
+      "start_sec": 865.0,
+      "end_sec": 900.0,
+      "position": "guard",
+      "labels": [
+        "triangle_to_armbar",
+        "submission_chain",
+        "submission_chaining",
+        "armbar_from_triangle",
+        "armbar_defense"
+      ]
+    },
+    {
+      "start_sec": 900.0,
+      "end_sec": 911.0,
+      "position": "scramble",
+      "labels": [
+        "submission_escape",
+        "last_second_scramble",
+        "armbar_escape",
+        "scrambling_under_pressure"
+      ]
+    },
+    {
+      "start_sec": 911.0,
+      "end_sec": 970.0,
+      "position": "post_match",
+      "labels": [
+        "decision",
+        "sportsmanship"
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {}
+}

@@ -1,0 +1,145 @@
+{
+  "task": "LLM judge self-consistency (same segment judged twice)",
+  "judge_model": "gemini-2.5-flash",
+  "judge_config": {
+    "temperature": 0.0,
+    "thinking_budget": 0
+  },
+  "n_segments": 10,
+  "seed": 17,
+  "exact_agreement": 1.0,
+  "within_1_agreement": 1.0,
+  "cohens_kappa": 1.0,
+  "mean_abs_score_diff": 0.0,
+  "usage": {
+    "calls": 20,
+    "prompt_tokens": 9300,
+    "output_tokens": 587,
+    "total_tokens": 9887,
+    "failures": 0,
+    "retries": 0
+  },
+  "approx_cost_usd": 0.00426,
+  "pairs": [
+    {
+      "idx": 0,
+      "system": "exp4_v3_skeleton_run2",
+      "gt_idx": 29,
+      "iou": 0.5,
+      "score_run1": 1,
+      "score_run2": 1,
+      "reason_run1": "Position is correct, but techniques are different, though some overlap in genera",
+      "reason_run2": "Position is correct, but techniques are inconsistent.",
+      "agree_exact": true,
+      "agree_within1": true
+    },
+    {
+      "idx": 1,
+      "system": "exp4_v2_skeleton_run2",
+      "gt_idx": 6,
+      "iou": 0.323,
+      "score_run1": 0,
+      "score_run2": 0,
+      "reason_run1": "GT is 'sweep' and 'back_control', PREDICTED is 'guard'. Clearly different positi",
+      "reason_run2": "GT is 'sweep' and 'back_control', PREDICTED is 'guard'. Clearly different positi",
+      "agree_exact": true,
+      "agree_within1": true
+    },
+    {
+      "idx": 2,
+      "system": "exp4_v1_skeleton_run2",
+      "gt_idx": 28,
+      "iou": 0.6,
+      "score_run1": 0,
+      "score_run2": 0,
+      "reason_run1": "Predicted 'side_control' is clearly different from GT 'escape' and 'open_guard'.",
+      "reason_run2": "Predicted position 'side_control' is clearly different from GT 'escape'.",
+      "agree_exact": true,
+      "agree_within1": true
+    },
+    {
+      "idx": 3,
+      "system": "exp4_v2_skeleton_run1",
+      "gt_idx": 3,
+      "iou": 0.667,
+      "score_run1": 0,
+      "score_run2": 0,
+      "reason_run1": "Predicted 'scramble' when GT was 'guard'; techniques also do not align.",
+      "reason_run2": "Predicted 'scramble' when GT was 'guard'; techniques also do not align.",
+      "agree_exact": true,
+      "agree_within1": true
+    },
+    {
+      "idx": 4,
+      "system": "exp4_v1_skeleton_run2",
+      "gt_idx": 14,
+      "iou": 0.3,
+      "score_run1": 0,
+      "score_run2": 0,
+      "reason_run1": "Predicted 'mount' is clearly different from GT 'escape' and 'open_guard'.",
+      "reason_run2": "Predicted 'mount' is clearly different from GT 'escape' and 'open_guard'.",
+      "agree_exact": true,
+      "agree_within1": true
+    },
+    {
+      "idx": 5,
+      "system": "exp4_combined_stage1_stage2",
+      "gt_idx": 8,
+      "iou": 0.5,
+      "score_run1": 0,
+      "score_run2": 0,
+      "reason_run1": "Predicted 'guard' is clearly different from GT 'escape' and 'mount'/'side contro",
+      "reason_run2": "Positions are clearly different: 'escape' vs 'guard'. Techniques also differ.",
+      "agree_exact": true,
+      "agree_within1": true
+    },
+    {
+      "idx": 6,
+      "system": "hmm_cv_only_baseline",
+      "gt_idx": 11,
+      "iou": 0.316,
+      "score_run1": 0,
+      "score_run2": 0,
+      "reason_run1": "Predicted 'escape' is clearly different from GT 'guard' and 'de_la_riva_guard'.",
+      "reason_run2": "Predicted 'escape' is clearly different from GT 'guard' and 'de_la_riva_guard'.",
+      "agree_exact": true,
+      "agree_within1": true
+    },
+    {
+      "idx": 7,
+      "system": "exp4_v1_skeleton_run1",
+      "gt_idx": 31,
+      "iou": 0.549,
+      "score_run1": 0,
+      "score_run2": 0,
+      "reason_run1": "Predicted 'post_match' is clearly different from GT 'side_control' and technique",
+      "reason_run2": "Predicted post-match, but GT was side control with an armbar attempt.",
+      "agree_exact": true,
+      "agree_within1": true
+    },
+    {
+      "idx": 8,
+      "system": "exp3_stage1_v33_compressed",
+      "gt_idx": 5,
+      "iou": 0.571,
+      "score_run1": 1,
+      "score_run2": 1,
+      "reason_run1": "Position is 'guard' family, but sub-positions and techniques differ.",
+      "reason_run2": "Position is 'guard' family, but sub-positions and techniques differ.",
+      "agree_exact": true,
+      "agree_within1": true
+    },
+    {
+      "idx": 9,
+      "system": "exp2_multipass_pass3_synthesis",
+      "gt_idx": 3,
+      "iou": 0.5,
+      "score_run1": 1,
+      "score_run2": 1,
+      "reason_run1": "Position is a near-miss, 'passing_guard' implies guard, but GT is 'guard'.",
+      "reason_run2": "Position is a near-miss, but 'passing_guard' is consistent with 'guard'.",
+      "agree_exact": true,
+      "agree_within1": true
+    }
+  ]
+}

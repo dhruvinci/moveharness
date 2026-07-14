@@ -1,0 +1,1412 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "exp2_multipass_pass1_enhanced",
+  "provenance": "honest machine output; Exp2 multi-pass, pass1 enhanced; in-sample",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 5.0,
+      "position": "standing",
+      "labels": [
+        "neutral",
+        "initial_engagement",
+        "stance",
+        "distance_management"
+      ]
+    },
+    {
+      "start_sec": 10.0,
+      "end_sec": 15.0,
+      "position": "standing",
+      "labels": [
+        "grip_fighting",
+        "hand_fighting",
+        "shoulder_pressure",
+        "distance_management",
+        "feint"
+      ]
+    },
+    {
+      "start_sec": 19.0,
+      "end_sec": 23.0,
+      "position": "standing",
+      "labels": [
+        "grip_fighting",
+        "hand_fighting",
+        "distance_management",
+        "feint",
+        "posture_control"
+      ]
+    },
+    {
+      "start_sec": 28.0,
+      "end_sec": 33.0,
+      "position": "standing",
+      "labels": [
+        "grip_fighting",
+        "hand_fighting",
+        "distance_management",
+        "feint",
+        "posture_control"
+      ]
+    },
+    {
+      "start_sec": 38.0,
+      "end_sec": 43.0,
+      "position": "standing",
+      "labels": [
+        "grip_fighting",
+        "collar_tie",
+        "head_position",
+        "snap_down_attempt",
+        "footwork"
+      ]
+    },
+    {
+      "start_sec": 48.0,
+      "end_sec": 52.0,
+      "position": "standing",
+      "labels": [
+        "grip_fighting",
+        "collar_tie",
+        "snap_down_attempt",
+        "guard_pull_attempt",
+        "leg_entanglement"
+      ]
+    },
+    {
+      "start_sec": 56.0,
+      "end_sec": 60.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 64.0,
+      "end_sec": 68.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 72.0,
+      "end_sec": 76.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 80.0,
+      "end_sec": 84.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 88.0,
+      "end_sec": 92.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 96.0,
+      "end_sec": 100.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 104.0,
+      "end_sec": 108.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 112.0,
+      "end_sec": 116.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 120.0,
+      "end_sec": 124.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 128.0,
+      "end_sec": 132.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 136.0,
+      "end_sec": 140.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 144.0,
+      "end_sec": 148.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 152.0,
+      "end_sec": 156.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 160.0,
+      "end_sec": 164.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 168.0,
+      "end_sec": 172.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 176.0,
+      "end_sec": 180.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 184.0,
+      "end_sec": 188.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 192.0,
+      "end_sec": 196.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 200.0,
+      "end_sec": 204.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 208.0,
+      "end_sec": 212.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 216.0,
+      "end_sec": 220.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 224.0,
+      "end_sec": 228.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 232.0,
+      "end_sec": 236.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 240.0,
+      "end_sec": 244.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 248.0,
+      "end_sec": 252.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 256.0,
+      "end_sec": 260.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 264.0,
+      "end_sec": 268.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 272.0,
+      "end_sec": 276.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 280.0,
+      "end_sec": 284.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 288.0,
+      "end_sec": 292.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 296.0,
+      "end_sec": 300.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 304.0,
+      "end_sec": 308.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 312.0,
+      "end_sec": 316.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 320.0,
+      "end_sec": 324.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 328.0,
+      "end_sec": 332.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 336.0,
+      "end_sec": 340.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 344.0,
+      "end_sec": 348.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 348.0,
+      "end_sec": 352.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 352.0,
+      "end_sec": 356.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 356.0,
+      "end_sec": 360.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "armbar_defense",
+        "stack_pass",
+        "leg_recovery",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 356.0,
+      "end_sec": 358.0,
+      "position": "north_south",
+      "labels": [
+        "north_south_control",
+        "shoulder_pressure",
+        "hip_control",
+        "defensive_posture",
+        "energy_conservation"
+      ]
+    },
+    {
+      "start_sec": 364.0,
+      "end_sec": 367.0,
+      "position": "back_control",
+      "labels": [
+        "body_triangle_control",
+        "body_triangle_lock",
+        "choke_setup",
+        "arm_isolation",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 367.0,
+      "end_sec": 370.0,
+      "position": "back_control",
+      "labels": [
+        "choke_attempt",
+        "rear_naked_choke",
+        "arm_under_chin",
+        "posture_break",
+        "submission_threat"
+      ]
+    },
+    {
+      "start_sec": 376.0,
+      "end_sec": 379.0,
+      "position": "back_control",
+      "labels": [
+        "arm_bar_attempt",
+        "arm_bar_entry",
+        "leg_over_head",
+        "hip_extension",
+        "submission_attempt"
+      ]
+    },
+    {
+      "start_sec": 379.0,
+      "end_sec": 382.0,
+      "position": "arm_bar_defense",
+      "labels": [
+        "stack_defense",
+        "stack_pass_attempt",
+        "arm_pull",
+        "hip_escape",
+        "guard_recovery_threat"
+      ]
+    },
+    {
+      "start_sec": 388.0,
+      "end_sec": 391.0,
+      "position": "half_guard",
+      "labels": [
+        "deep_half_entry",
+        "sweep_threat",
+        "leg_entanglement",
+        "weight_off_balance"
+      ]
+    },
+    {
+      "start_sec": 391.0,
+      "end_sec": 394.0,
+      "position": "deep_half_guard",
+      "labels": [
+        "sweep_attempt",
+        "deep_half_sweep",
+        "leg_drive",
+        "posture_break",
+        "base_disruption"
+      ]
+    },
+    {
+      "start_sec": 397.0,
+      "end_sec": 400.0,
+      "position": "deep_half_guard",
+      "labels": [
+        "knee_cut_defense",
+        "frame_creation",
+        "hip_escape",
+        "guard_maintenance"
+      ]
+    },
+    {
+      "start_sec": 403.0,
+      "end_sec": 406.0,
+      "position": "deep_half_guard",
+      "labels": [
+        "underhook_re_establish",
+        "sweep_threat",
+        "posture_break",
+        "leverage_gain"
+      ]
+    },
+    {
+      "start_sec": 412.0,
+      "end_sec": 415.0,
+      "position": "open_guard",
+      "labels": [
+        "spider_guard_setup",
+        "spider_guard_entry",
+        "sleeve_grip",
+        "foot_on_bicep",
+        "distance_management"
+      ]
+    },
+    {
+      "start_sec": 415.0,
+      "end_sec": 418.0,
+      "position": "open_guard",
+      "labels": [
+        "guard_pass_defense",
+        "foot_on_hip",
+        "knee_shield",
+        "posture_break"
+      ]
+    },
+    {
+      "start_sec": 421.0,
+      "end_sec": 424.0,
+      "position": "open_guard",
+      "labels": [
+        "guard_pass_attempt",
+        "knee_cut_pass",
+        "hip_control",
+        "frame_defense"
+      ]
+    },
+    {
+      "start_sec": 427.0,
+      "end_sec": 430.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 433.0,
+      "end_sec": 436.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 439.0,
+      "end_sec": 442.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 445.0,
+      "end_sec": 448.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 451.0,
+      "end_sec": 454.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 457.0,
+      "end_sec": 460.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 463.0,
+      "end_sec": 466.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 469.0,
+      "end_sec": 472.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 475.0,
+      "end_sec": 478.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 481.0,
+      "end_sec": 484.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 487.0,
+      "end_sec": 490.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 493.0,
+      "end_sec": 496.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 499.0,
+      "end_sec": 502.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 505.0,
+      "end_sec": 508.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 511.0,
+      "end_sec": 514.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 517.0,
+      "end_sec": 520.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 523.0,
+      "end_sec": 526.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 529.0,
+      "end_sec": 532.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 535.0,
+      "end_sec": 538.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 541.0,
+      "end_sec": 544.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 547.0,
+      "end_sec": 550.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 553.0,
+      "end_sec": 556.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 559.0,
+      "end_sec": 562.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 565.0,
+      "end_sec": 568.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 571.0,
+      "end_sec": 574.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 577.0,
+      "end_sec": 580.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 583.0,
+      "end_sec": 586.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 589.0,
+      "end_sec": 592.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 595.0,
+      "end_sec": 598.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 601.0,
+      "end_sec": 604.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 607.0,
+      "end_sec": 610.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 613.0,
+      "end_sec": 616.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 619.0,
+      "end_sec": 622.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 625.0,
+      "end_sec": 628.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 631.0,
+      "end_sec": 634.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 637.0,
+      "end_sec": 640.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 643.0,
+      "end_sec": 646.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 649.0,
+      "end_sec": 652.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 655.0,
+      "end_sec": 658.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 661.0,
+      "end_sec": 664.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 667.0,
+      "end_sec": 670.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 673.0,
+      "end_sec": 676.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 679.0,
+      "end_sec": 682.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_threat",
+        "leg_entanglement",
+        "sweep_setup",
+        "off_balancing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 685.0,
+      "end_sec": 688.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 690.0,
+      "end_sec": 695.0,
+      "position": "mount",
+      "labels": [
+        "high_mount",
+        "cross_face",
+        "arm_isolation",
+        "mount_pressure",
+        "defensive_shell"
+      ]
+    },
+    {
+      "start_sec": 695.0,
+      "end_sec": 700.0,
+      "position": "mount",
+      "labels": [
+        "high_mount",
+        "weight_distribution",
+        "mount_control",
+        "arm_trap",
+        "posture_defense"
+      ]
+    },
+    {
+      "start_sec": 697.0,
+      "end_sec": 700.0,
+      "position": "open_guard",
+      "labels": [
+        "leg_entanglement_attempt",
+        "leg_entanglement",
+        "foot_lock_entry",
+        "sweep_threat",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 700.0,
+      "end_sec": 705.0,
+      "position": "mount",
+      "labels": [
+        "high_mount",
+        "submission_threat",
+        "mount_retention",
+        "defensive_framing",
+        "hip_escape_attempt"
+      ]
+    },
+    {
+      "start_sec": 710.0,
+      "end_sec": 715.0,
+      "position": "mount",
+      "labels": [
+        "high_mount",
+        "mount_reestablishment",
+        "arm_isolation",
+        "head_control",
+        "defensive_frustration"
+      ]
+    },
+    {
+      "start_sec": 715.0,
+      "end_sec": 720.0,
+      "position": "mount",
+      "labels": [
+        "high_mount",
+        "chest_pressure",
+        "submission_setup",
+        "defensive_framing",
+        "elbow_escape"
+      ]
+    },
+    {
+      "start_sec": 725.0,
+      "end_sec": 728.0,
+      "position": "armbar_attempt",
+      "labels": [
+        "s_mount_armbar",
+        "armbar_extension",
+        "defensive_stack",
+        "hip_bridge",
+        "escape_initiation"
+      ]
+    },
+    {
+      "start_sec": 732.0,
+      "end_sec": 735.0,
+      "position": "open_guard",
+      "labels": [
+        "feet_on_hips",
+        "standing_pass",
+        "distance_management",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 740.0,
+      "end_sec": 745.0,
+      "position": "guard_pass_attempt",
+      "labels": [
+        "knee_slice_pass",
+        "knee_slice_pressure",
+        "hip_mobility",
+        "defensive_hooks",
+        "posture_maintenance"
+      ]
+    },
+    {
+      "start_sec": 750.0,
+      "end_sec": 755.0,
+      "position": "guard_pass_attempt",
+      "labels": [
+        "double_under_pass",
+        "double_under",
+        "hip_smash",
+        "defensive_hooks",
+        "posture_break"
+      ]
+    },
+    {
+      "start_sec": 760.0,
+      "end_sec": 765.0,
+      "position": "back_take_attempt",
+      "labels": [
+        "roll_through_back_take",
+        "roll_through",
+        "back_take_entry",
+        "hip_control",
+        "defensive_sprawl"
+      ]
+    },
+    {
+      "start_sec": 770.0,
+      "end_sec": 775.0,
+      "position": "back_control",
+      "labels": [
+        "body_triangle",
+        "choke_attempt",
+        "defensive_hand_fighting",
+        "head_positioning",
+        "pressure_application"
+      ]
+    },
+    {
+      "start_sec": 780.0,
+      "end_sec": 785.0,
+      "position": "back_control",
+      "labels": [
+        "body_triangle",
+        "armbar_transition",
+        "defensive_tuck",
+        "escape_initiation",
+        "grip_break"
+      ]
+    },
+    {
+      "start_sec": 788.0,
+      "end_sec": 792.0,
+      "position": "standing",
+      "labels": [
+        "collar_tie",
+        "grip_fighting",
+        "head_position",
+        "stance_control"
+      ]
+    },
+    {
+      "start_sec": 797.0,
+      "end_sec": 802.0,
+      "position": "leg_entanglement",
+      "labels": [
+        "outside_heel_hook_entry",
+        "leg_entanglement",
+        "heel_hook_entry",
+        "knee_line_attack",
+        "defensive_roll"
+      ]
+    },
+    {
+      "start_sec": 812.0,
+      "end_sec": 817.0,
+      "position": "standing",
+      "labels": [
+        "collar_tie",
+        "grip_fighting",
+        "head_position",
+        "stance_control"
+      ]
+    },
+    {
+      "start_sec": 822.0,
+      "end_sec": 827.0,
+      "position": "back_take_attempt",
+      "labels": [
+        "roll_through_back_take",
+        "roll_through",
+        "back_take_entry",
+        "hip_control",
+        "defensive_sprawl"
+      ]
+    },
+    {
+      "start_sec": 827.0,
+      "end_sec": 832.0,
+      "position": "back_control",
+      "labels": [
+        "body_triangle",
+        "rear_naked_choke_setup",
+        "neck_defense",
+        "seatbelt_grip"
+      ]
+    },
+    {
+      "start_sec": 837.0,
+      "end_sec": 960.0,
+      "position": "end_of_match",
+      "labels": [
+        "decision",
+        "judges_decision",
+        "sportsmanship",
+        "winner_announcement",
+        "respect"
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {}
+}

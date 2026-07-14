@@ -1,0 +1,192 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "naive_single_pass_holistic",
+  "provenance": "honest machine output; single-pass holistic VLM (no CV grounding); in-sample",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 7.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 7.0,
+      "end_sec": 16.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 16.0,
+      "end_sec": 19.0,
+      "position": "clinch",
+      "labels": []
+    },
+    {
+      "start_sec": 19.0,
+      "end_sec": 27.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 27.0,
+      "end_sec": 30.0,
+      "position": "clinch",
+      "labels": []
+    },
+    {
+      "start_sec": 30.0,
+      "end_sec": 38.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 38.0,
+      "end_sec": 40.0,
+      "position": "clinch",
+      "labels": []
+    },
+    {
+      "start_sec": 40.0,
+      "end_sec": 49.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 49.0,
+      "end_sec": 52.0,
+      "position": "takedown",
+      "labels": [
+        "front_headlock"
+      ]
+    },
+    {
+      "start_sec": 52.0,
+      "end_sec": 60.0,
+      "position": "guard",
+      "labels": [
+        "leg_entanglement"
+      ]
+    },
+    {
+      "start_sec": 65.0,
+      "end_sec": 70.0,
+      "position": "unknown",
+      "labels": []
+    },
+    {
+      "start_sec": 70.0,
+      "end_sec": 75.0,
+      "position": "guard",
+      "labels": [
+        "delariva_guard"
+      ]
+    },
+    {
+      "start_sec": 75.0,
+      "end_sec": 80.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 85.0,
+      "end_sec": 360.0,
+      "position": "mount",
+      "labels": []
+    },
+    {
+      "start_sec": 345.0,
+      "end_sec": 350.0,
+      "position": "side_control",
+      "labels": []
+    },
+    {
+      "start_sec": 355.0,
+      "end_sec": 360.0,
+      "position": "mount",
+      "labels": []
+    },
+    {
+      "start_sec": 360.0,
+      "end_sec": 370.0,
+      "position": "back_control",
+      "labels": [
+        "rear_body_lock"
+      ]
+    },
+    {
+      "start_sec": 370.0,
+      "end_sec": 390.0,
+      "position": "half_guard",
+      "labels": [
+        "deep_half_guard"
+      ]
+    },
+    {
+      "start_sec": 390.0,
+      "end_sec": 420.0,
+      "position": "passing_guard",
+      "labels": [
+        "knee_slice_pass"
+      ]
+    },
+    {
+      "start_sec": 420.0,
+      "end_sec": 465.0,
+      "position": "half_guard",
+      "labels": [
+        "defensive_half_guard"
+      ]
+    },
+    {
+      "start_sec": 465.0,
+      "end_sec": 495.0,
+      "position": "passing_guard",
+      "labels": [
+        "double_unders_pass"
+      ]
+    },
+    {
+      "start_sec": 495.0,
+      "end_sec": 540.0,
+      "position": "half_guard",
+      "labels": [
+        "defensive_half_guard"
+      ]
+    },
+    {
+      "start_sec": 540.0,
+      "end_sec": 585.0,
+      "position": "passing_guard",
+      "labels": [
+        "knee_slice_pass"
+      ]
+    },
+    {
+      "start_sec": 585.0,
+      "end_sec": 630.0,
+      "position": "half_guard",
+      "labels": [
+        "defensive_half_guard"
+      ]
+    },
+    {
+      "start_sec": 630.0,
+      "end_sec": 675.0,
+      "position": "passing_guard",
+      "labels": [
+        "double_unders_pass"
+      ]
+    },
+    {
+      "start_sec": 675.0,
+      "end_sec": 705.0,
+      "position": "half_guard",
+      "labels": [
+        "defensive_half_guard"
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {}
+}

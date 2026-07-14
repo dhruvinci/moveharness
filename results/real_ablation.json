@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "what": "Real per-module post-hoc ablation on MoveBench v0 (n=1 sample).",
+    "no_inference": true,
+    "gt": "data/v0/mb_v0_0001.json (32 macro segments, 64 subsegments, 959s, single annotator)",
+    "iou_threshold": 0.3,
+    "grounded_pred": "Exp4 two-stage skeleton+detail v3 run2 (25 segments)",
+    "ungrounded_pred": "multi-pass holistic VLM, no CV grounding (Exp2-family pass1, 39 segments)",
+    "caveat": "Single annotated sample; every delta is a single-sample developer measurement, not a leaderboard result. No CIs.",
+    "tautology_excluded": "The 50-video GT==prediction case is excluded everywhere."
+  },
+  "modules": {
+    "M1_measurement_grounding": {
+      "description": "Headline with/without-harness contrast: CV-grounded two-stage prediction vs ungrounded multi-pass holistic VLM (no CV constraints). Both real, unedited outputs.",
+      "measurement_type": "direct",
+      "ON_cv_grounded": {
+        "pred_segments": 25,
+        "T1_macro_f1": 0.1361,
+        "T1_dur_weighted_macro_f1": 0.1999,
+        "T1_mean_matched_iou": 0.7229,
+        "matched_of_32": 6,
+        "coverage": 1.0
+      },
+      "OFF_ungrounded": {
+        "pred_segments": 39,
+        "T1_macro_f1": 0.014,
+        "T1_dur_weighted_macro_f1": 0.0282,
+        "T1_mean_matched_iou": 0.875,
+        "matched_of_32": 1,
+        "coverage": 0.7247
+      },
+      "delta_ON_minus_OFF": {
+        "T1_macro_f1": 0.1221,
+        "T1_dur_weighted_macro_f1": 0.1717,
+        "T1_mean_matched_iou": -0.1521,
+        "matched_of_32": 5
+      },
+      "headline_metric": "T1_macro_f1",
+      "ungrounded_pathology": {
+        "malformed_decreasing_spans": 13,
+        "of_total_spans": 39,
+        "note": "The ungrounded multi-pass output emitted DECREASING timestamps in its third window (e.g. 11:30->11:20), so 13/39 predicted spans are zero/negative-length and are clipped to nothing by the scorer. This is a real failure mode of the harness-free pipeline, and it is the main reason the ungrounded run matches only 1/32 GT positions."
+      },
+      "direction": "CV-grounding is the headline win: it RAISES T1 macro-F1 ~9.7x (0.014 -> 0.136) and matched positions 1 -> 6 of 32. The ungrounded run's HIGHER mean matched IoU (0.875) is an ARTIFACT of matching only a single segment (n=1 matched), not better localization; read macro-F1 / matched-count as the load-bearing M1 metrics, not IoU."
+    },
+    "M2_semantic_ontology_folding": {
+      "description": "Ontology equivalence folding (alias/synonym/hierarchy normalization) ON vs OFF, scored on the SAME Exp4 prediction. OFF = exact lowercased string match.",
+      "measurement_type": "direct",
+      "ON_folding": {
+        "T1_macro_f1": 0.1361,
+        "T1_mean_matched_iou": 0.7229,
+        "matched_of_32": 6
+      },
+      "OFF_exact_string": {
+        "T1_macro_f1": 0.1361,
+        "T1_mean_matched_iou": 0.7229,
+        "matched_of_32": 6
+      },
+      "delta_ON_minus_OFF": {
+        "T1_macro_f1": 0.0,
+        "matched_of_32": 0
+      },
+      "direction": "Folding can only RAISE or hold matched-position F1 (it merges surface variants onto canonical ids). The measured delta on Exp4's position field quantifies how much the alias map is doing on this artifact."
+    },
+    "M3_temporal_smoothing": {
+      "description": "Merge adjacent same-position micro-segments (deterministic stand-in for EMA-over-boundaries) on the ungrounded prediction. Measures oversegmentation ratio (pred/GT) and T1 macro-F1 before/after.",
+      "measurement_type": "direct",
+      "OFF_raw": {
+        "pred_segments": 39,
+        "oversegmentation_ratio_vs_gt": 1.219,
+        "T1_macro_f1": 0.014,
+        "T1_mean_matched_iou": 0.875,
+        "matched_of_32": 1
+      },
+      "ON_smoothed": {
+        "pred_segments": 38,
+        "oversegmentation_ratio_vs_gt": 1.188,
+        "T1_macro_f1": 0.0154,
+        "T1_mean_matched_iou": 0.5,
+        "matched_of_32": 1
+      },
+      "delta_ON_minus_OFF": {
+        "pred_segments": -1,
+        "oversegmentation_ratio_vs_gt": -0.031,
+        "T1_macro_f1": 0.0014,
+        "T1_mean_matched_iou": -0.375,
+        "matched_of_32": 0
+      },
+      "direction": "Smoothing REDUCES the predicted-segment count toward GT granularity. On THIS artifact only 1 adjacent same-position pair exists (the multi-pass timeline interleaves positions and resets at window boundaries), so the merge is nearly inert (39 -> 38). The mean-IoU drop is a side-effect of that single merge widening one matched span; reported as measured, not inflated. The documented over-segmentation extreme for this pipeline family (Exp2 reached 241 segments, 7.5x GT) is NOT recomputed here because that 241-segment artifact is not in the converted prediction set."
+    },
+    "M4_abstain_aware": {
+      "description": "Treat predicted unknown/occluded/paused spans as ABSTAIN (excluded from FP accounting) vs counting them as ordinary segments, on the ungrounded prediction.",
+      "measurement_type": "direct",
+      "abstain_positions": [
+        "occluded",
+        "paused",
+        "unclear",
+        "unknown"
+      ],
+      "n_abstain_spans_in_pred": 1,
+      "OFF_abstain_counted": {
+        "pred_segments": 39,
+        "T1_macro_f1": 0.014,
+        "matched_of_32": 1,
+        "matched_per_pred_segment": 0.0256
+      },
+      "ON_abstain_excluded": {
+        "pred_segments": 38,
+        "T1_macro_f1": 0.0152,
+        "matched_of_32": 1,
+        "matched_per_pred_segment": 0.0263
+      },
+      "delta_ON_minus_OFF": {
+        "pred_segments": -1,
+        "T1_macro_f1": 0.0012,
+        "matched_per_pred_segment": 0.0007
+      },
+      "direction": "Abstain-aware removes non-committal spans so they cannot be scored as false positives; on this artifact only 1 span(s) are abstain, so the measured impact is small but its sign/magnitude is reported honestly.",
+      "note_if_small": "If n_abstain is 0-1, this module is effectively inert on this single sample; reported as measured, not inflated."
+    },
+    "M5_schema_constraint_violation_rate": {
+      "description": "Ontology-violation rate (fraction of predicted technique labels outside the v0 ontology) WITH folding vs WITHOUT, on the Exp4 prediction's labels (T3 oracle-segment regime, approximate index alignment).",
+      "measurement_type": "direct",
+      "ON_folding": {
+        "ontology_violation_rate": 0.6076,
+        "ontology_violations": 48,
+        "T3_micro_f1": 0.037
+      },
+      "OFF_no_folding": {
+        "ontology_violation_rate": 1.0,
+        "ontology_violations": 79,
+        "T3_micro_f1": 0.0
+      },
+      "delta_ON_minus_OFF": {
+        "ontology_violation_rate": -0.3924,
+        "T3_micro_f1": 0.037
+      },
+      "direction": "Schema-constraint folding LOWERS the apparent violation rate (canonical aliases get recognized as in-ontology) and can only hold-or-raise T3 F1. The delta quantifies the schema module's effect on this artifact.",
+      "note": "T3 here is the same approximate oracle-segment alignment used in baselines.md (predictions are not GT-boundary-aligned), so read the violation-rate delta as the load-bearing M5 number and T3 F1 as directional."
+    }
+  },
+  "derived_summary": {
+    "measurement_type": "derived",
+    "headline_with_vs_without_harness_T1_macro_f1": {
+      "with_harness_cv_grounded": 0.1361,
+      "without_harness_ungrounded": 0.014,
+      "abs_delta": 0.1221,
+      "rel_pct": 873.0,
+      "ratio_x": 9.73
+    },
+    "matched_positions_with_vs_without": {
+      "with_harness_cv_grounded": 6,
+      "without_harness_ungrounded": 1,
+      "of_32_gt_positions": 32
+    },
+    "note": "Derived = arithmetic combination of the M1 direct measurements. Macro-F1 (not mean IoU) is the load-bearing harness headline: the ungrounded run's higher IoU comes from matching only 1 segment and must not be read as better localization."
+  }
+}

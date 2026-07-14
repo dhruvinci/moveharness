@@ -1,0 +1,336 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 8.0,
+      "position": "standing",
+      "labels": [
+        "match_start",
+        "pre_match"
+      ]
+    },
+    {
+      "start_sec": 8.0,
+      "end_sec": 50.0,
+      "position": "standing",
+      "labels": [
+        "Standing",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 50.0,
+      "end_sec": 103.0,
+      "position": "standing",
+      "labels": [
+        "Guard",
+        "Standing",
+        "takedown"
+      ]
+    },
+    {
+      "start_sec": 103.0,
+      "end_sec": 124.0,
+      "position": "guard",
+      "labels": [
+        "guard_pass",
+        "lasso_guard",
+        "open_guard"
+      ]
+    },
+    {
+      "start_sec": 124.0,
+      "end_sec": 130.0,
+      "position": "standing",
+      "labels": [
+        "guard_pass",
+        "open_guard"
+      ]
+    },
+    {
+      "start_sec": 130.0,
+      "end_sec": 165.0,
+      "position": "guard",
+      "labels": [
+        "de_la_riva",
+        "headquarters_position"
+      ]
+    },
+    {
+      "start_sec": 165.0,
+      "end_sec": 185.0,
+      "position": "sweep",
+      "labels": [
+        "back_control",
+        "granby_roll",
+        "guard_pass",
+        "guillotine",
+        "headquarters_position"
+      ]
+    },
+    {
+      "start_sec": 185.0,
+      "end_sec": 230.0,
+      "position": "back_control",
+      "labels": [
+        "Side Control",
+        "body_lock",
+        "escaping",
+        "sweep",
+        "underhooks"
+      ]
+    },
+    {
+      "start_sec": 230.0,
+      "end_sec": 245.0,
+      "position": "escape",
+      "labels": [
+        "Mount",
+        "Side Control",
+        "escaping",
+        "knee_shield"
+      ]
+    },
+    {
+      "start_sec": 245.0,
+      "end_sec": 290.0,
+      "position": "mount",
+      "labels": [
+        "Mount"
+      ]
+    },
+    {
+      "start_sec": 290.0,
+      "end_sec": 330.0,
+      "position": "escape",
+      "labels": [
+        "Mount"
+      ]
+    },
+    {
+      "start_sec": 330.0,
+      "end_sec": 360.0,
+      "position": "guard",
+      "labels": [
+        "Mount",
+        "Side Control",
+        "butterfly_guard"
+      ]
+    },
+    {
+      "start_sec": 360.0,
+      "end_sec": 375.0,
+      "position": "sweep",
+      "labels": [
+        "butterfly_guard",
+        "open_guard",
+        "scramble",
+        "scramble_reversal",
+        "toreando_pass"
+      ]
+    },
+    {
+      "start_sec": 375.0,
+      "end_sec": 420.0,
+      "position": "side_control",
+      "labels": [
+        "de_la_riva",
+        "defensive_turtle",
+        "headquarters_position",
+        "open_guard",
+        "retaining_guard",
+        "reverse_de_la_riva",
+        "scramble"
+      ]
+    },
+    {
+      "start_sec": 420.0,
+      "end_sec": 440.0,
+      "position": "escape",
+      "labels": [
+        "open_guard",
+        "retaining_guard",
+        "scramble"
+      ]
+    },
+    {
+      "start_sec": 440.0,
+      "end_sec": 480.0,
+      "position": "guard",
+      "labels": [
+        "Standing",
+        "de_la_riva",
+        "headquarters_position",
+        "open_guard"
+      ]
+    },
+    {
+      "start_sec": 480.0,
+      "end_sec": 500.0,
+      "position": "sweep",
+      "labels": [
+        "de_la_riva",
+        "headquarters_position"
+      ]
+    },
+    {
+      "start_sec": 500.0,
+      "end_sec": 540.0,
+      "position": "side_control",
+      "labels": [
+        "de_la_riva",
+        "scramble"
+      ]
+    },
+    {
+      "start_sec": 540.0,
+      "end_sec": 580.0,
+      "position": "escape",
+      "labels": [
+        "de_la_riva",
+        "open_guard"
+      ]
+    },
+    {
+      "start_sec": 580.0,
+      "end_sec": 600.0,
+      "position": "standing",
+      "labels": [
+        "de_la_riva",
+        "stack_pass"
+      ]
+    },
+    {
+      "start_sec": 600.0,
+      "end_sec": 640.0,
+      "position": "guard",
+      "labels": [
+        "Half Guard",
+        "de_la_riva",
+        "double_leg",
+        "escaping",
+        "half_guard_to_guard",
+        "heel_hook",
+        "open_guard",
+        "takedown"
+      ]
+    },
+    {
+      "start_sec": 640.0,
+      "end_sec": 660.0,
+      "position": "sweep",
+      "labels": [
+        "Half Guard",
+        "knee_shield",
+        "open_guard",
+        "stack_pass"
+      ]
+    },
+    {
+      "start_sec": 660.0,
+      "end_sec": 710.0,
+      "position": "side_control",
+      "labels": [
+        "Mount",
+        "guard_pass",
+        "half_guard_to_mount"
+      ]
+    },
+    {
+      "start_sec": 710.0,
+      "end_sec": 720.0,
+      "position": "escape",
+      "labels": [
+        "Mount"
+      ]
+    },
+    {
+      "start_sec": 720.0,
+      "end_sec": 740.0,
+      "position": "standing",
+      "labels": [
+        "Mount"
+      ]
+    },
+    {
+      "start_sec": 740.0,
+      "end_sec": 770.0,
+      "position": "guard",
+      "labels": [
+        "Mount"
+      ]
+    },
+    {
+      "start_sec": 770.0,
+      "end_sec": 790.0,
+      "position": "sweep",
+      "labels": [
+        "Mount",
+        "Standing",
+        "escaping"
+      ]
+    },
+    {
+      "start_sec": 790.0,
+      "end_sec": 830.0,
+      "position": "back_control",
+      "labels": [
+        "Standing",
+        "armbar",
+        "back_control",
+        "closed_guard",
+        "double_leg",
+        "seat_belt",
+        "single_leg",
+        "stack_pass",
+        "triangle"
+      ]
+    },
+    {
+      "start_sec": 830.0,
+      "end_sec": 840.0,
+      "position": "escape",
+      "labels": [
+        "open_guard",
+        "stack_pass"
+      ]
+    },
+    {
+      "start_sec": 840.0,
+      "end_sec": 880.0,
+      "position": "guard",
+      "labels": [
+        "Standing",
+        "ankle_pick",
+        "grip_fighting",
+        "pull_guard"
+      ]
+    },
+    {
+      "start_sec": 880.0,
+      "end_sec": 900.0,
+      "position": "sweep",
+      "labels": [
+        "Side Control",
+        "kesa_gatame",
+        "knee_on_belly"
+      ]
+    },
+    {
+      "start_sec": 900.0,
+      "end_sec": 959.0,
+      "position": "side_control",
+      "labels": [
+        "armbar",
+        "match_end"
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {
+    "ruleset": "adcc",
+    "events": []
+  }
+}

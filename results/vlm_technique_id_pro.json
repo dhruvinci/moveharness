@@ -1,0 +1,5118 @@
+{
+  "summary": {
+    "task": "V1_technique_id_accuracy",
+    "model": "models/gemini-2.5-pro",
+    "domain": "MMA grappling (label dataset)",
+    "n_clips_total_on_disk": 498,
+    "n_clips_scored": 496,
+    "n_clips_failed": 2,
+    "position_top1_accuracy_pct": 66.3,
+    "technique_match_rate_pct": 40.3,
+    "overall_accuracy_pct": 34.7,
+    "either_match_rate_pct": 72.0,
+    "wilson_ci_95": {
+      "position_top1": {
+        "k": 329,
+        "n": 496,
+        "pct": 66.3,
+        "ci95_lo_pct": 62.1,
+        "ci95_hi_pct": 70.3
+      },
+      "technique_match": {
+        "k": 200,
+        "n": 496,
+        "pct": 40.3,
+        "ci95_lo_pct": 36.1,
+        "ci95_hi_pct": 44.7
+      },
+      "either_match": {
+        "k": 357,
+        "n": 496,
+        "pct": 72.0,
+        "ci95_lo_pct": 67.9,
+        "ci95_hi_pct": 75.7
+      },
+      "overall_both": {
+        "k": 172,
+        "n": 496,
+        "pct": 34.7,
+        "ci95_lo_pct": 30.6,
+        "ci95_hi_pct": 39.0
+      }
+    },
+    "matching": "ontology-normalized semantic matching against gt_tags",
+    "per_tag_accuracy_top_tags": {
+      "standing": {
+        "clips": 44,
+        "position_acc_pct": 79.5,
+        "technique_match_pct": 61.4,
+        "either_match_pct": 84.1
+      },
+      "guardpass": {
+        "clips": 27,
+        "position_acc_pct": 66.7,
+        "technique_match_pct": 29.6,
+        "either_match_pct": 66.7
+      },
+      "singleleg": {
+        "clips": 23,
+        "position_acc_pct": 73.9,
+        "technique_match_pct": 65.2,
+        "either_match_pct": 82.6
+      },
+      "destabilization": {
+        "clips": 28,
+        "position_acc_pct": 71.4,
+        "technique_match_pct": 50.0,
+        "either_match_pct": 75.0
+      },
+      "turtleentry": {
+        "clips": 24,
+        "position_acc_pct": 75.0,
+        "technique_match_pct": 54.2,
+        "either_match_pct": 79.2
+      },
+      "underhook": {
+        "clips": 19,
+        "position_acc_pct": 78.9,
+        "technique_match_pct": 57.9,
+        "either_match_pct": 89.5
+      },
+      "wrestling": {
+        "clips": 27,
+        "position_acc_pct": 88.9,
+        "technique_match_pct": 55.6,
+        "either_match_pct": 96.3
+      },
+      "legentanglement": {
+        "clips": 26,
+        "position_acc_pct": 88.5,
+        "technique_match_pct": 46.2,
+        "either_match_pct": 88.5
+      },
+      "takedown": {
+        "clips": 21,
+        "position_acc_pct": 85.7,
+        "technique_match_pct": 71.4,
+        "either_match_pct": 95.2
+      },
+      "mount": {
+        "clips": 13,
+        "position_acc_pct": 69.2,
+        "technique_match_pct": 46.2,
+        "either_match_pct": 84.6
+      },
+      "openguard": {
+        "clips": 21,
+        "position_acc_pct": 85.7,
+        "technique_match_pct": 38.1,
+        "either_match_pct": 90.5
+      },
+      "backtake": {
+        "clips": 16,
+        "position_acc_pct": 68.8,
+        "technique_match_pct": 37.5,
+        "either_match_pct": 68.8
+      },
+      "sweep": {
+        "clips": 17,
+        "position_acc_pct": 76.5,
+        "technique_match_pct": 11.8,
+        "either_match_pct": 82.4
+      },
+      "submission": {
+        "clips": 20,
+        "position_acc_pct": 55.0,
+        "technique_match_pct": 40.0,
+        "either_match_pct": 65.0
+      },
+      "gripfight": {
+        "clips": 19,
+        "position_acc_pct": 73.7,
+        "technique_match_pct": 63.2,
+        "either_match_pct": 78.9
+      }
+    },
+    "wall_clock_sec_this_run": 1850.9,
+    "api_calls_this_run": 491,
+    "prompt_tokens_this_run": 1921964,
+    "candidate_tokens_this_run": 14720,
+    "thought_tokens_this_run": 37139,
+    "approx_cost_usd_this_run": 2.921,
+    "cost_cap_usd": 5.0,
+    "cost_cap_aborted": false,
+    "checkpoint_file": "vlm_technique_id_pro.checkpoint.jsonl",
+    "failures": [
+      {
+        "clip": "pro_clip_0001",
+        "error": "file state FAILED"
+      },
+      {
+        "clip": "pro_clip_0002",
+        "error": "file state FAILED"
+      }
+    ]
+  },
+  "per_clip": [
+    {
+      "clip": "pro_clip_0003",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0004",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "seated_open_guard",
+      "norm_technique": "seated_open_guard",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0005",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0006",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0007",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0008",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0009",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0010",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0011",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.8,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0012",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "seated_open_guard",
+      "norm_technique": "seated_open_guard",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0013",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0014",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0015",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0016",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "seated_open_guard",
+      "norm_technique": "seated_open_guard",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0017",
+      "pred_position": "guard",
+      "norm_position": "guard",
+      "pred_technique": "armbar",
+      "norm_technique": "armbar",
+      "confidence": 1.0,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0018",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0019",
+      "pred_position": "north_south",
+      "norm_position": "north_south",
+      "pred_technique": "submission",
+      "norm_technique": "submission",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0020",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "toreando_pass",
+      "norm_technique": "toreando_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0021",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "loose_passing",
+      "norm_technique": "loose_passing",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0022",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0023",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0024",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "body_lock",
+      "norm_technique": "body_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0025",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "kimura",
+      "norm_technique": "kimura",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0026",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0027",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0028",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0029",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0030",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0031",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0032",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0033",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0034",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "hand_fight",
+      "norm_technique": "hand_fight",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0035",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0036",
+      "pred_position": "mount",
+      "norm_position": "mount",
+      "pred_technique": "arm_triangle",
+      "norm_technique": "arm_triangle",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0037",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0038",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0039",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0040",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "hand_fight",
+      "norm_technique": "hand_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0041",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0042",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0043",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0044",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0045",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0046",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0047",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0048",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0049",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0050",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0051",
+      "pred_position": "mount",
+      "norm_position": "mount",
+      "pred_technique": "escape",
+      "norm_technique": "escape",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0052",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0053",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0054",
+      "pred_position": "mount",
+      "norm_position": "mount",
+      "pred_technique": "armbar",
+      "norm_technique": "armbar",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0055",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0056",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0057",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0058",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0059",
+      "pred_position": "closed_guard",
+      "norm_position": "closed_guard",
+      "pred_technique": "body_lock",
+      "norm_technique": "body_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0060",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0061",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0062",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0063",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0064",
+      "pred_position": "north_south",
+      "norm_position": "north_south",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0065",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "toreando_pass",
+      "norm_technique": "toreando_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0066",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0067",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0068",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.8,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0069",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0070",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "scramble_reversal",
+      "norm_technique": "scramble_reversal",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0071",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0072",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0073",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "loose_passing",
+      "norm_technique": "loose_passing",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0074",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0075",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0076",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0077",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0078",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0079",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0080",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0081",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0082",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0083",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0084",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0085",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0086",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0087",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0088",
+      "pred_position": "north_south",
+      "norm_position": "north_south",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0089",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "sweep",
+      "norm_technique": "sweep",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0090",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0091",
+      "pred_position": "north_south",
+      "norm_position": "north_south",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0092",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0093",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0094",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0095",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0096",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0097",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "triangle",
+      "norm_technique": "triangle",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0098",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0099",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "hand_fight",
+      "norm_technique": "hand_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0100",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0101",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "scramble_reversal",
+      "norm_technique": "scramble_reversal",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0102",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0103",
+      "pred_position": "unknown",
+      "norm_position": "unknown",
+      "pred_technique": "unknown",
+      "norm_technique": "unknown",
+      "confidence": 0,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0104",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0105",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0106",
+      "pred_position": "guard",
+      "norm_position": "guard",
+      "pred_technique": "triangle",
+      "norm_technique": "triangle",
+      "confidence": 1.0,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0107",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0108",
+      "pred_position": "mount",
+      "norm_position": "mount",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0109",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0110",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0111",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0112",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0113",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0114",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0115",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0116",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0117",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0118",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0119",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0120",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "escape",
+      "norm_technique": "escape",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0121",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0122",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0123",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0124",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0125",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0126",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "over_under_pass",
+      "norm_technique": "over_under_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0127",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.8,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0128",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0129",
+      "pred_position": "north_south",
+      "norm_position": "north_south",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0130",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0131",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0132",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0133",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0134",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0135",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0136",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0137",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "armbar",
+      "norm_technique": "armbar",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0138",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0139",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0140",
+      "pred_position": "closed_guard",
+      "norm_position": "closed_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0141",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0142",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "hand_fight",
+      "norm_technique": "hand_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0143",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0144",
+      "pred_position": "guard",
+      "norm_position": "guard",
+      "pred_technique": "triangle",
+      "norm_technique": "triangle",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0145",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "submission_escape",
+      "norm_technique": "submission_escape",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0146",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0147",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0148",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0149",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "over_under_pass",
+      "norm_technique": "over_under_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0150",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0151",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0152",
+      "pred_position": "north_south",
+      "norm_position": "north_south",
+      "pred_technique": "arm_triangle",
+      "norm_technique": "arm_triangle",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0153",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "arm_triangle",
+      "norm_technique": "arm_triangle",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0154",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0155",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0156",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0157",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0158",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0159",
+      "pred_position": "guard",
+      "norm_position": "guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0160",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "wrestle_up",
+      "norm_technique": "wrestle_up",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0161",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0162",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0163",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0164",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0165",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0166",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0167",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0168",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0169",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0170",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0171",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0172",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0173",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0174",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0175",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0176",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0177",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0178",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0179",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0180",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0181",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0182",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0183",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "toreando_pass",
+      "norm_technique": "toreando_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0184",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0185",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "seated_open_guard",
+      "norm_technique": "seated_open_guard",
+      "confidence": 0.8,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0186",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "arm_triangle",
+      "norm_technique": "arm_triangle",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0187",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "underhook",
+      "norm_technique": "underhook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0188",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0189",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0190",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0191",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0192",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0193",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0194",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0195",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0196",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0197",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0198",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0199",
+      "pred_position": "mount",
+      "norm_position": "mount",
+      "pred_technique": "armbar",
+      "norm_technique": "armbar",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0200",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0201",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0202",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0203",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0204",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0205",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0206",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0207",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0208",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0209",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0210",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0211",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0212",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0213",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "kimura",
+      "norm_technique": "kimura",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0214",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0215",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0216",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "scramble_reversal",
+      "norm_technique": "scramble_reversal",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0217",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0218",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0219",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0220",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0221",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0222",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0223",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0224",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0225",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0226",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0227",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "arm_triangle",
+      "norm_technique": "arm_triangle",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0228",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0229",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "unknown",
+      "norm_technique": "unknown",
+      "confidence": 1.0,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0230",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0231",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0232",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0233",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0234",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0235",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0236",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0237",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "kimura",
+      "norm_technique": "kimura",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0238",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0239",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "outside_passing",
+      "norm_technique": "outside_passing",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0240",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0241",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0242",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0243",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0244",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0245",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0246",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0247",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0248",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0249",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0250",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0251",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0252",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0253",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0254",
+      "pred_position": "closed_guard",
+      "norm_position": "closed_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0255",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "scramble_reversal",
+      "norm_technique": "scramble_reversal",
+      "confidence": 0.8,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0256",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "submission",
+      "norm_technique": "submission",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0257",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "wrestle_up",
+      "norm_technique": "wrestle_up",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0258",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "sweep",
+      "norm_technique": "sweep",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0259",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "armbar",
+      "norm_technique": "armbar",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0260",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0261",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0262",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0263",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0264",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0265",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "wrestle_up",
+      "norm_technique": "wrestle_up",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0266",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0267",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "takedown_defense",
+      "norm_technique": "takedown_defense",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0268",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0269",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "mount_entry",
+      "norm_technique": "mount_entry",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0270",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0271",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0272",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "armbar",
+      "norm_technique": "armbar",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0273",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0274",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0275",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0276",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "hand_fight",
+      "norm_technique": "hand_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0277",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "toreando_pass",
+      "norm_technique": "toreando_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0278",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0279",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0280",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0281",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "submission_escape",
+      "norm_technique": "submission_escape",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0282",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0283",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0284",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0285",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0286",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0287",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0288",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0289",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0290",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0291",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "toreando_pass",
+      "norm_technique": "toreando_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0292",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0293",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0294",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0295",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "hand_fight",
+      "norm_technique": "hand_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0296",
+      "pred_position": "unknown",
+      "norm_position": "unknown",
+      "pred_technique": "unknown",
+      "norm_technique": "unknown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0297",
+      "pred_position": "guard",
+      "norm_position": "guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0298",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0299",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0300",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0301",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0302",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "scramble_reversal",
+      "norm_technique": "scramble_reversal",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0303",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0304",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0305",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0306",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0307",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0308",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0309",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0310",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0311",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0312",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0313",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0314",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0315",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0316",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0317",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "over_under_pass",
+      "norm_technique": "over_under_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0318",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "outside_passing",
+      "norm_technique": "outside_passing",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0319",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0320",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0321",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0322",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0323",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0324",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0325",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0326",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0327",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0328",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0329",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0330",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0331",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "toreando_pass",
+      "norm_technique": "toreando_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0332",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0333",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0334",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0335",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0336",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0337",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0338",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "seated_open_guard",
+      "norm_technique": "seated_open_guard",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0339",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown_defense",
+      "norm_technique": "takedown_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0340",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0341",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0342",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0343",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0344",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "loose_passing",
+      "norm_technique": "loose_passing",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0345",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "loose_passing",
+      "norm_technique": "loose_passing",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0346",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0347",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0348",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0349",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0350",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "wrestle_up",
+      "norm_technique": "wrestle_up",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0351",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0352",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0353",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0354",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0355",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0356",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0357",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "hand_fight",
+      "norm_technique": "hand_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0358",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "seated_open_guard",
+      "norm_technique": "seated_open_guard",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0359",
+      "pred_position": "north_south",
+      "norm_position": "north_south",
+      "pred_technique": "kata_gatame",
+      "norm_technique": "kata_gatame",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0360",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0361",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0362",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0363",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "escape",
+      "norm_technique": "escape",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0364",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0365",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0366",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0367",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "loose_passing",
+      "norm_technique": "loose_passing",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0368",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0369",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0370",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0371",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0372",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_retention",
+      "norm_technique": "guard_retention",
+      "confidence": 0.8,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0373",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0374",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0375",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0376",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "underhook",
+      "norm_technique": "underhook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0377",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0378",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0379",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "seated_open_guard",
+      "norm_technique": "seated_open_guard",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0380",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "scramble_reversal",
+      "norm_technique": "scramble_reversal",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0381",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0382",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0383",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0384",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0385",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0386",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0387",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0388",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "knee_slice",
+      "norm_technique": "knee_slice",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0389",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "arm_triangle",
+      "norm_technique": "arm_triangle",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0390",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0391",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "destabilization",
+      "norm_technique": "destabilization",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0392",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_retention",
+      "norm_technique": "guard_retention",
+      "confidence": 0.8,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0393",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0394",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0395",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0396",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0397",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0398",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0399",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "seated_open_guard",
+      "norm_technique": "seated_open_guard",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0400",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0401",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0402",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0403",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0404",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0405",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0406",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0407",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "over_under_pass",
+      "norm_technique": "over_under_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0408",
+      "pred_position": "guard",
+      "norm_position": "guard",
+      "pred_technique": "unknown",
+      "norm_technique": "unknown",
+      "confidence": 0.8,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0409",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0410",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "sweep",
+      "norm_technique": "sweep",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0411",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0412",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0413",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0414",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "loose_passing",
+      "norm_technique": "loose_passing",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0415",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0416",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0417",
+      "pred_position": "unknown",
+      "norm_position": "unknown",
+      "pred_technique": "unknown",
+      "norm_technique": "unknown",
+      "confidence": 1.0,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0418",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0419",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0420",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "leg_entanglement",
+      "norm_technique": "leg_entanglement",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0421",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0422",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "toreando_pass",
+      "norm_technique": "toreando_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0423",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "triangle",
+      "norm_technique": "triangle",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0424",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0425",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0426",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "underhook",
+      "norm_technique": "underhook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0427",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0428",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0429",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock_defense",
+      "norm_technique": "leg_lock_defense",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0430",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "arm_triangle",
+      "norm_technique": "arm_triangle",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0431",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0432",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pull",
+      "norm_technique": "guard_pull",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0433",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0434",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0435",
+      "pred_position": "mount",
+      "norm_position": "mount",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0436",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pull",
+      "norm_technique": "guard_pull",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0437",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0438",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0439",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0440",
+      "pred_position": "unknown",
+      "norm_position": "unknown",
+      "pred_technique": "unknown",
+      "norm_technique": "unknown",
+      "confidence": 0,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0441",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0442",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0443",
+      "pred_position": "mount",
+      "norm_position": "mount",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0444",
+      "pred_position": "guard",
+      "norm_position": "guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0445",
+      "pred_position": "guard",
+      "norm_position": "guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0446",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0447",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0448",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0449",
+      "pred_position": "mount",
+      "norm_position": "mount",
+      "pred_technique": "armbar",
+      "norm_technique": "armbar",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0450",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0451",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0452",
+      "pred_position": "mount",
+      "norm_position": "mount",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0453",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0454",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0455",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0456",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0457",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0458",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "unknown",
+      "norm_technique": "unknown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0459",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "grip_fight",
+      "norm_technique": "grip_fight",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0460",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0461",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0462",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "escape",
+      "norm_technique": "escape",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0463",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 1.0,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0464",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0465",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0466",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0467",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0468",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "sweep",
+      "norm_technique": "sweep",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0469",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "seated_open_guard",
+      "norm_technique": "seated_open_guard",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0470",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0471",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0472",
+      "pred_position": "clinch",
+      "norm_position": "clinch",
+      "pred_technique": "body_lock",
+      "norm_technique": "body_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0473",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "single_leg",
+      "norm_technique": "single_leg",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0474",
+      "pred_position": "scramble",
+      "norm_position": "scramble",
+      "pred_technique": "go_behind",
+      "norm_technique": "go_behind",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0475",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0476",
+      "pred_position": "guard",
+      "norm_position": "guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0477",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0478",
+      "pred_position": "half_guard",
+      "norm_position": "half_guard",
+      "pred_technique": "half_guard_pass",
+      "norm_technique": "half_guard_pass",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0479",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0480",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "control",
+      "norm_technique": "control",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0481",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0482",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "wrestle_up",
+      "norm_technique": "wrestle_up",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0483",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0484",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "leg_drag",
+      "norm_technique": "leg_drag",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0485",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0486",
+      "pred_position": "open_guard",
+      "norm_position": "open_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0487",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "heel_hook",
+      "norm_technique": "heel_hook",
+      "confidence": 0.95,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0488",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "submission_escape",
+      "norm_technique": "submission_escape",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0489",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0490",
+      "pred_position": "closed_guard",
+      "norm_position": "closed_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0491",
+      "pred_position": "leg_entanglement",
+      "norm_position": "leg_entanglement",
+      "pred_technique": "leg_lock",
+      "norm_technique": "leg_lock",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0492",
+      "pred_position": "standing",
+      "norm_position": "standing",
+      "pred_technique": "double_leg",
+      "norm_technique": "double_leg",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0493",
+      "pred_position": "turtle",
+      "norm_position": "turtle",
+      "pred_technique": "back_take",
+      "norm_technique": "back_take",
+      "confidence": 0.9,
+      "position_correct": false,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0494",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0495",
+      "pred_position": "side_control",
+      "norm_position": "side_control",
+      "pred_technique": "takedown",
+      "norm_technique": "takedown",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0496",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "guard_pass",
+      "norm_technique": "guard_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": true
+    },
+    {
+      "clip": "pro_clip_0497",
+      "pred_position": "back_control",
+      "norm_position": "back_control",
+      "pred_technique": "rear_naked_choke",
+      "norm_technique": "rear_naked_choke",
+      "confidence": 0.95,
+      "position_correct": true,
+      "technique_correct": false
+    },
+    {
+      "clip": "pro_clip_0498",
+      "pred_position": "passing_guard",
+      "norm_position": "passing_guard",
+      "pred_technique": "stack_pass",
+      "norm_technique": "stack_pass",
+      "confidence": 0.9,
+      "position_correct": true,
+      "technique_correct": false
+    }
+  ]
+}

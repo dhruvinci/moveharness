@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "ontology_id": "movebench-bjj",
+  "ontology_version": "0.1.0",
+  "title": "MoveBench v0 Label Ontology (BJJ / no-gi grappling instantiation)",
+  "description": "Machine-readable label set for MoveBench v0. Hierarchical: L0 engagement, L1A macro position (state), L1B sub-position/detail, L2 per-athlete role/action, transition events (event), scoring events. BJJ is the v0 stress-test instantiation of the broader 'technical human movement' target; this ontology is domain-specific and does NOT transfer to judo/wrestling/striking/dance/surgery without re-authoring the label set. Counts: 18 macro positions (L1A); a technique/action vocabulary of ~91 terms; 42 unique labels are actually used in the v0 single-match ground truth (excluding the 2 protocol annotations pre_match/match_start). The macro-position field in the v0 ground truth uses a reduced 7-value set (a subset of the 18 plus the event-style states 'sweep' and 'escape' used as segment positions); see `v0_macro_position_field_values`.",
+  "provenance": {
+    "macro_positions_source": "BJJ knowledge ontology, '18 Core Positions' (experiment repository, ontology v1.0)",
+    "technique_vocabulary_source": "BJJ knowledge ontology technique vocabulary (~91 terms; sub-positions, takedowns, passes, sweeps, submissions, escapes, grips, frames, transitions, match events)",
+    "v0_usage_source": "the single annotated public no-gi match ground truth (62 benchmark subsegments, 122 label instances, 42 unique labels)",
+    "privacy": "No athlete names, video URLs, gym names, user IDs, or local paths are included. Per-athlete roles use anonymized A1/A2 only."
+  },
+  "levels": {
+    "L0_engagement": "Coarse engagement state of the exchange (standing / ground / scramble / paused / unknown).",
+    "L1A_macro_position": "Stable macro grappling state. A STATE, contrasted with a transition EVENT. 18 values + unknown/occluded always allowed.",
+    "L1B_subposition_detail": "Finer specification of an L1A position (e.g. closed/open/half/butterfly/de-la-riva guard; low/high mount).",
+    "L2_role_action": "Per-athlete (A1/A2) role and action label tracked over time.",
+    "transition_event": "Discrete timestamped event that moves between positions (planned ground-truth layer in v1).",
+    "scoring_event": "Timestamped ruleset-scored event (e.g. ADCC points); planned ground-truth layer in v1."
+  },
+  "L0_engagement": [
+    {"id": "standing", "label": "Standing"},
+    {"id": "ground", "label": "Ground"},
+    {"id": "scramble", "label": "Scramble"},
+    {"id": "paused", "label": "Paused / referee intervention"},
+    {"id": "unknown", "label": "Unknown / occluded"}
+  ],
+  "L1A_macro_positions": [
+    {"id": "guard", "label": "Guard", "type": "state", "adcc_points": null, "aliases": ["Guard"]},
+    {"id": "mount", "label": "Mount", "type": "state", "adcc_points": 4, "aliases": ["Mount"]},
+    {"id": "side_control", "label": "Side Control", "type": "state", "adcc_points": null, "aliases": ["Side Control", "side"]},
+    {"id": "back_control", "label": "Back Control", "type": "state", "adcc_points": 4, "aliases": ["back", "back control"]},
+    {"id": "north_south", "label": "North-South", "type": "state", "adcc_points": null, "aliases": ["north-south", "north_south"]},
+    {"id": "knee_on_belly", "label": "Knee on Belly", "type": "state", "adcc_points": 2, "aliases": ["knee-on-belly", "kob"]},
+    {"id": "turtle", "label": "Turtle", "type": "state", "adcc_points": null, "aliases": ["defensive_turtle"]},
+    {"id": "half_guard", "label": "Half Guard", "type": "state", "adcc_points": null, "aliases": ["Half Guard", "half"]},
+    {"id": "standing", "label": "Standing", "type": "state", "adcc_points": null, "aliases": ["Standing"]},
+    {"id": "clinch", "label": "Clinch", "type": "state", "adcc_points": null, "aliases": []},
+    {"id": "takedown", "label": "Takedown", "type": "transition_state", "adcc_points": 2, "aliases": []},
+    {"id": "single_leg", "label": "Single Leg", "type": "transition_state", "adcc_points": null, "aliases": []},
+    {"id": "double_leg", "label": "Double Leg", "type": "transition_state", "adcc_points": null, "aliases": []},
+    {"id": "passing_guard", "label": "Passing Guard", "type": "transition_state", "adcc_points": 3, "aliases": ["guard_pass", "pass"]},
+    {"id": "sweep", "label": "Sweep", "type": "transition_state", "adcc_points": null, "aliases": []},
+    {"id": "submission_attempt", "label": "Submission Attempt", "type": "action_state", "adcc_points": null, "aliases": ["submission"]},
+    {"id": "scramble", "label": "Scramble", "type": "transition_state", "adcc_points": null, "aliases": []},
+    {"id": "unknown", "label": "Unknown / Unclear", "type": "state", "adcc_points": null, "aliases": ["occluded", "unclear"]}
+  ],
+  "L1A_always_allowed": ["unknown"],
+  "v0_macro_position_field_values": {
+    "description": "The 'position' field actually used in the v0 ground-truth macro segments. It is a reduced 7-value working set: 5 are L1A states and 2 ('sweep','escape') are event-style states the annotator used as segment-level positions. 'escape' is NOT in the 18-macro L1A set; in v0 it functions as a segment-level state for a guard/position recovery sequence and maps to the 'escape' role/transition family.",
+    "values": ["standing", "guard", "sweep", "back_control", "escape", "mount", "side_control"],
+    "counts_in_v0": {"standing": 6, "guard": 7, "sweep": 6, "back_control": 2, "escape": 6, "mount": 1, "side_control": 4},
+    "total_macro_segments": 32,
+    "notes": "escape and sweep are event/transition concepts used here as macro labels; scorers should treat them as their own position classes for T1 macro-F1 in v0 and reconcile against the transition layer in v1."
+  },
+  "L1B_subpositions": {
+    "guard": ["closed_guard", "open_guard", "half_guard", "butterfly_guard", "de_la_riva_guard", "reverse_de_la_riva", "x_guard", "single_leg_x", "z_guard", "knee_shield", "lasso_guard", "spider_guard", "deep_half_guard", "lockdown", "seated_guard"],
+    "mount": ["low_mount", "high_mount", "s_mount"],
+    "side_control": ["standard_side_control", "kesa_gatame", "reverse_kesa_gatame", "hundred_kilos"],
+    "back_control": ["hooks_in", "body_triangle", "single_hook", "seat_belt"],
+    "half_guard": ["top_half_guard", "bottom_half_guard", "deep_half_guard", "lockdown"],
+    "standing": ["circling", "grip_fighting", "engaged"],
+    "clinch": ["over_under", "collar_tie", "underhooks", "body_lock"],
+    "passing_guard": ["over_under_pass", "knee_slice", "leg_drag", "stack_pass", "toreando_pass", "headquarters_position"]
+  },
+  "L2_roles": {
+    "description": "Per-athlete (A1/A2 anonymized) role/action labels tracked over time for the role-consistency task.",
+    "values": ["top", "bottom", "neutral", "passing", "retaining", "attacking", "defending", "escaping", "sweeping", "submitting"]
+  },
+  "transition_events": {
+    "description": "Discrete event vocabulary for the transition-detection task (T2). v0 ground-truth transition layer is EMPTY; this list is the planned v1 event set. A transition is an EVENT, not a state.",
+    "values": ["takedown", "guard_pull", "sweep", "guard_pass", "back_take", "mount_achieve", "escape", "reguard", "leg_entry", "submission_on", "submission_off", "tap", "reset", "scramble_reversal"]
+  },
+  "scoring_events": {
+    "description": "Ruleset scoring vocabulary (T-scoring, planned v1). v0 ground-truth scoring layer is EMPTY.",
+    "rulesets": {
+      "adcc": {"takedown": 2, "knee_on_belly": 2, "guard_pass": 3, "mount": 4, "back_control": 4, "submission": "match_end"},
+      "ibjjf": {"takedown": 2, "guard_pass": 3, "knee_on_belly": 2, "mount": 4, "back_control": 4, "sweep": 2}
+    }
+  },
+  "protocol_annotations": {
+    "description": "Non-technique markers excluded from benchmark technique/action counts. The 2 below are excluded from the 62/122 benchmark counts (present in the 64/124 raw counts).",
+    "excluded_from_benchmark_count": ["pre_match", "match_start"],
+    "match_lifecycle": ["pre_match", "match_start", "match_end"]
+  },
+  "v0_used_labels": {
+    "description": "The 42 unique labels (excluding pre_match, match_start) that actually appear in the v0 single-match ground-truth subsegments, with their frequency (label-instance count) and normalized ontology mapping. These 42 are a strict subset of the full vocabulary. Original surface forms are preserved (the v0 GT mixes cased macro names like 'Standing' with snake_case technique labels); `normalized` gives the canonical id.",
+    "total_unique": 42,
+    "total_label_instances": 122,
+    "total_benchmark_subsegments": 62,
+    "labels": [
+      {"surface": "Standing", "normalized": "standing", "level": "L1A", "count": 15},
+      {"surface": "open_guard", "normalized": "open_guard", "level": "L1B", "count": 14},
+      {"surface": "de_la_riva", "normalized": "de_la_riva_guard", "level": "L1B", "count": 10},
+      {"surface": "Mount", "normalized": "mount", "level": "L1A", "count": 9},
+      {"surface": "Side Control", "normalized": "side_control", "level": "L1A", "count": 6},
+      {"surface": "headquarters_position", "normalized": "headquarters_position", "level": "L1B", "count": 5},
+      {"surface": "escaping", "normalized": "escaping", "level": "L2", "count": 5},
+      {"surface": "guard_pass", "normalized": "passing_guard", "level": "transition", "count": 4},
+      {"surface": "scramble", "normalized": "scramble", "level": "L1A", "count": 4},
+      {"surface": "stack_pass", "normalized": "stack_pass", "level": "L1B", "count": 4},
+      {"surface": "grip_fighting", "normalized": "grip_fighting", "level": "L1B", "count": 3},
+      {"surface": "takedown", "normalized": "takedown", "level": "transition", "count": 2},
+      {"surface": "back_control", "normalized": "back_control", "level": "L1A", "count": 2},
+      {"surface": "body_lock", "normalized": "body_lock", "level": "L1B", "count": 2},
+      {"surface": "knee_shield", "normalized": "knee_shield", "level": "L1B", "count": 2},
+      {"surface": "butterfly_guard", "normalized": "butterfly_guard", "level": "L1B", "count": 2},
+      {"surface": "retaining_guard", "normalized": "retaining", "level": "L2", "count": 2},
+      {"surface": "double_leg", "normalized": "double_leg", "level": "L1A", "count": 2},
+      {"surface": "Half Guard", "normalized": "half_guard", "level": "L1A", "count": 2},
+      {"surface": "triangle", "normalized": "triangle", "level": "submission", "count": 2},
+      {"surface": "armbar", "normalized": "armbar", "level": "submission", "count": 2},
+      {"surface": "kesa_gatame", "normalized": "kesa_gatame", "level": "L1B", "count": 2},
+      {"surface": "match_end", "normalized": "match_end", "level": "lifecycle", "count": 2},
+      {"surface": "Guard", "normalized": "guard", "level": "L1A", "count": 1},
+      {"surface": "lasso_guard", "normalized": "lasso_guard", "level": "L1B", "count": 1},
+      {"surface": "guillotine", "normalized": "guillotine", "level": "submission", "count": 1},
+      {"surface": "granby_roll", "normalized": "granby_roll", "level": "transition", "count": 1},
+      {"surface": "sweep", "normalized": "sweep", "level": "transition", "count": 1},
+      {"surface": "underhooks", "normalized": "underhooks", "level": "L1B", "count": 1},
+      {"surface": "scramble_reversal", "normalized": "scramble_reversal", "level": "transition", "count": 1},
+      {"surface": "toreando_pass", "normalized": "toreando_pass", "level": "L1B", "count": 1},
+      {"surface": "defensive_turtle", "normalized": "turtle", "level": "L1A", "count": 1},
+      {"surface": "reverse_de_la_riva", "normalized": "reverse_de_la_riva", "level": "L1B", "count": 1},
+      {"surface": "heel_hook", "normalized": "heel_hook", "level": "submission", "count": 1},
+      {"surface": "half_guard_to_guard", "normalized": "reguard", "level": "transition", "count": 1},
+      {"surface": "half_guard_to_mount", "normalized": "mount_achieve", "level": "transition", "count": 1},
+      {"surface": "single_leg", "normalized": "single_leg", "level": "L1A", "count": 1},
+      {"surface": "seat_belt", "normalized": "seat_belt", "level": "L1B", "count": 1},
+      {"surface": "closed_guard", "normalized": "closed_guard", "level": "L1B", "count": 1},
+      {"surface": "ankle_pick", "normalized": "ankle_pick", "level": "transition", "count": 1},
+      {"surface": "pull_guard", "normalized": "guard_pull", "level": "transition", "count": 1},
+      {"surface": "knee_on_belly", "normalized": "knee_on_belly", "level": "L1A", "count": 1}
+    ]
+  },
+  "technique_vocabulary": {
+    "description": "The ~91-term technique/action vocabulary (the full label space MoveBench draws from). Organized by category. Of these, 42 unique labels appear in v0 (see v0_used_labels). The exact full list lives in the experiment-repository ontology; the categories below enumerate the canonical terms used for scoring.",
+    "approx_term_count": 91,
+    "categories": {
+      "guards": ["closed_guard", "open_guard", "half_guard", "butterfly_guard", "de_la_riva_guard", "reverse_de_la_riva", "x_guard", "single_leg_x", "z_guard", "knee_shield", "lasso_guard", "spider_guard", "deep_half_guard", "lockdown", "seated_guard", "headquarters_position"],
+      "passes": ["over_under_pass", "knee_slice", "leg_drag", "stack_pass", "toreando_pass", "guard_pass", "smash_pass", "long_step_pass", "body_lock_pass"],
+      "sweeps": ["hip_bump_sweep", "scissor_sweep", "butterfly_sweep", "pendulum_sweep", "sweep", "scramble_reversal", "x_guard_sweep"],
+      "takedowns": ["single_leg", "double_leg", "ankle_pick", "foot_sweep", "hip_toss", "trip", "snap_down", "guard_pull", "body_lock_takedown", "takedown"],
+      "submissions": ["armbar", "kimura", "americana", "triangle", "guillotine", "rear_naked_choke", "heel_hook", "ankle_lock", "knee_bar", "omoplata", "crucifix", "darce", "anaconda", "kneebar", "toe_hold", "ezekiel", "bow_and_arrow"],
+      "controls_grips": ["seat_belt", "body_lock", "underhooks", "overhook", "collar_tie", "crossface", "body_triangle", "hooks_in", "grip_fighting", "frames", "kesa_gatame", "mount_control", "back_control_grip"],
+      "movements_transitions": ["granby_roll", "back_take", "reguard", "guard_recovery", "half_guard_to_guard", "half_guard_to_mount", "scramble", "dog_fight", "wrestle_up", "leg_entry", "limp_arm"],
+      "states_roles": ["escaping", "retaining_guard", "defensive_turtle", "passing", "attacking", "defending", "stalling"],
+      "match_lifecycle": ["pre_match", "match_start", "match_end"]
+    }
+  }
+}

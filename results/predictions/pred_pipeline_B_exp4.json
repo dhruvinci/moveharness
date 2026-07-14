@@ -1,0 +1,264 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "pipeline_B_two_stage_skeleton_detail",
+  "provenance": "honest machine output, dev artifact, single anchor match, in-sample",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 6.0,
+      "position": "pre_match",
+      "labels": [
+        "pre_match_ritual"
+      ]
+    },
+    {
+      "start_sec": 6.0,
+      "end_sec": 49.0,
+      "position": "standing",
+      "labels": [
+        "hand_fighting",
+        "collar_tie",
+        "distance_management"
+      ]
+    },
+    {
+      "start_sec": 49.0,
+      "end_sec": 94.0,
+      "position": "standing",
+      "labels": [
+        "takedown_attempt",
+        "snap_down",
+        "front_headlock",
+        "scramble"
+      ]
+    },
+    {
+      "start_sec": 94.0,
+      "end_sec": 104.0,
+      "position": "standing",
+      "labels": [
+        "takedown",
+        "double_overhooks",
+        "uchi_mata",
+        "scramble"
+      ]
+    },
+    {
+      "start_sec": 104.0,
+      "end_sec": 123.0,
+      "position": "turtle",
+      "labels": [
+        "guard_pull",
+        "triangle_attempt",
+        "armbar_attempt",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 123.0,
+      "end_sec": 172.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing",
+        "de_la_riva",
+        "leg_pummeling"
+      ]
+    },
+    {
+      "start_sec": 172.0,
+      "end_sec": 212.0,
+      "position": "back_control",
+      "labels": [
+        "sweep",
+        "back_take",
+        "body_triangle",
+        "scramble"
+      ]
+    },
+    {
+      "start_sec": 212.0,
+      "end_sec": 245.0,
+      "position": "back_control",
+      "labels": [
+        "submission_defense",
+        "hand_fighting",
+        "body_triangle_control"
+      ]
+    },
+    {
+      "start_sec": 245.0,
+      "end_sec": 286.0,
+      "position": "mount",
+      "labels": [
+        "transition_to_mount",
+        "submission_attempt",
+        "kimura_trap"
+      ]
+    },
+    {
+      "start_sec": 286.0,
+      "end_sec": 351.0,
+      "position": "side_control",
+      "labels": [
+        "mount_escape",
+        "guard_recovery_attempt",
+        "pass_to_side_control"
+      ]
+    },
+    {
+      "start_sec": 351.0,
+      "end_sec": 370.0,
+      "position": "scramble",
+      "labels": [
+        "escape",
+        "reversal",
+        "scramble"
+      ]
+    },
+    {
+      "start_sec": 370.0,
+      "end_sec": 442.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing",
+        "pressure_passing",
+        "body_lock_pass"
+      ]
+    },
+    {
+      "start_sec": 442.0,
+      "end_sec": 497.0,
+      "position": "scramble",
+      "labels": [
+        "sweep_attempt",
+        "inversion",
+        "leg_entanglement",
+        "reset"
+      ]
+    },
+    {
+      "start_sec": 497.0,
+      "end_sec": 550.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing",
+        "knee_slice",
+        "leg_drag_attempt"
+      ]
+    },
+    {
+      "start_sec": 550.0,
+      "end_sec": 598.0,
+      "position": "back_control",
+      "labels": [
+        "back_take",
+        "sweep",
+        "body_lock",
+        "scramble"
+      ]
+    },
+    {
+      "start_sec": 598.0,
+      "end_sec": 650.0,
+      "position": "mount",
+      "labels": [
+        "transition_to_mount",
+        "submission_threat",
+        "pressure_control"
+      ]
+    },
+    {
+      "start_sec": 650.0,
+      "end_sec": 670.0,
+      "position": "mount",
+      "labels": [
+        "submission_defense",
+        "arm_isolation",
+        "kimura_grip"
+      ]
+    },
+    {
+      "start_sec": 670.0,
+      "end_sec": 725.0,
+      "position": "back_control",
+      "labels": [
+        "mount_to_back_transition",
+        "body_triangle",
+        "choke_attempt"
+      ]
+    },
+    {
+      "start_sec": 725.0,
+      "end_sec": 789.0,
+      "position": "scramble",
+      "labels": [
+        "escape",
+        "reversal",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 789.0,
+      "end_sec": 810.0,
+      "position": "standing",
+      "labels": [
+        "reset",
+        "stand_up",
+        "wrestling_stance"
+      ]
+    },
+    {
+      "start_sec": 810.0,
+      "end_sec": 830.0,
+      "position": "scramble",
+      "labels": [
+        "takedown_attempt",
+        "back_take_attempt",
+        "triangle_attempt",
+        "armbar_attempt"
+      ]
+    },
+    {
+      "start_sec": 830.0,
+      "end_sec": 865.0,
+      "position": "guard",
+      "labels": [
+        "guard_passing",
+        "leg_entanglement",
+        "scramble"
+      ]
+    },
+    {
+      "start_sec": 865.0,
+      "end_sec": 900.0,
+      "position": "scramble",
+      "labels": [
+        "sweep",
+        "pass_attempt",
+        "mount_attempt"
+      ]
+    },
+    {
+      "start_sec": 900.0,
+      "end_sec": 911.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "armbar",
+        "match_end"
+      ]
+    },
+    {
+      "start_sec": 911.0,
+      "end_sec": 970.0,
+      "position": "post_match",
+      "labels": [
+        "decision",
+        "sportsmanship"
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {}
+}

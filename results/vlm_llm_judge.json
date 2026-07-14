@@ -1,0 +1,4471 @@
+{
+  "benchmark": "MoveBench v0",
+  "task": "V3 LLM-as-judge semantic correctness",
+  "judge_model": "gemini-2.5-flash",
+  "judge_config": {
+    "temperature": 0.0,
+    "thinking_budget": 0,
+    "response_format": "json"
+  },
+  "gt_path": "data/v0/mb_v0_0001.json",
+  "n_samples": 1,
+  "gt_macro_segments": 32,
+  "iou_threshold": 0.3,
+  "alignment": "greedy max-IoU GT->pred, threshold 0.3 (same as strict T1 scorer)",
+  "scoring_scale": "0=wrong, 1=partial, 2=correct; normalized /2 to [0,1]",
+  "denominator": "GT-anchored: judged matched segs + misses(=0); abstain & judge-failed excluded",
+  "abstain_positions": [
+    "occluded",
+    "unclear",
+    "unknown"
+  ],
+  "test_one_item": {
+    "system": "exp2_multipass_pass1_enhanced",
+    "gt_idx": 0,
+    "score": 2,
+    "reason": "Dominant position 'standing' matches. Predicted labels are consistent with 'grip",
+    "raw": "{\"score\": 2, \"reason\": \"Dominant position 'standing' matches. Predicted labels are consistent with 'grip_fighting'.\"}"
+  },
+  "timed_out": false,
+  "skipped_timeout": 0,
+  "wall_clock_sec": 97.9,
+  "usage": {
+    "calls": 325,
+    "prompt_tokens": 151094,
+    "output_tokens": 9527,
+    "total_tokens": 160621,
+    "failures": 0,
+    "retries": 0
+  },
+  "approx_cost_usd": 0.06915,
+  "systems": [
+    {
+      "system": "hmm_cv_only_baseline_raw",
+      "pred_file": "pred_hmm_cv_baseline_raw.json",
+      "pred_segments": 81,
+      "gt_segments": 32,
+      "n_matched_judged": 27,
+      "n_miss": 5,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 14,
+        "partial_1": 13,
+        "correct_2": 0
+      },
+      "mean_semantic_correctness_0to1": 0.2031,
+      "mean_judged_only_0to1": 0.2407,
+      "strict_macro_f1": null,
+      "strict_to_judge_gap": null
+    },
+    {
+      "system": "exp4_v1_skeleton_run3",
+      "pred_file": "pred_exp4_v1_run3.json",
+      "pred_segments": 25,
+      "gt_segments": 32,
+      "n_matched_judged": 28,
+      "n_miss": 4,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 19,
+        "partial_1": 6,
+        "correct_2": 3
+      },
+      "mean_semantic_correctness_0to1": 0.1875,
+      "mean_judged_only_0to1": 0.2143,
+      "strict_macro_f1": 0.1331,
+      "strict_to_judge_gap": 0.0544
+    },
+    {
+      "system": "exp4_v2_skeleton_run1",
+      "pred_file": "pred_exp4_v2_run1.json",
+      "pred_segments": 24,
+      "gt_segments": 32,
+      "n_matched_judged": 23,
+      "n_miss": 9,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 12,
+        "partial_1": 10,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.1875,
+      "mean_judged_only_0to1": 0.2609,
+      "strict_macro_f1": 0.165,
+      "strict_to_judge_gap": 0.0225
+    },
+    {
+      "system": "exp4_v3_skeleton_run1",
+      "pred_file": "pred_exp4_v3_run1.json",
+      "pred_segments": 15,
+      "gt_segments": 32,
+      "n_matched_judged": 15,
+      "n_miss": 17,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 6,
+        "partial_1": 6,
+        "correct_2": 3
+      },
+      "mean_semantic_correctness_0to1": 0.1875,
+      "mean_judged_only_0to1": 0.4,
+      "strict_macro_f1": 0.1317,
+      "strict_to_judge_gap": 0.0558
+    },
+    {
+      "system": "exp4_v3_skeleton_run2",
+      "pred_file": "pred_exp4_v3_run2.json",
+      "pred_segments": 25,
+      "gt_segments": 32,
+      "n_matched_judged": 23,
+      "n_miss": 9,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 16,
+        "partial_1": 2,
+        "correct_2": 5
+      },
+      "mean_semantic_correctness_0to1": 0.1875,
+      "mean_judged_only_0to1": 0.2609,
+      "strict_macro_f1": 0.1361,
+      "strict_to_judge_gap": 0.0514
+    },
+    {
+      "system": "exp3_stage1_cv_cached_timeline",
+      "pred_file": "pred_exp3_stage1.json",
+      "pred_segments": 58,
+      "gt_segments": 32,
+      "n_matched_judged": 30,
+      "n_miss": 2,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 23,
+        "partial_1": 4,
+        "correct_2": 3
+      },
+      "mean_semantic_correctness_0to1": 0.1562,
+      "mean_judged_only_0to1": 0.1667,
+      "strict_macro_f1": 0.0991,
+      "strict_to_judge_gap": 0.0571
+    },
+    {
+      "system": "exp4_v2_skeleton_run2",
+      "pred_file": "pred_exp4_v2_run2.json",
+      "pred_segments": 22,
+      "gt_segments": 32,
+      "n_matched_judged": 24,
+      "n_miss": 8,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 15,
+        "partial_1": 8,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.1562,
+      "mean_judged_only_0to1": 0.2083,
+      "strict_macro_f1": 0.1888,
+      "strict_to_judge_gap": -0.0326
+    },
+    {
+      "system": "hmm_cv_only_baseline",
+      "pred_file": "pred_hmm_cv_baseline.json",
+      "pred_segments": 18,
+      "gt_segments": 32,
+      "n_matched_judged": 16,
+      "n_miss": 16,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 9,
+        "partial_1": 6,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.125,
+      "mean_judged_only_0to1": 0.25,
+      "strict_macro_f1": null,
+      "strict_to_judge_gap": null
+    },
+    {
+      "system": "exp3_stage1_v33_pass1",
+      "pred_file": "pred_exp3_stage1_v33_pass1.json",
+      "pred_segments": 49,
+      "gt_segments": 32,
+      "n_matched_judged": 8,
+      "n_miss": 24,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 3,
+        "partial_1": 4,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.0938,
+      "mean_judged_only_0to1": 0.375,
+      "strict_macro_f1": 0.0119,
+      "strict_to_judge_gap": 0.0819
+    },
+    {
+      "system": "exp3_stage3_merged_timeline",
+      "pred_file": "pred_exp3_stage3_v33.json",
+      "pred_segments": 48,
+      "gt_segments": 32,
+      "n_matched_judged": 7,
+      "n_miss": 25,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 2,
+        "partial_1": 4,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.0938,
+      "mean_judged_only_0to1": 0.4286,
+      "strict_macro_f1": 0.0111,
+      "strict_to_judge_gap": 0.0827
+    },
+    {
+      "system": "exp4_combined_stage1_stage2",
+      "pred_file": "pred_exp4_combined.json",
+      "pred_segments": 69,
+      "gt_segments": 32,
+      "n_matched_judged": 31,
+      "n_miss": 1,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 25,
+        "partial_1": 6,
+        "correct_2": 0
+      },
+      "mean_semantic_correctness_0to1": 0.0938,
+      "mean_judged_only_0to1": 0.0968,
+      "strict_macro_f1": 0.0774,
+      "strict_to_judge_gap": 0.0164
+    },
+    {
+      "system": "exp4_v1_skeleton_run1",
+      "pred_file": "pred_exp4_v1_run1.json",
+      "pred_segments": 69,
+      "gt_segments": 32,
+      "n_matched_judged": 31,
+      "n_miss": 1,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 25,
+        "partial_1": 6,
+        "correct_2": 0
+      },
+      "mean_semantic_correctness_0to1": 0.0938,
+      "mean_judged_only_0to1": 0.0968,
+      "strict_macro_f1": 0.0774,
+      "strict_to_judge_gap": 0.0164
+    },
+    {
+      "system": "exp3_stage1_v33_compressed",
+      "pred_file": "pred_exp3_stage1_v33_compressed.json",
+      "pred_segments": 24,
+      "gt_segments": 32,
+      "n_matched_judged": 15,
+      "n_miss": 17,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 11,
+        "partial_1": 3,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.0781,
+      "mean_judged_only_0to1": 0.1667,
+      "strict_macro_f1": 0.0564,
+      "strict_to_judge_gap": 0.0217
+    },
+    {
+      "system": "exp2_multipass_pass3_synthesis",
+      "pred_file": "pred_exp2_pass3_synthesis.json",
+      "pred_segments": 14,
+      "gt_segments": 32,
+      "n_matched_judged": 11,
+      "n_miss": 21,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 8,
+        "partial_1": 2,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.0625,
+      "mean_judged_only_0to1": 0.1818,
+      "strict_macro_f1": 0.022,
+      "strict_to_judge_gap": 0.0405
+    },
+    {
+      "system": "naive_single_pass_holistic",
+      "pred_file": "pred_naive_pass1.json",
+      "pred_segments": 26,
+      "gt_segments": 32,
+      "n_matched_judged": 12,
+      "n_miss": 20,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 9,
+        "partial_1": 2,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.0625,
+      "mean_judged_only_0to1": 0.1667,
+      "strict_macro_f1": 0.0152,
+      "strict_to_judge_gap": 0.0473
+    },
+    {
+      "system": "exp4_v1_skeleton_run2",
+      "pred_file": "pred_exp4_v1_run2.json",
+      "pred_segments": 157,
+      "gt_segments": 32,
+      "n_matched_judged": 14,
+      "n_miss": 18,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 12,
+        "partial_1": 1,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.0469,
+      "mean_judged_only_0to1": 0.1071,
+      "strict_macro_f1": 0.0171,
+      "strict_to_judge_gap": 0.0298
+    },
+    {
+      "system": "exp2_multipass_pass1_enhanced",
+      "pred_file": "pred_exp2_pass1_enhanced.json",
+      "pred_segments": 121,
+      "gt_segments": 32,
+      "n_matched_judged": 4,
+      "n_miss": 28,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 3,
+        "partial_1": 0,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.0312,
+      "mean_judged_only_0to1": 0.25,
+      "strict_macro_f1": 0.0084,
+      "strict_to_judge_gap": 0.0228
+    },
+    {
+      "system": "exp2_multipass_pass1_fixed",
+      "pred_file": "pred_exp2_pass1_fixed.json",
+      "pred_segments": 241,
+      "gt_segments": 32,
+      "n_matched_judged": 6,
+      "n_miss": 26,
+      "n_abstain": 0,
+      "n_failed_or_skipped": 0,
+      "n_scored_denom": 32,
+      "judged_score_dist": {
+        "wrong_0": 5,
+        "partial_1": 0,
+        "correct_2": 1
+      },
+      "mean_semantic_correctness_0to1": 0.0312,
+      "mean_judged_only_0to1": 0.1667,
+      "strict_macro_f1": 0.0042,
+      "strict_to_judge_gap": 0.027
+    }
+  ],
+  "detail": {
+    "exp2_multipass_pass1_enhanced": {
+      "file": "pred_exp2_pass1_enhanced.json",
+      "system": "exp2_multipass_pass1_enhanced",
+      "pred_segments": 121,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.625,
+          "score": 2,
+          "reason": "Dominant position 'standing' matches. Predicted labels are consistent with 'grip"
+        },
+        {
+          "gt_idx": 1,
+          "status": "miss",
+          "iou": 0.119,
+          "score": 0
+        },
+        {
+          "gt_idx": 2,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 3,
+          "status": "miss",
+          "iou": 0.19,
+          "score": 0
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "miss",
+          "iou": 0.114,
+          "score": 0
+        },
+        {
+          "gt_idx": 6,
+          "status": "miss",
+          "iou": 0.2,
+          "score": 0
+        },
+        {
+          "gt_idx": 7,
+          "status": "miss",
+          "iou": 0.089,
+          "score": 0
+        },
+        {
+          "gt_idx": 8,
+          "status": "miss",
+          "iou": 0.267,
+          "score": 0
+        },
+        {
+          "gt_idx": 9,
+          "status": "miss",
+          "iou": 0.089,
+          "score": 0
+        },
+        {
+          "gt_idx": 10,
+          "status": "miss",
+          "iou": 0.1,
+          "score": 0
+        },
+        {
+          "gt_idx": 11,
+          "status": "miss",
+          "iou": 0.133,
+          "score": 0
+        },
+        {
+          "gt_idx": 12,
+          "status": "miss",
+          "iou": 0.2,
+          "score": 0
+        },
+        {
+          "gt_idx": 13,
+          "status": "miss",
+          "iou": 0.067,
+          "score": 0
+        },
+        {
+          "gt_idx": 14,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 15,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 16,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 17,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 18,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 19,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 20,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 21,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 22,
+          "status": "miss",
+          "iou": 0.1,
+          "score": 0
+        },
+        {
+          "gt_idx": 23,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'escape'; clearly different dominant positions."
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "miss",
+          "iou": 0.167,
+          "score": 0
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.125,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.154,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "judged",
+          "iou": 0.325,
+          "score": 0,
+          "reason": "Predicted 'end_of_match' vs GT 'guard' is completely different."
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.163,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.48,
+          "score": 0,
+          "reason": "Predicted position 'end_of_match' is clearly different from GT 'side_control'."
+        }
+      ]
+    },
+    "exp2_multipass_pass1_fixed": {
+      "file": "pred_exp2_pass1_fixed.json",
+      "system": "exp2_multipass_pass1_fixed",
+      "pred_segments": 241,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.625,
+          "score": 2,
+          "reason": "Dominant position 'standing' matches. Predicted labels are consistent with 'grip"
+        },
+        {
+          "gt_idx": 1,
+          "status": "miss",
+          "iou": 0.119,
+          "score": 0
+        },
+        {
+          "gt_idx": 2,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 3,
+          "status": "miss",
+          "iou": 0.19,
+          "score": 0
+        },
+        {
+          "gt_idx": 4,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Standing vs leg entanglement are clearly different positions."
+        },
+        {
+          "gt_idx": 5,
+          "status": "miss",
+          "iou": 0.114,
+          "score": 0
+        },
+        {
+          "gt_idx": 6,
+          "status": "miss",
+          "iou": 0.2,
+          "score": 0
+        },
+        {
+          "gt_idx": 7,
+          "status": "miss",
+          "iou": 0.089,
+          "score": 0
+        },
+        {
+          "gt_idx": 8,
+          "status": "miss",
+          "iou": 0.267,
+          "score": 0
+        },
+        {
+          "gt_idx": 9,
+          "status": "miss",
+          "iou": 0.089,
+          "score": 0
+        },
+        {
+          "gt_idx": 10,
+          "status": "miss",
+          "iou": 0.1,
+          "score": 0
+        },
+        {
+          "gt_idx": 11,
+          "status": "miss",
+          "iou": 0.133,
+          "score": 0
+        },
+        {
+          "gt_idx": 12,
+          "status": "miss",
+          "iou": 0.2,
+          "score": 0
+        },
+        {
+          "gt_idx": 13,
+          "status": "miss",
+          "iou": 0.067,
+          "score": 0
+        },
+        {
+          "gt_idx": 14,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 15,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 16,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 17,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 18,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 19,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 20,
+          "status": "miss",
+          "iou": 0.075,
+          "score": 0
+        },
+        {
+          "gt_idx": 21,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 22,
+          "status": "miss",
+          "iou": 0.1,
+          "score": 0
+        },
+        {
+          "gt_idx": 23,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'escape'; clearly different dominant positions."
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "miss",
+          "iou": 0.167,
+          "score": 0
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.125,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted RNC, GT was open guard/stack pass. Completely different positions and "
+        },
+        {
+          "gt_idx": 29,
+          "status": "judged",
+          "iou": 0.325,
+          "score": 0,
+          "reason": "Predicted 'end_of_match' vs GT 'guard' is completely different."
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.163,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.48,
+          "score": 0,
+          "reason": "Predicted position 'end_of_match' is clearly different from GT 'side_control'."
+        }
+      ]
+    },
+    "exp2_multipass_pass3_synthesis": {
+      "file": "pred_exp2_pass3_synthesis.json",
+      "system": "exp2_multipass_pass3_synthesis",
+      "pred_segments": 14,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.533,
+          "score": 2,
+          "reason": "Dominant position 'standing' matches. Sub-position 'grip_fighting' is implied."
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.357,
+          "score": 1,
+          "reason": "Position is a near-miss, 'clinch' is a sub-position of 'standing'."
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.566,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'standing/takedown' is a clear mismatch."
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 1,
+          "reason": "Position is a near-miss, but 'passing_guard' is consistent with 'guard'."
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.133,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.778,
+          "score": 0,
+          "reason": "Predicted side_control, but GT is guard. Clearly different positions."
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'sweep' and 'back_control'."
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Predicted 'submission_attempt' is clearly different from GT 'back_control'."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "GT is escape from mount/side control, prediction is scramble. Clearly different."
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'half_guard' when GT is 'mount' is a clear positional mismatch."
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'escape' from 'Mount'; clearly different positions."
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 1.0,
+          "score": 0,
+          "reason": "Predicted 'passing_guard' while GT is 'de_la_riva_guard' (a type of guard)."
+        },
+        {
+          "gt_idx": 12,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 13,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 14,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 15,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 16,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 17,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 18,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 19,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 20,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 21,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 22,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        }
+      ]
+    },
+    "exp3_stage1_cv_cached_timeline": {
+      "file": "pred_exp3_stage1.json",
+      "system": "exp3_stage1_cv_cached_timeline",
+      "pred_segments": 58,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.364,
+          "score": 2,
+          "reason": "Dominant position matches, technique labels are consistent."
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.405,
+          "score": 1,
+          "reason": "Position is correct, but predicted techniques are more specific than GT."
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.434,
+          "score": 1,
+          "reason": "Dominant position 'standing' matches, but GT 'takedown' is more specific than pr"
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.636,
+          "score": 1,
+          "reason": "Position is a near-miss (closed vs open guard), techniques overlap."
+        },
+        {
+          "gt_idx": 4,
+          "status": "judged",
+          "iou": 0.556,
+          "score": 0,
+          "reason": "Positions are completely different: 'standing' vs 'referee_reset'."
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.486,
+          "score": 2,
+          "reason": "Position (guard/open_guard) and de_la_riva are correct."
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'open_guard' is clearly different from GT 'sweep' and 'back_control'."
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.556,
+          "score": 1,
+          "reason": "Dominant position 'back_control' matches, but techniques are different."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 1.0,
+          "score": 0,
+          "reason": "GT is 'escape' from bad positions, PREDICTED is 'mount' (dominant position)."
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.556,
+          "score": 2,
+          "reason": "Dominant position 'mount' matches. Techniques are consistent with mount action."
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.625,
+          "score": 0,
+          "reason": "GT is 'escape' from 'Mount', prediction is 'mount' and 'submission_defense'."
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Predicted mount, GT guard. Clearly different dominant positions."
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Predicted mount is clearly different from GT sweep/scramble."
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'side_control'."
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'escape' and 'open_guard'."
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted mount, GT guard. Clearly different dominant positions."
+        },
+        {
+          "gt_idx": 16,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'sweep'."
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted mount, GT side_control; clearly different positions."
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted mount, GT escape/guard. Clearly different positions."
+        },
+        {
+          "gt_idx": 19,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'standing'. Techniques also diffe"
+        },
+        {
+          "gt_idx": 20,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'guard' and 'de_la_riva_guard'."
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted mount is clearly different from GT sweep/half guard."
+        },
+        {
+          "gt_idx": 22,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted mount, but GT is side_control. Techniques are also unrelated."
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'standing'; clearly different positions."
+        },
+        {
+          "gt_idx": 25,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'guard', which are clearly different positions."
+        },
+        {
+          "gt_idx": 26,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "GT is 'sweep' and 'standing', PREDICTED is 'mount'. Clearly different positions."
+        },
+        {
+          "gt_idx": 27,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'back_control'."
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly wrong; GT is 'guard'. Techniques are also unrelated"
+        },
+        {
+          "gt_idx": 30,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'sweep' and 'side_control'."
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.686,
+          "score": 0,
+          "reason": "Predicted position 'referee_standup' is clearly different from GT 'side_control'"
+        }
+      ]
+    },
+    "exp3_stage1_v33_compressed": {
+      "file": "pred_exp3_stage1_v33_compressed.json",
+      "system": "exp3_stage1_v33_compressed",
+      "pred_segments": 24,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 2,
+          "reason": "Dominant position 'standing' matches. Techniques 'grip_fighting' and 'collar_tie"
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'open_guard' is clearly different from GT 'standing' and 'clinch'."
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.377,
+          "score": 0,
+          "reason": "Predicted 'open_guard' when GT was 'standing/takedown'; clearly different positi"
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.708,
+          "score": 0,
+          "reason": "Position is completely different (guard vs back_control); techniques do not corr"
+        },
+        {
+          "gt_idx": 4,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 0,
+          "reason": "Predicted position 'open_guard' is wrong; GT is 'standing'. Techniques are also "
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.571,
+          "score": 1,
+          "reason": "Open guard is a family of guard, but x-guard is not de la riva."
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 0,
+          "reason": "GT is 'sweep' with various techniques, PREDICTED is 'mount' and 'side_control'. "
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.444,
+          "score": 0,
+          "reason": "Predicted mount is clearly different from GT back_control; techniques also diffe"
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "GT is 'escape' from bad position, PREDICTED is 'mount' (dominant position)."
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.444,
+          "score": 1,
+          "reason": "Dominant position 'mount' is correct, but predicted techniques are missing from "
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'escape'; clearly different dominant positions."
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Predicted 'half_guard' is clearly different from GT 'de_la_riva_guard' and 'guar"
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 0,
+          "reason": "Position 'sweep' vs 'half_guard' is clearly different; techniques do not corresp"
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.444,
+          "score": 0,
+          "reason": "Predicted 'half_guard' when GT is 'side_control'; these are distinct positions."
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 1,
+          "reason": "Position is a near-miss (escape vs half_guard), but actions (guard retention) ov"
+        },
+        {
+          "gt_idx": 15,
+          "status": "miss",
+          "iou": 0.2,
+          "score": 0
+        },
+        {
+          "gt_idx": 16,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 17,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 18,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 19,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 20,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 21,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 22,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        }
+      ]
+    },
+    "exp3_stage1_v33_pass1": {
+      "file": "pred_exp3_stage1_v33_pass1.json",
+      "system": "exp3_stage1_v33_pass1",
+      "pred_segments": 49,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 2,
+          "reason": "Dominant position 'standing' matches; 'grip_fighting' is consistent."
+        },
+        {
+          "gt_idx": 1,
+          "status": "miss",
+          "iou": 0.286,
+          "score": 0
+        },
+        {
+          "gt_idx": 2,
+          "status": "miss",
+          "iou": 0.113,
+          "score": 0
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.476,
+          "score": 1,
+          "reason": "Position is a near-miss (closed vs open guard), techniques are related."
+        },
+        {
+          "gt_idx": 4,
+          "status": "judged",
+          "iou": 0.833,
+          "score": 0,
+          "reason": "GT is standing, prediction is open_guard. Clearly different positions."
+        },
+        {
+          "gt_idx": 5,
+          "status": "miss",
+          "iou": 0.286,
+          "score": 0
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'open_guard' is clearly different from GT 'sweep' and 'back_control'."
+        },
+        {
+          "gt_idx": 7,
+          "status": "miss",
+          "iou": 0.222,
+          "score": 0
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Positions are completely different: 'escape' vs 'open_guard'. Techniques also do"
+        },
+        {
+          "gt_idx": 9,
+          "status": "miss",
+          "iou": 0.222,
+          "score": 0
+        },
+        {
+          "gt_idx": 10,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 1,
+          "reason": "Position is correct (guard/open_guard), but GT techniques are not in prediction."
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 1,
+          "reason": "Position is a near-miss (sweep vs open_guard), but some labels overlap."
+        },
+        {
+          "gt_idx": 13,
+          "status": "miss",
+          "iou": 0.222,
+          "score": 0
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 1,
+          "reason": "Position 'open_guard' is correct, but 'escape' and 'scramble' are missed."
+        },
+        {
+          "gt_idx": 15,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 16,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 17,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 18,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 19,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 20,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 21,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 22,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        }
+      ]
+    },
+    "exp3_stage3_merged_timeline": {
+      "file": "pred_exp3_stage3_v33.json",
+      "system": "exp3_stage3_merged_timeline",
+      "pred_segments": 48,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 2,
+          "reason": "Dominant position 'standing' matches; 'grip_fighting' is consistent."
+        },
+        {
+          "gt_idx": 1,
+          "status": "miss",
+          "iou": 0.286,
+          "score": 0
+        },
+        {
+          "gt_idx": 2,
+          "status": "miss",
+          "iou": 0.208,
+          "score": 0
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.476,
+          "score": 1,
+          "reason": "Position is a near-miss (closed vs open guard), techniques are plausible."
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "miss",
+          "iou": 0.286,
+          "score": 0
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'open_guard' is clearly different from GT 'sweep' and 'back_control'."
+        },
+        {
+          "gt_idx": 7,
+          "status": "miss",
+          "iou": 0.222,
+          "score": 0
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Positions are completely different: 'escape' vs 'open_guard'. Techniques also do"
+        },
+        {
+          "gt_idx": 9,
+          "status": "miss",
+          "iou": 0.222,
+          "score": 0
+        },
+        {
+          "gt_idx": 10,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 1,
+          "reason": "Position is correct (guard/open_guard), but GT techniques are off-base."
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 1,
+          "reason": "GT 'sweep' and PREDICTED 'open_guard' are related, and some labels overlap."
+        },
+        {
+          "gt_idx": 13,
+          "status": "miss",
+          "iou": 0.244,
+          "score": 0
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 1,
+          "reason": "Position 'open_guard' is correct, but 'escape' and 'scramble' are missed."
+        },
+        {
+          "gt_idx": 15,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 16,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 17,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 18,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 19,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 20,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 21,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 22,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        }
+      ]
+    },
+    "exp4_combined_stage1_stage2": {
+      "file": "pred_exp4_combined.json",
+      "system": "exp4_combined_stage1_stage2",
+      "pred_segments": 69,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.875,
+          "score": 1,
+          "reason": "Position is correct, but predicted labels are not relevant to the action."
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.953,
+          "score": 1,
+          "reason": "Dominant position (standing) is correct, but sub-position (clinch) is missed."
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.528,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'standing/takedown' is a clear mismatch."
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.708,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'guard'."
+        },
+        {
+          "gt_idx": 4,
+          "status": "judged",
+          "iou": 0.833,
+          "score": 0,
+          "reason": "Predicted 'side_control' when GT is 'standing'; clearly different positions."
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.429,
+          "score": 1,
+          "reason": "Position is correct, but predicted techniques are too generic compared to GT."
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 0,
+          "reason": "GT is 'sweep', PREDICTED is 'back_control'. These are distinct positions."
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.489,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'back_control'."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'guard' is clearly different from GT 'escape' and 'mount'/'side contro"
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'mount'. "
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'scramble' are related concepts, 'mount_escape' is con"
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'scramble' is clearly different from GT 'guard' and 'de_la_riva_guard'"
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.533,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'sweep' and associated techniques"
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'scramble' when GT was 'side_control'; techniques also differ."
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'escape' and 'open_guard'."
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'guard' and 'de_la_riva_guard'."
+        },
+        {
+          "gt_idx": 16,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'guard' is clearly different from GT 'sweep'. Techniques also differ."
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "GT is side_control, predicted is back_control. These are clearly different posit"
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted mount, GT escape/guard; clearly different positions."
+        },
+        {
+          "gt_idx": 19,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'scramble' when GT was 'standing'; techniques also do not align."
+        },
+        {
+          "gt_idx": 20,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Dominant positions are completely different: 'guard' vs 'back_control'."
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 1,
+          "reason": "GT is 'sweep', PREDICTED is 'guard'. Both involve guard, but 'sweep' is more spe"
+        },
+        {
+          "gt_idx": 22,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'side_control' is a clear position mismatch."
+        },
+        {
+          "gt_idx": 23,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'scramble' are related; 'mount_escape' is consistent."
+        },
+        {
+          "gt_idx": 24,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'standing' is a clear mismatch."
+        },
+        {
+          "gt_idx": 25,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'guard' and 'de_la_riva_gu"
+        },
+        {
+          "gt_idx": 26,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "GT is 'sweep' and 'standing', PREDICTED is 'mount'. Clearly different positions."
+        },
+        {
+          "gt_idx": 27,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'back_control' is a clear mismatch."
+        },
+        {
+          "gt_idx": 28,
+          "status": "judged",
+          "iou": 1.0,
+          "score": 0,
+          "reason": "Positions 'escape' and 'back_control' are clearly different; techniques do not c"
+        },
+        {
+          "gt_idx": 29,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 30,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'scramble' is clearly different from GT 'sweep' and 'side control'."
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.549,
+          "score": 0,
+          "reason": "Predicted post-match, but GT was side control with an armbar attempt."
+        }
+      ]
+    },
+    "exp4_v1_skeleton_run1": {
+      "file": "pred_exp4_v1_run1.json",
+      "system": "exp4_v1_skeleton_run1",
+      "pred_segments": 69,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.875,
+          "score": 1,
+          "reason": "Position is correct, but predicted labels are irrelevant to the action."
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.953,
+          "score": 1,
+          "reason": "Dominant position (standing) is correct, but sub-position (clinch) is missed."
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.528,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'standing/takedown' is a clear mismatch."
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.708,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'guard'."
+        },
+        {
+          "gt_idx": 4,
+          "status": "judged",
+          "iou": 0.833,
+          "score": 0,
+          "reason": "Predicted 'side_control' when GT is 'standing'; clearly different positions."
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.429,
+          "score": 1,
+          "reason": "Position is correct, but predicted techniques are too generic compared to GT."
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 0,
+          "reason": "GT is 'sweep', PREDICTED is 'back_control'. These are distinct positions."
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.489,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'back_control'."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'guard' is clearly different from GT 'escape' and 'mount'/'side contro"
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'mount'. Techniques are al"
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'scramble' are related concepts, 'mount_escape' is con"
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "GT is guard, predicted is scramble. Positions are clearly different."
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.533,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'sweep' and associated techniques"
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'scramble' when GT was 'side_control'; techniques also differ."
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'escape' and 'open_guard'."
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'guard' and 'de_la_riva_guard'."
+        },
+        {
+          "gt_idx": 16,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'guard' is clearly different from GT 'sweep'. Techniques also differ."
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "GT is side_control, predicted is back_control; these are clearly different posit"
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted mount, GT escape; clearly different positions."
+        },
+        {
+          "gt_idx": 19,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'scramble' when GT was 'standing'; techniques also do not align."
+        },
+        {
+          "gt_idx": 20,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Dominant positions are completely different: 'guard' vs 'back_control'."
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 1,
+          "reason": "GT is 'sweep', PREDICTED is 'guard'. Both involve guard, but 'sweep' is more spe"
+        },
+        {
+          "gt_idx": 22,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'side_control' is a clear position mismatch."
+        },
+        {
+          "gt_idx": 23,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'scramble' are related; 'mount_escape' is consistent."
+        },
+        {
+          "gt_idx": 24,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'standing' is a clear mismatch."
+        },
+        {
+          "gt_idx": 25,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'guard' and 'de_la_riva_gu"
+        },
+        {
+          "gt_idx": 26,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "GT is 'sweep' and 'standing', PREDICTED is 'mount'. Clearly different positions."
+        },
+        {
+          "gt_idx": 27,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'back_control' is a clear mismatch."
+        },
+        {
+          "gt_idx": 28,
+          "status": "judged",
+          "iou": 1.0,
+          "score": 0,
+          "reason": "Positions 'escape' and 'back_control' are clearly different; techniques do not c"
+        },
+        {
+          "gt_idx": 29,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 30,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'scramble' is clearly different from GT 'sweep' and 'side control'."
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.549,
+          "score": 0,
+          "reason": "Predicted post-match, but GT was side control with an armbar attempt."
+        }
+      ]
+    },
+    "exp4_v1_skeleton_run2": {
+      "file": "pred_exp4_v1_run2.json",
+      "system": "exp4_v1_skeleton_run2",
+      "pred_segments": 157,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.875,
+          "score": 2,
+          "reason": "Dominant position 'standing' matches. Predicted labels are consistent with 'grip"
+        },
+        {
+          "gt_idx": 1,
+          "status": "miss",
+          "iou": 0.262,
+          "score": 0
+        },
+        {
+          "gt_idx": 2,
+          "status": "miss",
+          "iou": 0.151,
+          "score": 0
+        },
+        {
+          "gt_idx": 3,
+          "status": "miss",
+          "iou": 0.286,
+          "score": 0
+        },
+        {
+          "gt_idx": 4,
+          "status": "judged",
+          "iou": 1.0,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'standing' is a clear mismatch."
+        },
+        {
+          "gt_idx": 5,
+          "status": "miss",
+          "iou": 0.229,
+          "score": 0
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'sweep' and 'back_control'."
+        },
+        {
+          "gt_idx": 7,
+          "status": "miss",
+          "iou": 0.133,
+          "score": 0
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'escape' and 'side_control'; clearly different posi"
+        },
+        {
+          "gt_idx": 9,
+          "status": "miss",
+          "iou": 0.133,
+          "score": 0
+        },
+        {
+          "gt_idx": 10,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 11,
+          "status": "miss",
+          "iou": 0.2,
+          "score": 0
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 1,
+          "reason": "Position is related (open_guard vs sweep), and sweep attempt aligns with GT's sw"
+        },
+        {
+          "gt_idx": 13,
+          "status": "miss",
+          "iou": 0.133,
+          "score": 0
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'escape' and 'open_guard'."
+        },
+        {
+          "gt_idx": 15,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 16,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted 'half_guard' and 'escape' when GT was 'sweep' from 'de_la_riva'."
+        },
+        {
+          "gt_idx": 17,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 18,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 19,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted 'side_control' when GT was 'standing'; clearly different positions."
+        },
+        {
+          "gt_idx": 20,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted 'open_guard' and 'mount_escape' vs GT 'sweep' and 'stack_pass' are cle"
+        },
+        {
+          "gt_idx": 22,
+          "status": "miss",
+          "iou": 0.12,
+          "score": 0
+        },
+        {
+          "gt_idx": 23,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 0,
+          "reason": "GT is 'escape' from 'Mount', PREDICTED is 'open_guard' and 'guard_recovery'. Cle"
+        },
+        {
+          "gt_idx": 24,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted 'open_guard' while GT is 'standing'; clearly different positions."
+        },
+        {
+          "gt_idx": 25,
+          "status": "miss",
+          "iou": 0.2,
+          "score": 0
+        },
+        {
+          "gt_idx": 26,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "GT is 'sweep' and 'standing', PREDICTED is 'mount'. Clearly different positions."
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 0,
+          "reason": "Predicted 'side_control' is clearly different from GT 'escape' and 'open_guard'."
+        },
+        {
+          "gt_idx": 29,
+          "status": "miss",
+          "iou": 0.15,
+          "score": 0
+        },
+        {
+          "gt_idx": 30,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted mount, GT sweep/side control. Clearly different dominant positions."
+        },
+        {
+          "gt_idx": 31,
+          "status": "miss",
+          "iou": 0.102,
+          "score": 0
+        }
+      ]
+    },
+    "exp4_v1_skeleton_run3": {
+      "file": "pred_exp4_v1_run3.json",
+      "system": "exp4_v1_skeleton_run3",
+      "pred_segments": 25,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.875,
+          "score": 1,
+          "reason": "Dominant position (standing) is correct, but sub-position and labels differ."
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.506,
+          "score": 2,
+          "reason": "Dominant position is correct; technique labels are consistent and overlapping."
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.417,
+          "score": 1,
+          "reason": "Position is correct, but GT indicates takedown, which is missing from prediction"
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.952,
+          "score": 0,
+          "reason": "Predicted 'scramble' when GT was 'guard'; techniques also do not align."
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.109,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.636,
+          "score": 2,
+          "reason": "Dominant position 'guard' matches. 'de_la_riva' technique matches."
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.304,
+          "score": 1,
+          "reason": "GT 'sweep' and PREDICTED 'back_control' are related, and 'sweep_to_back_take' ov"
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.844,
+          "score": 1,
+          "reason": "Dominant position 'back_control' matches, but techniques are different."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.306,
+          "score": 0,
+          "reason": "GT is 'escape' from 'Mount'/'Side Control', PREDICTED is 'mount' control."
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.469,
+          "score": 2,
+          "reason": "Dominant position 'mount' matches. Predicted techniques are consistent with moun"
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.327,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'scramble' are related; 'mount_escape' is consistent."
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.566,
+          "score": 0,
+          "reason": "Predicted 'standing' vs GT 'guard' is a clear mismatch; techniques also differ."
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.467,
+          "score": 0,
+          "reason": "Position 'sweep' vs 'half_guard' are clearly different; techniques do not corres"
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.441,
+          "score": 0,
+          "reason": "Predicted 'guard' is clearly different from GT 'side_control'. Techniques also d"
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.377,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'guard' are different, but 'scramble' and 'leg_entangl"
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.617,
+          "score": 0,
+          "reason": "Predicted 'standing' vs GT 'guard' is a clear mismatch. Techniques are also diff"
+        },
+        {
+          "gt_idx": 16,
+          "status": "judged",
+          "iou": 0.351,
+          "score": 0,
+          "reason": "Predicted 'standing' and 'takedown' when GT is 'sweep' and 'de_la_riva'."
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.65,
+          "score": 0,
+          "reason": "GT is side_control, PREDICTED is scramble. These are clearly different positions"
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.611,
+          "score": 0,
+          "reason": "Predicted 'side_control' is clearly different from GT 'escape' and 'de_la_riva'."
+        },
+        {
+          "gt_idx": 19,
+          "status": "judged",
+          "iou": 0.588,
+          "score": 0,
+          "reason": "Positions are clearly different (standing vs scramble); techniques do not corres"
+        },
+        {
+          "gt_idx": 20,
+          "status": "judged",
+          "iou": 0.471,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'guard' and 'de_la_riva_guard'."
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.317,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'sweep' and 'half_guard'."
+        },
+        {
+          "gt_idx": 22,
+          "status": "judged",
+          "iou": 0.615,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'side_control'; techniques"
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.182,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.231,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'half_guard' and 'passing' when GT was 'guard' and 'Mount' (position o"
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.231,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'back_control' is a clear mismatch."
+        },
+        {
+          "gt_idx": 28,
+          "status": "judged",
+          "iou": 0.312,
+          "score": 0,
+          "reason": "GT 'escape'/'open_guard' vs PREDICTED 'scramble' are distinct positions."
+        },
+        {
+          "gt_idx": 29,
+          "status": "judged",
+          "iou": 0.44,
+          "score": 0,
+          "reason": "Predicted 'scramble' is clearly different from GT 'guard' and techniques don't m"
+        },
+        {
+          "gt_idx": 30,
+          "status": "judged",
+          "iou": 0.526,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'sweep' and 'side control'. Techn"
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.696,
+          "score": 0,
+          "reason": "Predicted 'post-match' vs GT 'side_control' is a clear mismatch."
+        }
+      ]
+    },
+    "exp4_v2_skeleton_run1": {
+      "file": "pred_exp4_v2_run1.json",
+      "system": "exp4_v2_skeleton_run1",
+      "pred_segments": 24,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "miss",
+          "iou": 0.089,
+          "score": 0
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.467,
+          "score": 1,
+          "reason": "Dominant position 'standing' is correct, but techniques are different."
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.388,
+          "score": 1,
+          "reason": "Position is correct, but predicted techniques are too generic for a takedown."
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Predicted 'scramble' when GT was 'guard'; techniques also do not align."
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.125,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.729,
+          "score": 1,
+          "reason": "Position correct, but predicted techniques include passing, which contradicts GT"
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.652,
+          "score": 1,
+          "reason": "Position is a near-miss (sweep vs back_control), but techniques overlap (scrambl"
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.8,
+          "score": 1,
+          "reason": "Position is correct, but techniques are mostly different, though some overlap."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.619,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'escape' and 'side control'; techniques also differ"
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.918,
+          "score": 2,
+          "reason": "Dominant position 'mount' matches. Techniques are consistent with mount control."
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'scramble' are related concepts in this context."
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.411,
+          "score": 1,
+          "reason": "Dominant position 'guard' matches, but techniques are different."
+        },
+        {
+          "gt_idx": 12,
+          "status": "miss",
+          "iou": 0.205,
+          "score": 0
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.615,
+          "score": 0,
+          "reason": "GT is side_control, predicted is scramble. These are distinct positions."
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'scramble' are related concepts, but techniques differ"
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.7,
+          "score": 0,
+          "reason": "Predicted 'standing' while GT is 'guard' (de_la_riva_guard), a clear mismatch."
+        },
+        {
+          "gt_idx": 16,
+          "status": "judged",
+          "iou": 0.469,
+          "score": 0,
+          "reason": "Predicted back_control/takedown vs GT sweep/de_la_riva are clearly different."
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.425,
+          "score": 0,
+          "reason": "Predicted position 'submission_attack' is clearly different from GT 'side_contro"
+        },
+        {
+          "gt_idx": 18,
+          "status": "miss",
+          "iou": 0.273,
+          "score": 0
+        },
+        {
+          "gt_idx": 19,
+          "status": "miss",
+          "iou": 0.2,
+          "score": 0
+        },
+        {
+          "gt_idx": 20,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'guard' and 'de_la_riva_guard'."
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "GT is 'sweep' from 'half_guard', PREDICTED is 'scramble' and 'mount_escape'. Cle"
+        },
+        {
+          "gt_idx": 22,
+          "status": "judged",
+          "iou": 0.615,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'side_control' - clearly different positions."
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.182,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 0,
+          "reason": "Predicted 'scramble' and techniques; GT 'standing' and 'Mount'. Clearly differen"
+        },
+        {
+          "gt_idx": 25,
+          "status": "judged",
+          "iou": 0.385,
+          "score": 1,
+          "reason": "Dominant position 'guard' matches, but GT technique 'Mount' is a clear mismatch."
+        },
+        {
+          "gt_idx": 26,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'guard' is clearly different from GT 'sweep' and 'mount'/'standing'."
+        },
+        {
+          "gt_idx": 27,
+          "status": "judged",
+          "iou": 0.325,
+          "score": 1,
+          "reason": "GT is back_control, PREDICTED is back_attack. Close enough, but techniques are o"
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.114,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "judged",
+          "iou": 0.455,
+          "score": 0,
+          "reason": "Position and techniques are completely different. GT is guard, prediction is sub"
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.227,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "miss",
+          "iou": 0.043,
+          "score": 0
+        }
+      ]
+    },
+    "exp4_v2_skeleton_run2": {
+      "file": "pred_exp4_v2_run2.json",
+      "system": "exp4_v2_skeleton_run2",
+      "pred_segments": 22,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "miss",
+          "iou": 0.085,
+          "score": 0
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.447,
+          "score": 1,
+          "reason": "Position is correct, but predicted techniques are too general/different from GT."
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.427,
+          "score": 1,
+          "reason": "Position is correct, but predicted techniques are setups, not the takedown itsel"
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.76,
+          "score": 1,
+          "reason": "Position is correct, but predicted techniques are different from GT."
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.16,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.565,
+          "score": 1,
+          "reason": "Position is correct, but predicted techniques are mixed (passing vs retention)."
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.323,
+          "score": 0,
+          "reason": "GT is 'sweep' and 'back_control', PREDICTED is 'guard'. Clearly different positi"
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 0,
+          "reason": "GT is back_control, prediction is scramble. Clearly different positions."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "GT is 'escape' from 'Mount'/'Side Control', PREDICTED is 'mount' entry."
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 2,
+          "reason": "Dominant position 'mount' matches. Techniques are consistent with mount control."
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.353,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'escape' - clearly different dominant positions."
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.652,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'guard'; clearly different positions."
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 1,
+          "reason": "GT 'sweep' and PREDICTED 'scramble' are related actions, both involve dynamic mo"
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.778,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'side_control'; clearly different positions."
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.606,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'scramble' are related; some label overlap."
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.336,
+          "score": 0,
+          "reason": "Predicted 'scramble' and leg entanglements; GT is 'de_la_riva_guard' and open gu"
+        },
+        {
+          "gt_idx": 16,
+          "status": "miss",
+          "iou": 0.187,
+          "score": 0
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.374,
+          "score": 1,
+          "reason": "GT 'side_control' vs PREDICTED 'scramble' is a near miss, but 'scramble' is pres"
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.462,
+          "score": 0,
+          "reason": "Predicted 'guard' and passing techniques; GT 'escape' and guard type."
+        },
+        {
+          "gt_idx": 19,
+          "status": "judged",
+          "iou": 0.364,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'standing'; techniques also do not align."
+        },
+        {
+          "gt_idx": 20,
+          "status": "judged",
+          "iou": 0.538,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'guard' and 'de_la_riva_guard'."
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted mount, but GT is sweep/half guard. Clearly different positions."
+        },
+        {
+          "gt_idx": 22,
+          "status": "judged",
+          "iou": 0.692,
+          "score": 0,
+          "reason": "Predicted 'mount' but GT is 'side_control'; clearly different dominant positions"
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.167,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.167,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "judged",
+          "iou": 0.353,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'guard' - clearly different positions."
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.235,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.222,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "judged",
+          "iou": 0.417,
+          "score": 1,
+          "reason": "Position 'guard' matches, but techniques are completely different."
+        },
+        {
+          "gt_idx": 30,
+          "status": "judged",
+          "iou": 0.571,
+          "score": 0,
+          "reason": "Predicted 'guard' and submission chain; GT 'sweep' to side control and kesa gata"
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.686,
+          "score": 0,
+          "reason": "Position 'post_match' is clearly different from 'side_control'. Techniques also "
+        }
+      ]
+    },
+    "exp4_v3_skeleton_run1": {
+      "file": "pred_exp4_v3_run1.json",
+      "system": "exp4_v3_skeleton_run1",
+      "pred_segments": 15,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "miss",
+          "iou": 0.089,
+          "score": 0
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.467,
+          "score": 1,
+          "reason": "Position is correct, but predicted techniques are too generic for clinch/grip fi"
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.388,
+          "score": 1,
+          "reason": "Position is correct, but predicted labels miss the 'takedown' action."
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.304,
+          "score": 2,
+          "reason": "Dominant position 'guard' matches. Techniques are consistent and overlapping."
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.087,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.507,
+          "score": 2,
+          "reason": "Dominant position 'guard' matches. Techniques 'de_la_riva' and 'de_la_riva_hooks"
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.481,
+          "score": 1,
+          "reason": "GT is sweep, predicted is back_control. Some overlap in techniques."
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.603,
+          "score": 0,
+          "reason": "Predicted 'side_control' when GT was 'back_control'; techniques also differ."
+        },
+        {
+          "gt_idx": 8,
+          "status": "miss",
+          "iou": 0.268,
+          "score": 0
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.35,
+          "score": 2,
+          "reason": "Dominant position 'mount' matches. Predicted techniques are consistent with moun"
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.342,
+          "score": 0,
+          "reason": "Predicted 'mount' when GT is 'escape'; clearly different positions."
+        },
+        {
+          "gt_idx": 11,
+          "status": "miss",
+          "iou": 0.256,
+          "score": 0
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 1,
+          "reason": "GT 'sweep' and PREDICTED 'scramble' are related, and both have 'scramble' labels"
+        },
+        {
+          "gt_idx": 13,
+          "status": "miss",
+          "iou": 0.29,
+          "score": 0
+        },
+        {
+          "gt_idx": 14,
+          "status": "miss",
+          "iou": 0.129,
+          "score": 0
+        },
+        {
+          "gt_idx": 15,
+          "status": "miss",
+          "iou": 0.258,
+          "score": 0
+        },
+        {
+          "gt_idx": 16,
+          "status": "miss",
+          "iou": 0.129,
+          "score": 0
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 1,
+          "reason": "GT is side control, prediction is scramble. Both mention scramble, so partially "
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.429,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'escape' and 'de_la_riva' guard."
+        },
+        {
+          "gt_idx": 19,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly wrong; GT is 'standing' with specific guard/pass."
+        },
+        {
+          "gt_idx": 20,
+          "status": "miss",
+          "iou": 0.161,
+          "score": 0
+        },
+        {
+          "gt_idx": 21,
+          "status": "miss",
+          "iou": 0.114,
+          "score": 0
+        },
+        {
+          "gt_idx": 22,
+          "status": "miss",
+          "iou": 0.284,
+          "score": 0
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.057,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.114,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "miss",
+          "iou": 0.17,
+          "score": 0
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.1,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "judged",
+          "iou": 0.455,
+          "score": 0,
+          "reason": "Predicted 'scramble' and 'escape' when GT is 'back_control' and 'armbar'. Clearl"
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.11,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "judged",
+          "iou": 0.44,
+          "score": 1,
+          "reason": "Position is correct, but techniques are completely different."
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.22,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.686,
+          "score": 0,
+          "reason": "Position is completely different (side_control vs post_match); techniques are un"
+        }
+      ]
+    },
+    "exp4_v3_skeleton_run2": {
+      "file": "pred_exp4_v3_run2.json",
+      "system": "exp4_v3_skeleton_run2",
+      "pred_segments": 25,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Positions 'standing' and 'pre_match' are clearly different."
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.932,
+          "score": 2,
+          "reason": "Dominant position is correct; predicted techniques are consistent with clinch/gr"
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.815,
+          "score": 2,
+          "reason": "Dominant position 'standing' matches. Techniques are consistent with a takedown."
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.905,
+          "score": 0,
+          "reason": "Position is clearly wrong (turtle vs guard); techniques are unrelated."
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.122,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.714,
+          "score": 2,
+          "reason": "Dominant position 'guard' matches. Technique labels are consistent and overlappi"
+        },
+        {
+          "gt_idx": 6,
+          "status": "miss",
+          "iou": 0.277,
+          "score": 0
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.466,
+          "score": 2,
+          "reason": "Dominant position 'back_control' matches. Techniques are consistent/overlapping."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.455,
+          "score": 0,
+          "reason": "Positions are completely different: 'escape' vs 'back_control'."
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.911,
+          "score": 2,
+          "reason": "Dominant position 'mount' matches. Techniques describe actions within mount."
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.615,
+          "score": 0,
+          "reason": "Predicted 'side_control' when GT is 'escape' from 'Mount'; clearly different."
+        },
+        {
+          "gt_idx": 11,
+          "status": "miss",
+          "iou": 0.284,
+          "score": 0
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.417,
+          "score": 1,
+          "reason": "GT 'sweep' and PREDICTED 'scramble' are related actions, techniques overlap."
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.625,
+          "score": 0,
+          "reason": "GT is side_control, predicted is guard. These are clearly different positions."
+        },
+        {
+          "gt_idx": 14,
+          "status": "miss",
+          "iou": 0.278,
+          "score": 0
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Predicted 'scramble' is clearly different from GT 'guard' and techniques don't m"
+        },
+        {
+          "gt_idx": 16,
+          "status": "miss",
+          "iou": 0.293,
+          "score": 0
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.755,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'side_control'; techniques also do not align."
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.517,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'escape' and 'de_la_riva'."
+        },
+        {
+          "gt_idx": 19,
+          "status": "judged",
+          "iou": 0.36,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'standing'."
+        },
+        {
+          "gt_idx": 20,
+          "status": "judged",
+          "iou": 0.769,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'guard' and 'de_la_riva_guard'."
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'mount' is clearly different from GT 'sweep' and 'half_guard'. Techniq"
+        },
+        {
+          "gt_idx": 22,
+          "status": "judged",
+          "iou": 0.615,
+          "score": 0,
+          "reason": "Predicted 'back_control' when GT is 'side_control' is a clear mismatch."
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.182,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.217,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "judged",
+          "iou": 0.469,
+          "score": 0,
+          "reason": "Predicted 'scramble' and 'escape' when GT was 'guard' and 'mount'. Clearly diffe"
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.292,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "GT is back_control, prediction is scramble; clearly different positions."
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.286,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 1,
+          "reason": "Position is correct, but techniques are different, though some overlap in genera"
+        },
+        {
+          "gt_idx": 30,
+          "status": "judged",
+          "iou": 0.571,
+          "score": 0,
+          "reason": "GT is side control/kesa gatame, PREDICTED is scramble/sweep. Clearly different."
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.686,
+          "score": 0,
+          "reason": "Position 'post_match' is clearly different from 'side_control'. Techniques also "
+        }
+      ]
+    },
+    "hmm_cv_only_baseline": {
+      "file": "pred_hmm_cv_baseline.json",
+      "system": "hmm_cv_only_baseline",
+      "pred_segments": 18,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "miss",
+          "iou": 0.047,
+          "score": 0
+        },
+        {
+          "gt_idx": 1,
+          "status": "miss",
+          "iou": 0.247,
+          "score": 0
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.312,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'standing/takedown' - clearly different positions."
+        },
+        {
+          "gt_idx": 3,
+          "status": "miss",
+          "iou": 0.124,
+          "score": 0
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.035,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "miss",
+          "iou": 0.206,
+          "score": 0
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'escape' is clearly different from GT 'sweep' and 'back_control'."
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.444,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'back_control' - clearly different positions."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 1,
+          "reason": "Position 'escape' matches, but all specific labels are missing."
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.444,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'mount' is a clear mismatch."
+        },
+        {
+          "gt_idx": 10,
+          "status": "judged",
+          "iou": 0.421,
+          "score": 1,
+          "reason": "Position 'escape' matches, but GT also specifies 'Mount' which is missing."
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.316,
+          "score": 0,
+          "reason": "Predicted 'escape' is clearly different from GT 'guard' and 'de_la_riva_guard'."
+        },
+        {
+          "gt_idx": 12,
+          "status": "miss",
+          "iou": 0.158,
+          "score": 0
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.368,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'side_control' -- clearly different positions."
+        },
+        {
+          "gt_idx": 14,
+          "status": "miss",
+          "iou": 0.235,
+          "score": 0
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.316,
+          "score": 1,
+          "reason": "Dominant position 'guard' is correct, but specific sub-position and techniques a"
+        },
+        {
+          "gt_idx": 16,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'escape' is clearly different from GT 'sweep' and associated technique"
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.8,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'side_control' - clearly different positions."
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 1,
+          "reason": "Dominant position 'escape' matches, but technique labels are missing."
+        },
+        {
+          "gt_idx": 19,
+          "status": "miss",
+          "iou": 0.133,
+          "score": 0
+        },
+        {
+          "gt_idx": 20,
+          "status": "miss",
+          "iou": 0.267,
+          "score": 0
+        },
+        {
+          "gt_idx": 21,
+          "status": "miss",
+          "iou": 0.133,
+          "score": 0
+        },
+        {
+          "gt_idx": 22,
+          "status": "miss",
+          "iou": 0.29,
+          "score": 0
+        },
+        {
+          "gt_idx": 23,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 1,
+          "reason": "Dominant position 'escape' matches, but 'Mount' technique is missing."
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.267,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 1,
+          "reason": "Dominant position 'guard' is correct, but 'Mount' label is missing."
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.267,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "judged",
+          "iou": 0.625,
+          "score": 2,
+          "reason": "Dominant position 'back_control' matches exactly."
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.069,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "miss",
+          "iou": 0.276,
+          "score": 0
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.138,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.407,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'side_control' is a clear mismatch."
+        }
+      ]
+    },
+    "hmm_cv_only_baseline_raw": {
+      "file": "pred_hmm_cv_baseline_raw.json",
+      "system": "hmm_cv_only_baseline_raw",
+      "pred_segments": 81,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.625,
+          "score": 0,
+          "reason": "Standing vs sweep are clearly different dominant positions."
+        },
+        {
+          "gt_idx": 1,
+          "status": "judged",
+          "iou": 0.357,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'standing/clinch' is a clear mismatch."
+        },
+        {
+          "gt_idx": 2,
+          "status": "judged",
+          "iou": 0.66,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'standing' and 'takedown'; clearly different."
+        },
+        {
+          "gt_idx": 3,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 1,
+          "reason": "Dominant position 'guard' is correct, but all specific labels are missing."
+        },
+        {
+          "gt_idx": 4,
+          "status": "judged",
+          "iou": 0.833,
+          "score": 0,
+          "reason": "Predicted 'guard' but GT is 'standing', a clear mismatch."
+        },
+        {
+          "gt_idx": 5,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 1,
+          "reason": "Dominant position 'guard' is correct, but sub-position and techniques are missin"
+        },
+        {
+          "gt_idx": 6,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'escape' is clearly different from GT 'sweep' and 'back_control'."
+        },
+        {
+          "gt_idx": 7,
+          "status": "judged",
+          "iou": 0.444,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'back_control' - clearly different positions."
+        },
+        {
+          "gt_idx": 8,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 1,
+          "reason": "Dominant position 'escape' matches, but all specific labels are missing."
+        },
+        {
+          "gt_idx": 9,
+          "status": "judged",
+          "iou": 0.444,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'mount' is a clear mismatch."
+        },
+        {
+          "gt_idx": 10,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 11,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 0,
+          "reason": "Predicted 'escape' is clearly different from GT 'guard' and 'de_la_riva_guard'."
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 1,
+          "reason": "Dominant position 'sweep' matches, but all technique labels are missing."
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.556,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'side_control' - clearly different positions."
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 1,
+          "reason": "GT is 'escape' (a type of scramble), PREDICTED is 'guard'. Partially correct."
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.375,
+          "score": 1,
+          "reason": "Dominant position 'guard' is correct, but specific sub-position and techniques a"
+        },
+        {
+          "gt_idx": 16,
+          "status": "judged",
+          "iou": 0.429,
+          "score": 1,
+          "reason": "Sweep is a type of guard action, so partially correct."
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'side_control' is a clear mismatch."
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 1,
+          "reason": "GT 'escape' and PREDICTED 'guard' are related, but techniques are missing."
+        },
+        {
+          "gt_idx": 19,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 20,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 1,
+          "reason": "Dominant position 'guard' is correct, but all technique labels are missing."
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 1,
+          "reason": "GT is 'sweep' (action), PREDICTED is 'guard' (position). Partial overlap."
+        },
+        {
+          "gt_idx": 22,
+          "status": "judged",
+          "iou": 0.4,
+          "score": 0,
+          "reason": "Predicted 'guard' when GT is 'side_control' - clearly different positions."
+        },
+        {
+          "gt_idx": 23,
+          "status": "judged",
+          "iou": 0.333,
+          "score": 1,
+          "reason": "Dominant position 'escape' matches, but 'Mount' technique is missing."
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 1,
+          "reason": "Dominant position 'guard' is correct, but 'de_la_riva_guard' and 'Mount' are mis"
+        },
+        {
+          "gt_idx": 26,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 0,
+          "reason": "Predicted 'guard' is clearly different from GT 'sweep' and 'mount'."
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.25,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.286,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "judged",
+          "iou": 0.5,
+          "score": 1,
+          "reason": "Dominant position 'guard' is correct, but sub-position and techniques are missin"
+        },
+        {
+          "gt_idx": 30,
+          "status": "judged",
+          "iou": 0.75,
+          "score": 0,
+          "reason": "Predicted 'guard' is clearly different from GT 'sweep' and 'side_control'."
+        },
+        {
+          "gt_idx": 31,
+          "status": "judged",
+          "iou": 0.678,
+          "score": 0,
+          "reason": "Predicted 'guard' is clearly different from GT 'side_control'."
+        }
+      ]
+    },
+    "naive_single_pass_holistic": {
+      "file": "pred_naive_pass1.json",
+      "system": "naive_single_pass_holistic",
+      "pred_segments": 26,
+      "segments": [
+        {
+          "gt_idx": 0,
+          "status": "judged",
+          "iou": 0.875,
+          "score": 2,
+          "reason": "Dominant position 'standing' matches. Sub-position 'grip_fighting' is a detail."
+        },
+        {
+          "gt_idx": 1,
+          "status": "miss",
+          "iou": 0.214,
+          "score": 0
+        },
+        {
+          "gt_idx": 2,
+          "status": "miss",
+          "iou": 0.151,
+          "score": 0
+        },
+        {
+          "gt_idx": 3,
+          "status": "miss",
+          "iou": 0.076,
+          "score": 0
+        },
+        {
+          "gt_idx": 4,
+          "status": "miss",
+          "iou": 0.022,
+          "score": 0
+        },
+        {
+          "gt_idx": 5,
+          "status": "miss",
+          "iou": 0.127,
+          "score": 0
+        },
+        {
+          "gt_idx": 6,
+          "status": "miss",
+          "iou": 0.073,
+          "score": 0
+        },
+        {
+          "gt_idx": 7,
+          "status": "miss",
+          "iou": 0.164,
+          "score": 0
+        },
+        {
+          "gt_idx": 8,
+          "status": "miss",
+          "iou": 0.055,
+          "score": 0
+        },
+        {
+          "gt_idx": 9,
+          "status": "miss",
+          "iou": 0.164,
+          "score": 0
+        },
+        {
+          "gt_idx": 10,
+          "status": "miss",
+          "iou": 0.145,
+          "score": 0
+        },
+        {
+          "gt_idx": 11,
+          "status": "miss",
+          "iou": 0.167,
+          "score": 0
+        },
+        {
+          "gt_idx": 12,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Predicted 'back_control' is clearly different from GT 'sweep'."
+        },
+        {
+          "gt_idx": 13,
+          "status": "judged",
+          "iou": 0.667,
+          "score": 0,
+          "reason": "Predicted 'passing_guard' when GT is 'side_control' is a clear mismatch."
+        },
+        {
+          "gt_idx": 14,
+          "status": "judged",
+          "iou": 0.444,
+          "score": 1,
+          "reason": "GT 'escape' and 'scramble' overlaps with PREDICTED 'half_guard' and 'defensive_h"
+        },
+        {
+          "gt_idx": 15,
+          "status": "judged",
+          "iou": 0.417,
+          "score": 0,
+          "reason": "Predicted half_guard is clearly different from GT de_la_riva_guard."
+        },
+        {
+          "gt_idx": 16,
+          "status": "judged",
+          "iou": 0.429,
+          "score": 0,
+          "reason": "Predicted 'passing_guard' is opposite of GT 'sweep' from 'de_la_riva'."
+        },
+        {
+          "gt_idx": 17,
+          "status": "judged",
+          "iou": 0.889,
+          "score": 0,
+          "reason": "Predicted 'half_guard' is clearly different from GT 'side_control'."
+        },
+        {
+          "gt_idx": 18,
+          "status": "judged",
+          "iou": 0.889,
+          "score": 0,
+          "reason": "GT is 'escape' and 'de_la_riva', PREDICTED is 'passing_guard'. Clearly different"
+        },
+        {
+          "gt_idx": 19,
+          "status": "judged",
+          "iou": 0.3,
+          "score": 0,
+          "reason": "Predicted 'half_guard' is clearly different from GT 'standing'."
+        },
+        {
+          "gt_idx": 20,
+          "status": "judged",
+          "iou": 0.545,
+          "score": 1,
+          "reason": "Position is a near-miss (half_guard vs guard/de_la_riva_guard)."
+        },
+        {
+          "gt_idx": 21,
+          "status": "judged",
+          "iou": 0.444,
+          "score": 0,
+          "reason": "GT is sweep, predicted is passing_guard; clearly different positions."
+        },
+        {
+          "gt_idx": 22,
+          "status": "judged",
+          "iou": 0.6,
+          "score": 0,
+          "reason": "Predicted half_guard, but GT is side_control. Clearly different positions."
+        },
+        {
+          "gt_idx": 23,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 24,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 25,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 26,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 27,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 28,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 29,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 30,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        },
+        {
+          "gt_idx": 31,
+          "status": "miss",
+          "iou": 0.0,
+          "score": 0
+        }
+      ]
+    }
+  },
+  "aggregate": {
+    "n_systems_with_strict_baseline": 16,
+    "mean_judge_semantic_0to1": 0.1094,
+    "mean_strict_macro_f1": 0.0722,
+    "mean_strict_to_judge_gap": 0.0372,
+    "median_strict_to_judge_gap": 0.0352,
+    "max_strict_to_judge_gap": 0.0827,
+    "min_strict_to_judge_gap": -0.0326,
+    "n_positive_gap": 15,
+    "spearman_rho_judge_vs_strict_ranking": 0.8706,
+    "total_judged_segments": 325,
+    "total_miss_segments": 251,
+    "total_abstain_segments": 0
+  },
+  "self_consistency": {
+    "task": "LLM judge self-consistency (same segment judged twice)",
+    "judge_model": "gemini-2.5-flash",
+    "judge_config": {
+      "temperature": 0.0,
+      "thinking_budget": 0
+    },
+    "n_segments": 10,
+    "seed": 17,
+    "exact_agreement": 1.0,
+    "within_1_agreement": 1.0,
+    "cohens_kappa": 1.0,
+    "mean_abs_score_diff": 0.0,
+    "usage": {
+      "calls": 20,
+      "prompt_tokens": 9300,
+      "output_tokens": 587,
+      "total_tokens": 9887,
+      "failures": 0,
+      "retries": 0
+    },
+    "approx_cost_usd": 0.00426,
+    "pairs": [
+      {
+        "idx": 0,
+        "system": "exp4_v3_skeleton_run2",
+        "gt_idx": 29,
+        "iou": 0.5,
+        "score_run1": 1,
+        "score_run2": 1,
+        "reason_run1": "Position is correct, but techniques are different, though some overlap in genera",
+        "reason_run2": "Position is correct, but techniques are inconsistent.",
+        "agree_exact": true,
+        "agree_within1": true
+      },
+      {
+        "idx": 1,
+        "system": "exp4_v2_skeleton_run2",
+        "gt_idx": 6,
+        "iou": 0.323,
+        "score_run1": 0,
+        "score_run2": 0,
+        "reason_run1": "GT is 'sweep' and 'back_control', PREDICTED is 'guard'. Clearly different positi",
+        "reason_run2": "GT is 'sweep' and 'back_control', PREDICTED is 'guard'. Clearly different positi",
+        "agree_exact": true,
+        "agree_within1": true
+      },
+      {
+        "idx": 2,
+        "system": "exp4_v1_skeleton_run2",
+        "gt_idx": 28,
+        "iou": 0.6,
+        "score_run1": 0,
+        "score_run2": 0,
+        "reason_run1": "Predicted 'side_control' is clearly different from GT 'escape' and 'open_guard'.",
+        "reason_run2": "Predicted position 'side_control' is clearly different from GT 'escape'.",
+        "agree_exact": true,
+        "agree_within1": true
+      },
+      {
+        "idx": 3,
+        "system": "exp4_v2_skeleton_run1",
+        "gt_idx": 3,
+        "iou": 0.667,
+        "score_run1": 0,
+        "score_run2": 0,
+        "reason_run1": "Predicted 'scramble' when GT was 'guard'; techniques also do not align.",
+        "reason_run2": "Predicted 'scramble' when GT was 'guard'; techniques also do not align.",
+        "agree_exact": true,
+        "agree_within1": true
+      },
+      {
+        "idx": 4,
+        "system": "exp4_v1_skeleton_run2",
+        "gt_idx": 14,
+        "iou": 0.3,
+        "score_run1": 0,
+        "score_run2": 0,
+        "reason_run1": "Predicted 'mount' is clearly different from GT 'escape' and 'open_guard'.",
+        "reason_run2": "Predicted 'mount' is clearly different from GT 'escape' and 'open_guard'.",
+        "agree_exact": true,
+        "agree_within1": true
+      },
+      {
+        "idx": 5,
+        "system": "exp4_combined_stage1_stage2",
+        "gt_idx": 8,
+        "iou": 0.5,
+        "score_run1": 0,
+        "score_run2": 0,
+        "reason_run1": "Predicted 'guard' is clearly different from GT 'escape' and 'mount'/'side contro",
+        "reason_run2": "Positions are clearly different: 'escape' vs 'guard'. Techniques also differ.",
+        "agree_exact": true,
+        "agree_within1": true
+      },
+      {
+        "idx": 6,
+        "system": "hmm_cv_only_baseline",
+        "gt_idx": 11,
+        "iou": 0.316,
+        "score_run1": 0,
+        "score_run2": 0,
+        "reason_run1": "Predicted 'escape' is clearly different from GT 'guard' and 'de_la_riva_guard'.",
+        "reason_run2": "Predicted 'escape' is clearly different from GT 'guard' and 'de_la_riva_guard'.",
+        "agree_exact": true,
+        "agree_within1": true
+      },
+      {
+        "idx": 7,
+        "system": "exp4_v1_skeleton_run1",
+        "gt_idx": 31,
+        "iou": 0.549,
+        "score_run1": 0,
+        "score_run2": 0,
+        "reason_run1": "Predicted 'post_match' is clearly different from GT 'side_control' and technique",
+        "reason_run2": "Predicted post-match, but GT was side control with an armbar attempt.",
+        "agree_exact": true,
+        "agree_within1": true
+      },
+      {
+        "idx": 8,
+        "system": "exp3_stage1_v33_compressed",
+        "gt_idx": 5,
+        "iou": 0.571,
+        "score_run1": 1,
+        "score_run2": 1,
+        "reason_run1": "Position is 'guard' family, but sub-positions and techniques differ.",
+        "reason_run2": "Position is 'guard' family, but sub-positions and techniques differ.",
+        "agree_exact": true,
+        "agree_within1": true
+      },
+      {
+        "idx": 9,
+        "system": "exp2_multipass_pass3_synthesis",
+        "gt_idx": 3,
+        "iou": 0.5,
+        "score_run1": 1,
+        "score_run2": 1,
+        "reason_run1": "Position is a near-miss, 'passing_guard' implies guard, but GT is 'guard'.",
+        "reason_run2": "Position is a near-miss, but 'passing_guard' is consistent with 'guard'.",
+        "agree_exact": true,
+        "agree_within1": true
+      }
+    ]
+  }
+}

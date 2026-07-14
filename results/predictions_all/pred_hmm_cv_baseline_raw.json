@@ -1,0 +1,498 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "hmm_cv_only_baseline_raw",
+  "provenance": "CV-only Gaussian-HMM macro-position decoder over Exp4 stage0 CV anchor features (mb_v0_0001, 194 checkpoints @5s); K=6 states selected by AIC; Viterbi-decoded; state->position by oracle majority-overlap mapping; no VLM, no network, in-sample. T3 labels intentionally empty (CV decoder emits no technique labels). [raw Viterbi]",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 5.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 5.0,
+      "end_sec": 15.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 15.0,
+      "end_sec": 20.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 20.0,
+      "end_sec": 25.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 25.0,
+      "end_sec": 30.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 30.0,
+      "end_sec": 45.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 45.0,
+      "end_sec": 50.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 50.0,
+      "end_sec": 85.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 85.0,
+      "end_sec": 90.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 90.0,
+      "end_sec": 120.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 120.0,
+      "end_sec": 125.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 125.0,
+      "end_sec": 130.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 130.0,
+      "end_sec": 135.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 135.0,
+      "end_sec": 170.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 170.0,
+      "end_sec": 185.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 185.0,
+      "end_sec": 205.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 205.0,
+      "end_sec": 215.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 215.0,
+      "end_sec": 230.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 230.0,
+      "end_sec": 255.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 255.0,
+      "end_sec": 260.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 260.0,
+      "end_sec": 265.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 265.0,
+      "end_sec": 270.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 270.0,
+      "end_sec": 290.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 290.0,
+      "end_sec": 300.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 300.0,
+      "end_sec": 310.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 310.0,
+      "end_sec": 320.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 320.0,
+      "end_sec": 325.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 325.0,
+      "end_sec": 330.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 330.0,
+      "end_sec": 335.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 335.0,
+      "end_sec": 345.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 345.0,
+      "end_sec": 355.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 355.0,
+      "end_sec": 360.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 360.0,
+      "end_sec": 365.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 365.0,
+      "end_sec": 370.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 370.0,
+      "end_sec": 375.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 375.0,
+      "end_sec": 380.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 380.0,
+      "end_sec": 405.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 405.0,
+      "end_sec": 410.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 410.0,
+      "end_sec": 415.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 415.0,
+      "end_sec": 420.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 420.0,
+      "end_sec": 425.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 425.0,
+      "end_sec": 450.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 450.0,
+      "end_sec": 455.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 455.0,
+      "end_sec": 470.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 470.0,
+      "end_sec": 480.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 480.0,
+      "end_sec": 485.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 485.0,
+      "end_sec": 515.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 515.0,
+      "end_sec": 520.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 520.0,
+      "end_sec": 540.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 540.0,
+      "end_sec": 555.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 555.0,
+      "end_sec": 590.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 590.0,
+      "end_sec": 595.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 595.0,
+      "end_sec": 630.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 630.0,
+      "end_sec": 635.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 635.0,
+      "end_sec": 655.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 655.0,
+      "end_sec": 660.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 660.0,
+      "end_sec": 680.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 680.0,
+      "end_sec": 685.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 685.0,
+      "end_sec": 705.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 705.0,
+      "end_sec": 715.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 715.0,
+      "end_sec": 725.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 725.0,
+      "end_sec": 730.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 730.0,
+      "end_sec": 770.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 770.0,
+      "end_sec": 775.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 775.0,
+      "end_sec": 780.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 780.0,
+      "end_sec": 790.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 790.0,
+      "end_sec": 800.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 800.0,
+      "end_sec": 805.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 805.0,
+      "end_sec": 815.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 815.0,
+      "end_sec": 850.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 850.0,
+      "end_sec": 855.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 855.0,
+      "end_sec": 875.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 875.0,
+      "end_sec": 880.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 880.0,
+      "end_sec": 895.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 895.0,
+      "end_sec": 900.0,
+      "position": "escape",
+      "labels": []
+    },
+    {
+      "start_sec": 900.0,
+      "end_sec": 905.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 905.0,
+      "end_sec": 910.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 910.0,
+      "end_sec": 950.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 950.0,
+      "end_sec": 955.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 955.0,
+      "end_sec": 960.0,
+      "position": "guard",
+      "labels": []
+    },
+    {
+      "start_sec": 960.0,
+      "end_sec": 970.0333333333333,
+      "position": "standing",
+      "labels": []
+    }
+  ],
+  "transitions": [],
+  "scoring": {
+    "events": []
+  }
+}

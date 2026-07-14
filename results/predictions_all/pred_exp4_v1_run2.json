@@ -1,0 +1,1712 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "exp4_v1_skeleton_run2",
+  "provenance": "honest machine output; Exp4 stage1 v1 skeleton, run2; in-sample",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 7.0,
+      "position": "standing",
+      "labels": [
+        "initial_stance",
+        "circling",
+        "distance_management"
+      ]
+    },
+    {
+      "start_sec": 7.0,
+      "end_sec": 15.0,
+      "position": "standing",
+      "labels": [
+        "collar_ties",
+        "hand_fighting",
+        "grip_fighting",
+        "takedown_setup"
+      ]
+    },
+    {
+      "start_sec": 15.0,
+      "end_sec": 22.0,
+      "position": "standing",
+      "labels": [
+        "aggressive_hand_fighting",
+        "feints",
+        "striking_feints",
+        "takedown_setup"
+      ]
+    },
+    {
+      "start_sec": 22.0,
+      "end_sec": 30.0,
+      "position": "standing",
+      "labels": [
+        "snapdown_attempt",
+        "posture_defense",
+        "wrestling_takedown",
+        "head_control"
+      ]
+    },
+    {
+      "start_sec": 30.0,
+      "end_sec": 38.0,
+      "position": "standing",
+      "labels": [
+        "clinch_initiation",
+        "disengagement",
+        "collar_ties",
+        "takedown_defense"
+      ]
+    },
+    {
+      "start_sec": 38.0,
+      "end_sec": 49.0,
+      "position": "standing",
+      "labels": [
+        "double_leg_attempt",
+        "sprawl_defense",
+        "wrestling_takedown"
+      ]
+    },
+    {
+      "start_sec": 49.0,
+      "end_sec": 53.0,
+      "position": "standing",
+      "labels": [
+        "double_overhook_clinch",
+        "takedown_defense",
+        "clinch_control"
+      ]
+    },
+    {
+      "start_sec": 53.0,
+      "end_sec": 61.0,
+      "position": "open_guard",
+      "labels": [
+        "outside_leg_hook",
+        "takedown_to_guard",
+        "takedown_execution",
+        "guard_entry"
+      ]
+    },
+    {
+      "start_sec": 61.0,
+      "end_sec": 69.0,
+      "position": "open_guard",
+      "labels": [
+        "guard_retention",
+        "hip_escapes",
+        "flexible_guard",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 69.0,
+      "end_sec": 76.0,
+      "position": "side_control",
+      "labels": [
+        "guard_break",
+        "guard_pass_to_side",
+        "guard_passing_mechanics",
+        "side_control_entry"
+      ]
+    },
+    {
+      "start_sec": 76.0,
+      "end_sec": 84.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 84.0,
+      "end_sec": 92.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "pressure_game"
+      ]
+    },
+    {
+      "start_sec": 92.0,
+      "end_sec": 100.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_setup"
+      ]
+    },
+    {
+      "start_sec": 100.0,
+      "end_sec": 106.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 106.0,
+      "end_sec": 112.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 112.0,
+      "end_sec": 118.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 118.0,
+      "end_sec": 124.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 124.0,
+      "end_sec": 130.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 130.0,
+      "end_sec": 138.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 138.0,
+      "end_sec": 144.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 144.0,
+      "end_sec": 150.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 150.0,
+      "end_sec": 156.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 156.0,
+      "end_sec": 162.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 162.0,
+      "end_sec": 168.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 168.0,
+      "end_sec": 174.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 174.0,
+      "end_sec": 180.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 180.0,
+      "end_sec": 186.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 186.0,
+      "end_sec": 192.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 192.0,
+      "end_sec": 198.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 198.0,
+      "end_sec": 204.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 204.0,
+      "end_sec": 210.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 210.0,
+      "end_sec": 216.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 216.0,
+      "end_sec": 222.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 222.0,
+      "end_sec": 228.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 228.0,
+      "end_sec": 234.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 234.0,
+      "end_sec": 240.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 240.0,
+      "end_sec": 246.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 246.0,
+      "end_sec": 252.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 252.0,
+      "end_sec": 258.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 258.0,
+      "end_sec": 264.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 264.0,
+      "end_sec": 270.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 270.0,
+      "end_sec": 276.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 276.0,
+      "end_sec": 282.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 282.0,
+      "end_sec": 288.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 288.0,
+      "end_sec": 294.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 294.0,
+      "end_sec": 300.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 300.0,
+      "end_sec": 306.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 306.0,
+      "end_sec": 312.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 312.0,
+      "end_sec": 318.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 318.0,
+      "end_sec": 324.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 324.0,
+      "end_sec": 330.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 330.0,
+      "end_sec": 336.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 336.0,
+      "end_sec": 342.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 342.0,
+      "end_sec": 348.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 348.0,
+      "end_sec": 354.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 354.0,
+      "end_sec": 360.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 360.0,
+      "end_sec": 366.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 366.0,
+      "end_sec": 372.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 372.0,
+      "end_sec": 378.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 378.0,
+      "end_sec": 384.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 384.0,
+      "end_sec": 390.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 390.0,
+      "end_sec": 396.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 396.0,
+      "end_sec": 402.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 402.0,
+      "end_sec": 408.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 408.0,
+      "end_sec": 414.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 414.0,
+      "end_sec": 420.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 420.0,
+      "end_sec": 426.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 426.0,
+      "end_sec": 432.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 432.0,
+      "end_sec": 438.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 438.0,
+      "end_sec": 444.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 444.0,
+      "end_sec": 450.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 450.0,
+      "end_sec": 456.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 456.0,
+      "end_sec": 462.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 462.0,
+      "end_sec": 468.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 468.0,
+      "end_sec": 474.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 474.0,
+      "end_sec": 480.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 480.0,
+      "end_sec": 486.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 486.0,
+      "end_sec": 492.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 492.0,
+      "end_sec": 498.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 498.0,
+      "end_sec": 504.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 504.0,
+      "end_sec": 510.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 510.0,
+      "end_sec": 516.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 516.0,
+      "end_sec": 522.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 522.0,
+      "end_sec": 528.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 528.0,
+      "end_sec": 534.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 534.0,
+      "end_sec": 540.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 540.0,
+      "end_sec": 546.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 546.0,
+      "end_sec": 552.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 552.0,
+      "end_sec": 558.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 558.0,
+      "end_sec": 564.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 564.0,
+      "end_sec": 570.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 570.0,
+      "end_sec": 576.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 576.0,
+      "end_sec": 582.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 582.0,
+      "end_sec": 588.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 588.0,
+      "end_sec": 594.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 594.0,
+      "end_sec": 600.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 600.0,
+      "end_sec": 606.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 606.0,
+      "end_sec": 612.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 612.0,
+      "end_sec": 618.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 618.0,
+      "end_sec": 624.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 624.0,
+      "end_sec": 630.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 630.0,
+      "end_sec": 636.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 636.0,
+      "end_sec": 642.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 642.0,
+      "end_sec": 648.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 648.0,
+      "end_sec": 654.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 654.0,
+      "end_sec": 660.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 660.0,
+      "end_sec": 666.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 666.0,
+      "end_sec": 672.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 672.0,
+      "end_sec": 678.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 678.0,
+      "end_sec": 684.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 684.0,
+      "end_sec": 690.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 690.0,
+      "end_sec": 696.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 696.0,
+      "end_sec": 702.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 702.0,
+      "end_sec": 708.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 708.0,
+      "end_sec": 714.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 714.0,
+      "end_sec": 720.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 720.0,
+      "end_sec": 726.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 726.0,
+      "end_sec": 732.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 732.0,
+      "end_sec": 738.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 738.0,
+      "end_sec": 744.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 744.0,
+      "end_sec": 750.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 750.0,
+      "end_sec": 756.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 756.0,
+      "end_sec": 762.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 762.0,
+      "end_sec": 768.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 768.0,
+      "end_sec": 774.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 774.0,
+      "end_sec": 780.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 780.0,
+      "end_sec": 786.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 786.0,
+      "end_sec": 792.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 792.0,
+      "end_sec": 798.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 798.0,
+      "end_sec": 804.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 804.0,
+      "end_sec": 810.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 810.0,
+      "end_sec": 816.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 816.0,
+      "end_sec": 822.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 822.0,
+      "end_sec": 828.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 828.0,
+      "end_sec": 834.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 834.0,
+      "end_sec": 840.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 840.0,
+      "end_sec": 846.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 846.0,
+      "end_sec": 852.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 852.0,
+      "end_sec": 858.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 858.0,
+      "end_sec": 864.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 864.0,
+      "end_sec": 870.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 870.0,
+      "end_sec": 876.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 876.0,
+      "end_sec": 882.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 882.0,
+      "end_sec": 888.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 888.0,
+      "end_sec": 894.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 894.0,
+      "end_sec": 900.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 900.0,
+      "end_sec": 906.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 906.0,
+      "end_sec": 912.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 912.0,
+      "end_sec": 918.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 918.0,
+      "end_sec": 924.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 924.0,
+      "end_sec": 930.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "mount_control",
+        "submission_hunting"
+      ]
+    },
+    {
+      "start_sec": 930.0,
+      "end_sec": 936.0,
+      "position": "open_guard",
+      "labels": [
+        "mount_escape",
+        "guard_recovery",
+        "mount_escape_mechanics",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 936.0,
+      "end_sec": 942.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "pass_defense",
+        "guard_offense"
+      ]
+    },
+    {
+      "start_sec": 942.0,
+      "end_sec": 948.0,
+      "position": "side_control",
+      "labels": [
+        "open_guard_pass",
+        "side_control_entry",
+        "guard_passing_mechanics",
+        "positional_dominance"
+      ]
+    },
+    {
+      "start_sec": 948.0,
+      "end_sec": 954.0,
+      "position": "half_guard",
+      "labels": [
+        "side_control_escape",
+        "half_guard_recovery",
+        "framing_defense",
+        "guard_recovery"
+      ]
+    },
+    {
+      "start_sec": 954.0,
+      "end_sec": 960.0,
+      "position": "mount",
+      "labels": [
+        "half_guard_pass",
+        "mount_transition",
+        "mount_entry",
+        "relentless_passing"
+      ]
+    },
+    {
+      "start_sec": 960.0,
+      "end_sec": 968.0,
+      "position": "mount",
+      "labels": [
+        "mount_pressure",
+        "arm_isolation_attempt",
+        "time_expires",
+        "mount_control",
+        "submission_hunting",
+        "match_end"
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {}
+}

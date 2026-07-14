@@ -1,0 +1,40 @@
+{
+  "n_boot": 10000,
+  "seed": 20260714,
+  "unit": "gt_segment",
+  "caveat": "within-match resampling only; segments of one match are not independent samples of the domain",
+  "systems": {
+    "grounded_best_vlm_exp4_v2_run2": {
+      "pred_file": "pred_exp4_v2_run2.json",
+      "macro_f1": 0.1888,
+      "ci95": [
+        0.0432,
+        0.2169
+      ]
+    },
+    "grounded_exp4_v3_run2": {
+      "pred_file": "pred_exp4_v3_run2.json",
+      "macro_f1": 0.1361,
+      "ci95": [
+        0.0295,
+        0.1493
+      ]
+    },
+    "ungrounded_naive_single_pass": {
+      "pred_file": "pred_naive_pass1.json",
+      "macro_f1": 0.0152,
+      "ci95": [
+        0.0,
+        0.0208
+      ]
+    }
+  },
+  "grounded_minus_ungrounded_delta": {
+    "point": 0.1737,
+    "ci95": [
+      0.031,
+      0.2092
+    ],
+    "excludes_zero": true
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "exp2_multipass_pass3_synthesis",
+  "provenance": "honest machine output; Exp2 multi-pass, pass3 synthesized timeline; in-sample",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 15.0,
+      "position": "standing",
+      "labels": []
+    },
+    {
+      "start_sec": 15.0,
+      "end_sec": 30.0,
+      "position": "clinch",
+      "labels": []
+    },
+    {
+      "start_sec": 30.0,
+      "end_sec": 45.0,
+      "position": "takedown",
+      "labels": []
+    },
+    {
+      "start_sec": 45.0,
+      "end_sec": 60.0,
+      "position": "scramble",
+      "labels": []
+    },
+    {
+      "start_sec": 60.0,
+      "end_sec": 90.0,
+      "position": "guard",
+      "labels": [
+        "closed_guard"
+      ]
+    },
+    {
+      "start_sec": 90.0,
+      "end_sec": 120.0,
+      "position": "passing_guard",
+      "labels": []
+    },
+    {
+      "start_sec": 120.0,
+      "end_sec": 165.0,
+      "position": "side_control",
+      "labels": []
+    },
+    {
+      "start_sec": 165.0,
+      "end_sec": 195.0,
+      "position": "mount",
+      "labels": []
+    },
+    {
+      "start_sec": 195.0,
+      "end_sec": 225.0,
+      "position": "submission_attempt",
+      "labels": []
+    },
+    {
+      "start_sec": 225.0,
+      "end_sec": 240.0,
+      "position": "scramble",
+      "labels": []
+    },
+    {
+      "start_sec": 240.0,
+      "end_sec": 270.0,
+      "position": "half_guard",
+      "labels": [
+        "deep_half_guard"
+      ]
+    },
+    {
+      "start_sec": 270.0,
+      "end_sec": 300.0,
+      "position": "sweep",
+      "labels": []
+    },
+    {
+      "start_sec": 300.0,
+      "end_sec": 330.0,
+      "position": "guard",
+      "labels": [
+        "spider_guard"
+      ]
+    },
+    {
+      "start_sec": 330.0,
+      "end_sec": 360.0,
+      "position": "passing_guard",
+      "labels": []
+    }
+  ],
+  "transitions": [],
+  "scoring": {}
+}

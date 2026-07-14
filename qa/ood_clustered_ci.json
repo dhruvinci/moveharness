@@ -1,0 +1,27 @@
+{
+  "n_videos": 200,
+  "n_segments": 4640,
+  "B": 5000,
+  "method": "video cluster bootstrap",
+  "exact": {
+    "pct": 46.7,
+    "ci": [
+      42.5,
+      51.4
+    ]
+  },
+  "coarse": {
+    "pct": 59.7,
+    "ci": [
+      56.4,
+      63.4
+    ]
+  },
+  "adjacent": {
+    "pct": 92.9,
+    "ci": [
+      91.9,
+      93.8
+    ]
+  }
+}

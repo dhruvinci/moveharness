@@ -1,0 +1,137 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "iou_threshold": 0.3,
+  "degenerate": false,
+  "T1_position_segments": {
+    "gt_segments": 32,
+    "pred_segments": 25,
+    "matched_segments": 6,
+    "macro_f1": 0.13608815426997245,
+    "mean_matched_iou": 0.7229245105681888,
+    "per_label": {
+      "back_control": {
+        "tp": 1,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.25,
+        "recall": 0.5,
+        "f1": 0.3333333333333333
+      },
+      "escape": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "guard": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 5,
+        "precision": 0.5,
+        "recall": 0.2857142857142857,
+        "f1": 0.36363636363636365
+      },
+      "mount": {
+        "tp": 1,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4
+      },
+      "post_match": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "pre_match": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "scramble": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "side_control": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "standing": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "f1": 0.4
+      },
+      "sweep": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "turtle": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "duration_weighted_macro_f1": 0.1999494422852087,
+    "total_gt_duration_sec": 959.0
+  },
+  "T3_label_f1_oracle_segment": {
+    "aligned_segments": 25,
+    "micro_f1": 0.037037037037037035,
+    "macro_f1": 0.008983451536643027,
+    "micro_tp": 2,
+    "micro_fp": 29,
+    "micro_fn": 75,
+    "unique_labels": 47,
+    "ontology_violation_rate": 0.6075949367088608,
+    "ontology_violations": 48
+  },
+  "T2_transitions": {
+    "task_status": "no_v0_ground_truth",
+    "note": "v0 transition ground-truth layer is empty; not scored."
+  },
+  "scoring_task": {
+    "task_status": "no_v0_ground_truth",
+    "note": "v0 scoring ground-truth layer is empty; not scored."
+  },
+  "T5_coverage": {
+    "duration_sec": 959.0,
+    "covered_sec": 959.0,
+    "coverage_fraction": 1.0,
+    "n_segments": 25,
+    "n_valid_spans": 1,
+    "caveat": "completeness_not_correctness"
+  },
+  "integrity_notes": [
+    "Metric VECTOR, not a single scalar.",
+    "Coverage is COMPLETENESS, not correctness; read it next to T1/T3.",
+    "Empty GT layers report no_v0_ground_truth, never a misleading 0/1."
+  ]
+}

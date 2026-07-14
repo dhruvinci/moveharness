@@ -1,0 +1,35 @@
+{
+  "method": "GT macro_segments filtered to positions inside the pipelines' output vocabulary (drops sweep/escape, 12/32 = 37.5%); same movebench scorer, same stored predictions, IoU 0.3",
+  "dropped": {
+    "escape": 6,
+    "sweep": 6
+  },
+  "systems": {
+    "headline_best_vlm_exp4_v2_run2": {
+      "pred_file": "pred_exp4_v2_run2.json",
+      "full": {
+        "n_gt": 32,
+        "macro_f1": 0.1888,
+        "matched": 6
+      },
+      "matchable": {
+        "n_gt": 20,
+        "macro_f1": 0.2428,
+        "matched": 6
+      }
+    },
+    "exp4_v3_run2": {
+      "pred_file": "pred_exp4_v3_run2.json",
+      "full": {
+        "n_gt": 32,
+        "macro_f1": 0.1361,
+        "matched": 6
+      },
+      "matchable": {
+        "n_gt": 20,
+        "macro_f1": 0.1663,
+        "matched": 6
+      }
+    }
+  }
+}

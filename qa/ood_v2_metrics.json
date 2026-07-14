@@ -1,0 +1,180 @@
+{
+  "n_videos": 200,
+  "n_segments_reviewed": 4620,
+  "n_unreviewed_assumed_correct": 20,
+  "counts": {
+    "accepted": 2148,
+    "rejected": 2472,
+    "unreviewed": 20
+  },
+  "extraction_methods": {
+    "A": 1753,
+    "llm": 699,
+    "B": 20
+  },
+  "n_unparsed_rejections": 0,
+  "strict_pct": 46.7,
+  "semantic_pct": 59.7,
+  "adjacency_pct": 92.9,
+  "strict_ci": [
+    42.5,
+    51.4
+  ],
+  "semantic_ci": [
+    56.4,
+    63.4
+  ],
+  "adjacency_ci": [
+    91.9,
+    93.8
+  ],
+  "reviewed_only": {
+    "strict_pct": 46.5,
+    "semantic_pct": 59.5,
+    "adjacency_pct": 92.8
+  },
+  "semantic_credit_from_rejections": 603,
+  "adjacency_credit_from_rejections": 2141,
+  "top_confusion_pairs": [
+    {
+      "model": "guard",
+      "actual": "half_guard",
+      "n": 407
+    },
+    {
+      "model": "scramble",
+      "actual": "half_guard",
+      "n": 115
+    },
+    {
+      "model": "side_control",
+      "actual": "back",
+      "n": 108
+    },
+    {
+      "model": "idle",
+      "actual": "standing",
+      "n": 88
+    },
+    {
+      "model": "side_control",
+      "actual": "half_guard",
+      "n": 85
+    },
+    {
+      "model": "turtle",
+      "actual": "leg_entanglement",
+      "n": 74
+    },
+    {
+      "model": "guard",
+      "actual": "submission",
+      "n": 70
+    },
+    {
+      "model": "scramble",
+      "actual": "back",
+      "n": 67
+    },
+    {
+      "model": "guard",
+      "actual": "back",
+      "n": 61
+    },
+    {
+      "model": "side_control",
+      "actual": "mount",
+      "n": 61
+    },
+    {
+      "model": "turtle",
+      "actual": "side_control",
+      "n": 58
+    },
+    {
+      "model": "standing",
+      "actual": "guard_pull",
+      "n": 57
+    },
+    {
+      "model": "back",
+      "actual": "guard",
+      "n": 53
+    },
+    {
+      "model": "scramble",
+      "actual": "turtle",
+      "n": 49
+    },
+    {
+      "model": "back",
+      "actual": "half_guard",
+      "n": 47
+    },
+    {
+      "model": "guard",
+      "actual": "mount",
+      "n": 44
+    },
+    {
+      "model": "standing",
+      "actual": "leg_entanglement",
+      "n": 39
+    },
+    {
+      "model": "standing",
+      "actual": "turtle",
+      "n": 38
+    },
+    {
+      "model": "scramble",
+      "actual": "guard",
+      "n": 37
+    },
+    {
+      "model": "turtle",
+      "actual": "half_guard",
+      "n": 36
+    }
+  ],
+  "cluster_confusion_matrix": {
+    "Guard|Idle": 39,
+    "Idle|Idle": 534,
+    "Guard|Back/turtle": 74,
+    "Back/turtle|Back/turtle": 413,
+    "Transition|Guard": 190,
+    "Back/turtle|Guard": 216,
+    "Guard|Guard": 1110,
+    "Top control|Top control": 372,
+    "Guard|Top control": 85,
+    "Transition|Back/turtle": 120,
+    "Idle|Transition": 139,
+    "Idle|Back/turtle": 84,
+    "Transition|Transition": 398,
+    "Back/turtle|Transition": 69,
+    "Idle|Top control": 59,
+    "Top control|Guard": 131,
+    "Back/turtle|Top control": 113,
+    "Transition|Top control": 54,
+    "Idle|Guard": 109,
+    "Guard|Transition": 103,
+    "Top control|Idle": 24,
+    "Top control|Back/turtle": 134,
+    "Transition|Idle": 6,
+    "Back/turtle|Idle": 12,
+    "Idle|?": 1,
+    "Back/turtle|?": 1,
+    "Guard|?": 1,
+    "Top control|Transition": 27,
+    "?|Idle": 1,
+    "?|?": 1
+  },
+  "cluster_order": [
+    "Top control",
+    "Back/turtle",
+    "Guard",
+    "Transition",
+    "Idle"
+  ],
+  "ci_method": "video cluster bootstrap (B=5000); see ood_clustered_ci.py"
+}

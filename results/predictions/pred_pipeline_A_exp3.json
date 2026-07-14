@@ -1,0 +1,518 @@
+{
+  "sample_id": "mb_v0_0001",
+  "ontology_version": "0.1.0",
+  "system": "pipeline_A_single_pass_cv_cached",
+  "provenance": "honest machine output, dev artifact, single anchor match, in-sample",
+  "segments": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 22.0,
+      "position": "standing",
+      "labels": [
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 22.0,
+      "end_sec": 33.0,
+      "position": "standing",
+      "labels": [
+        "takedown_attempt",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 33.0,
+      "end_sec": 50.0,
+      "position": "standing",
+      "labels": [
+        "body_lock",
+        "takedown_attempt"
+      ]
+    },
+    {
+      "start_sec": 50.0,
+      "end_sec": 67.0,
+      "position": "standing",
+      "labels": [
+        "grip_fighting",
+        "position_improvement"
+      ]
+    },
+    {
+      "start_sec": 67.0,
+      "end_sec": 90.0,
+      "position": "standing",
+      "labels": [
+        "body_lock",
+        "throw_attempt",
+        "takedown_completed"
+      ]
+    },
+    {
+      "start_sec": 90.0,
+      "end_sec": 110.0,
+      "position": "open_guard",
+      "labels": [
+        "submission_attempt",
+        "guard_retention",
+        "guard_pass_attempt"
+      ]
+    },
+    {
+      "start_sec": 110.0,
+      "end_sec": 125.0,
+      "position": "open_guard",
+      "labels": [
+        "guard_pass_attempt",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 125.0,
+      "end_sec": 133.0,
+      "position": "referee_reset",
+      "labels": [
+        "referee_reset"
+      ]
+    },
+    {
+      "start_sec": 133.0,
+      "end_sec": 150.0,
+      "position": "open_guard",
+      "labels": [
+        "guard_pass_attempt",
+        "grip_fighting",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 150.0,
+      "end_sec": 165.0,
+      "position": "open_guard",
+      "labels": [
+        "guard_pass_attempt",
+        "guard_retention"
+      ]
+    },
+    {
+      "start_sec": 165.0,
+      "end_sec": 180.0,
+      "position": "open_guard",
+      "labels": [
+        "sweep_attempt",
+        "sweep_defense"
+      ]
+    },
+    {
+      "start_sec": 180.0,
+      "end_sec": 190.0,
+      "position": "back_control",
+      "labels": [
+        "back_take",
+        "position_improvement"
+      ]
+    },
+    {
+      "start_sec": 190.0,
+      "end_sec": 205.0,
+      "position": "back_control",
+      "labels": [
+        "position_maintenance",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 205.0,
+      "end_sec": 230.0,
+      "position": "back_control",
+      "labels": [
+        "position_maintenance",
+        "submission_attempt"
+      ]
+    },
+    {
+      "start_sec": 230.0,
+      "end_sec": 245.0,
+      "position": "mount",
+      "labels": [
+        "mount_achieved",
+        "position_improvement"
+      ]
+    },
+    {
+      "start_sec": 245.0,
+      "end_sec": 270.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "position_improvement",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 270.0,
+      "end_sec": 295.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 295.0,
+      "end_sec": 320.0,
+      "position": "mount",
+      "labels": [
+        "position_improvement",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 320.0,
+      "end_sec": 340.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 340.0,
+      "end_sec": 360.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 360.0,
+      "end_sec": 370.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 370.0,
+      "end_sec": 385.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense",
+        "grip_fighting"
+      ]
+    },
+    {
+      "start_sec": 385.0,
+      "end_sec": 400.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance",
+        "mount_escape"
+      ]
+    },
+    {
+      "start_sec": 400.0,
+      "end_sec": 415.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 415.0,
+      "end_sec": 430.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 430.0,
+      "end_sec": 445.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 445.0,
+      "end_sec": 460.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 460.0,
+      "end_sec": 475.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 475.0,
+      "end_sec": 490.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 490.0,
+      "end_sec": 505.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 505.0,
+      "end_sec": 520.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 520.0,
+      "end_sec": 535.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 535.0,
+      "end_sec": 550.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 550.0,
+      "end_sec": 565.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 565.0,
+      "end_sec": 580.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 580.0,
+      "end_sec": 595.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 595.0,
+      "end_sec": 610.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 610.0,
+      "end_sec": 625.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 625.0,
+      "end_sec": 640.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 640.0,
+      "end_sec": 655.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 655.0,
+      "end_sec": 670.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 670.0,
+      "end_sec": 685.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 685.0,
+      "end_sec": 700.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 700.0,
+      "end_sec": 715.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 715.0,
+      "end_sec": 730.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 730.0,
+      "end_sec": 745.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 745.0,
+      "end_sec": 760.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 760.0,
+      "end_sec": 775.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 775.0,
+      "end_sec": 790.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 790.0,
+      "end_sec": 805.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 805.0,
+      "end_sec": 820.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 820.0,
+      "end_sec": 835.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 835.0,
+      "end_sec": 850.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 850.0,
+      "end_sec": 865.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 865.0,
+      "end_sec": 880.0,
+      "position": "mount",
+      "labels": [
+        "position_maintenance"
+      ]
+    },
+    {
+      "start_sec": 880.0,
+      "end_sec": 895.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 895.0,
+      "end_sec": 911.0,
+      "position": "mount",
+      "labels": [
+        "submission_attempt",
+        "submission_defense"
+      ]
+    },
+    {
+      "start_sec": 911.0,
+      "end_sec": 970.0,
+      "position": "referee_standup",
+      "labels": [
+        "referee_standup",
+        "match_end"
+      ]
+    }
+  ],
+  "transitions": [],
+  "scoring": {}
+}

@@ -1,0 +1,353 @@
+{
+  "title": "MoveBench v0 \u2014 Our Label Dataset Characterization",
+  "generated": "2026-05-30",
+  "source": "self-labeled technique dataset (SQLite), expert-curated instructional + competition grappling corpus",
+  "method": "Deterministic SQL aggregation over the label dataset SQLite + ontology string/semantic mapping. No model inference. Counts cross-checked against shared/evidence-ledger.md (section 6).",
+  "corpus_totals": {
+    "videos": 430,
+    "distinct_channels_sources": 189,
+    "timestamped_clips": 5604,
+    "clips_with_text_label": 5604,
+    "clips_with_label_pct": 100.0,
+    "video_level_hashtag_rows": 28503,
+    "clip_level_hashtag_rows": 68925,
+    "distinct_hashtags": 1653,
+    "note": "video_hashtags and clip(timestamp)_hashtags draw from the same 1,653-tag vocabulary."
+  },
+  "label_text": {
+    "clips_labeled": 5604,
+    "char_length_min": 17,
+    "char_length_mean": 285.8,
+    "char_length_max": 1801,
+    "note": "Every clip carries a free-text expert description (coaching prose), not just tags."
+  },
+  "tags_per_clip": {
+    "min": 4,
+    "max": 40,
+    "mean": 12.3,
+    "median": 11,
+    "distribution_note": "Unimodal, peak at 9-11 tags/clip; right tail to 40. See histogram in .md.",
+    "histogram": {
+      "4": 30,
+      "5": 83,
+      "6": 177,
+      "7": 353,
+      "8": 507,
+      "9": 536,
+      "10": 564,
+      "11": 563,
+      "12": 505,
+      "13": 417,
+      "14": 382,
+      "15": 304,
+      "16": 257,
+      "17": 233,
+      "18": 153,
+      "19": 110,
+      "20": 114,
+      "21": 58,
+      "22": 77,
+      "23": 46,
+      "24": 40,
+      "25": 24,
+      "26": 20,
+      "27": 18,
+      "28": 9,
+      "29": 5,
+      "30": 7,
+      "31": 3,
+      "33": 3,
+      "35": 3,
+      "39": 2,
+      "40": 1
+    }
+  },
+  "clips_per_video": {
+    "min": 1,
+    "max": 139,
+    "mean": 13.0,
+    "median": 9,
+    "videos_with_zero_clips": 0,
+    "distribution_note": "Long right tail: most videos have 1-15 clips; two extreme-length compilation videos hold 135 and 139 clips."
+  },
+  "top30_clip_tags": [
+    {
+      "tag": "#nogi",
+      "count": 5138
+    },
+    {
+      "tag": "#footage",
+      "count": 4809
+    },
+    {
+      "tag": "#legentanglement",
+      "count": 934
+    },
+    {
+      "tag": "#standing",
+      "count": 849
+    },
+    {
+      "tag": "#resource",
+      "count": 798
+    },
+    {
+      "tag": "#adcc",
+      "count": 734
+    },
+    {
+      "tag": "#wno",
+      "count": 697
+    },
+    {
+      "tag": "#destabilization",
+      "count": 656
+    },
+    {
+      "tag": "#guardpass",
+      "count": 534
+    },
+    {
+      "tag": "#submission",
+      "count": 439
+    },
+    {
+      "tag": "#wrestling",
+      "count": 432
+    },
+    {
+      "tag": "#underhook",
+      "count": 426
+    },
+    {
+      "tag": "#dilemma",
+      "count": 388
+    },
+    {
+      "tag": "#openguard",
+      "count": 370
+    },
+    {
+      "tag": "#takedown",
+      "count": 354
+    },
+    {
+      "tag": "#kuzushi",
+      "count": 349
+    },
+    {
+      "tag": "#guardretention",
+      "count": 341
+    },
+    {
+      "tag": "#leglockdefense",
+      "count": 335
+    },
+    {
+      "tag": "#singleleg",
+      "count": 325
+    },
+    {
+      "tag": "#halfguardpass",
+      "count": 318
+    },
+    {
+      "tag": "#backtake",
+      "count": 298
+    },
+    {
+      "tag": "#turtleentry",
+      "count": 298
+    },
+    {
+      "tag": "#gripfight",
+      "count": 289
+    },
+    {
+      "tag": "#handfight",
+      "count": 289
+    },
+    {
+      "tag": "#back",
+      "count": 285
+    },
+    {
+      "tag": "#sidecontrolentry",
+      "count": 281
+    },
+    {
+      "tag": "#outsidepassing",
+      "count": 280
+    },
+    {
+      "tag": "#loosepassing",
+      "count": 276
+    }
+  ],
+  "top_clip_tags_note": "Top clip-tag list shrunk from 30 to 28 entries: two athlete-name tags (person-name hashtags) were removed for privacy. Counts of the remaining technique/position/metadata tags are unchanged.",
+  "ontology_coverage": {
+    "ontology": {
+      "macro_positions": 18,
+      "technique_vocab_terms_approx": 91,
+      "macro_alias_norm_terms": 28,
+      "vocab_role_transition_norm_terms": 120
+    },
+    "exact_string_match": {
+      "distinct_tags_mapped": 69,
+      "distinct_tags_total": 1653,
+      "distinct_mapped_pct": 4.2,
+      "instances_mapped": 7981,
+      "instances_total": 68925,
+      "instances_mapped_pct": 11.6,
+      "macro_ids_attested_of_18": 14,
+      "vocab_norm_terms_attested": 52
+    },
+    "semantic_categorization": {
+      "categories": {
+        "exact_ontology": {
+          "distinct": 69,
+          "instances": 7981,
+          "inst_pct": 11.6
+        },
+        "semantic_technique": {
+          "distinct": 845,
+          "instances": 28906,
+          "inst_pct": 41.9
+        },
+        "meta_event": {
+          "distinct": 4,
+          "instances": 1901,
+          "inst_pct": 2.8
+        },
+        "meta_source": {
+          "distinct": 5,
+          "instances": 6093,
+          "inst_pct": 8.8
+        },
+        "meta_modality": {
+          "distinct": 3,
+          "instances": 5612,
+          "inst_pct": 8.1
+        },
+        "meta_athlete": {
+          "distinct": 20,
+          "instances": 2446,
+          "inst_pct": 3.5
+        },
+        "other_unmapped": {
+          "distinct": 707,
+          "instances": 15986,
+          "inst_pct": 23.2
+        }
+      },
+      "technique_or_position_relevant": {
+        "distinct": 914,
+        "instances": 36887,
+        "inst_pct": 53.5
+      },
+      "metadata_event_source_modality_athlete": {
+        "distinct": 32,
+        "instances": 16052,
+        "inst_pct": 23.3
+      },
+      "interpretation": "Exact ontology string-match covers only 11.6% of tag instances because the corpus uses a far richer free-form hashtag vocabulary (1,653 distinct) than the ~91-term ontology. A semantic pass (concept-word containment) shows ~53.5% of tag instances are technique/position-relevant and map conceptually onto the ontology families; the remaining ~23% are explicit metadata (event/source/modality/athlete) and ~23% are finer-grained free-form concepts not yet in the v0 vocabulary."
+    },
+    "takeaway": "The ontology's 18 macro positions are well-attested (14/18 macro ids appear by exact id/alias; the rest appear via free-form synonyms). The corpus vocabulary is ~18x larger than the v0 ontology, so v0 ontology expansion (mapping the high-frequency free-form technique tags) is the main data-curation lever."
+  },
+  "proposed_splits": {
+    "athlete_event_disjoint": {
+      "method": "greedy clip-balanced, channel-disjoint (channel = athlete/instructor/source proxy)",
+      "rationale": "channel = instructor/athlete/event source; channel-disjoint prevents same-athlete or same-event leakage across train/val/test.",
+      "n_channels": 189,
+      "train": {
+        "channels": 76,
+        "videos": 259,
+        "videos_pct": 60.2,
+        "clips": 3923,
+        "clips_pct": 70.0
+      },
+      "val": {
+        "channels": 57,
+        "videos": 88,
+        "videos_pct": 20.5,
+        "clips": 841,
+        "clips_pct": 15.0
+      },
+      "test": {
+        "channels": 56,
+        "videos": 83,
+        "videos_pct": 19.3,
+        "clips": 840,
+        "clips_pct": 15.0
+      },
+      "disjoint_verified": true
+    },
+    "leave_one_video_out": {
+      "corpus_folds": 430,
+      "definition": "train on 429 videos, evaluate on the held-out 1; repeat 430x. Channel-aware LOVO additionally removes all same-channel videos from the train fold.",
+      "v0_note": "v0 has a single annotated match; LOVO degenerates to 1 held-out fold until more matches are annotated"
+    }
+  },
+  "v0_seed": {
+    "description": "Public v0 seed = single expert-annotated public no-gi competition match (mb_v0_0001).",
+    "macro_segments": 32,
+    "subsegments_raw": 64,
+    "subsegments_benchmark_excl_2_protocol": 62,
+    "label_instances_raw": 124,
+    "label_instances_benchmark": 122,
+    "unique_labels_raw": 44,
+    "unique_technique_labels": 42,
+    "protocol_annotations_excluded": [
+      "pre_match",
+      "match_start"
+    ],
+    "avg_subsegments_per_position": 1.94,
+    "avg_labels_per_subsegment": 1.97,
+    "v0_macro_position_field_values": [
+      "standing",
+      "guard",
+      "sweep",
+      "back_control",
+      "escape",
+      "mount",
+      "side_control"
+    ],
+    "annotators": 1,
+    "annotator_role": "expert_reviewer",
+    "inter_annotator_agreement": null,
+    "source": "benchmark/data/v0/mb_v0_0001.json; cross-checked evidence-ledger section 5"
+  },
+  "production_candidate_pool": {
+    "description": "System-scale production corpus the v0 seed and candidate clips were drawn/triaged from (private, not release-cleared).",
+    "videos": 313,
+    "completed_analyses": 269,
+    "round_type_counts": {
+      "training": 228,
+      "competition": 84,
+      "instructional": 1
+    },
+    "sport_type": {
+      "grappling": 313
+    },
+    "eligible_triage_subset": 213,
+    "eligible_triage_breakdown": {
+      "training": 158,
+      "competition": 54,
+      "instructional": 1
+    },
+    "eligible_triage_duration_median_sec": 206,
+    "predictions_written": 50,
+    "expert_ground_truth_files": 4,
+    "timeline_segments_per_analysis_median": 17,
+    "timeline_segments_per_analysis_mean": 19.96,
+    "timeline_segments_aggregate": 5369,
+    "source": "evidence-ledger sections 1, 2, 9"
+  },
+  "caveats": [
+    "Exact ontology-to-tag mapping is intentionally strict (normalized string match); the 11.6% instance coverage is a floor, not a ceiling. Semantic coverage (~53.5%) is an estimate from concept-word containment, labeled as such.",
+    "channel is used as an athlete/event-disjoint proxy; it is not a perfect athlete identifier (one channel may feature multiple athletes; one athlete may appear across channels). The split is disjoint by channel, which is the strongest available leakage control without per-athlete labels.",
+    "Median tags/clip (11) and median clips/video (9) computed by ordered offset; mean values are exact.",
+    "v0 LOVO is degenerate (single annotated match); reported as a protocol for the 430-video corpus once more matches are annotated.",
+    "The 50-video production prediction slice is tautological (GT==prediction); excluded from any accuracy claim per evidence-ledger 9.6."
+  ]
+}

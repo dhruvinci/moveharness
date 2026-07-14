@@ -1,0 +1,504 @@
+{
+  "method": {
+    "bootstrap": "nonparametric percentile bootstrap, 10000 resamples, numpy default_rng seed=1234",
+    "wilson": "Wilson score interval, z=1.95996 (two-sided 95%)",
+    "std": "sample standard deviation, ddof=1",
+    "seed": 1234,
+    "n_boot": 10000,
+    "sources": [
+      "vlm_multivideo.json",
+      "vlm_ablation_measured.json",
+      "vlm_technique_id.json",
+      "vlm_runs_raw.json",
+      "real_scores.json"
+    ]
+  },
+  "a_multivideo_distributions": {
+    "cost_usd": {
+      "label": "Cost per match-edit (USD per video)",
+      "n": 10,
+      "mean": 0.0205,
+      "std_ddof1": 0.0154,
+      "ci95_lo": 0.0117,
+      "ci95_hi": 0.03,
+      "min": 0.0036,
+      "max": 0.0464
+    },
+    "coverage": {
+      "label": "Timeline coverage fraction",
+      "n": 10,
+      "mean": 0.9895,
+      "std_ddof1": 0.0174,
+      "ci95_lo": 0.9779,
+      "ci95_hi": 0.9973,
+      "min": 0.9434,
+      "max": 0.9991
+    },
+    "segs_per_min": {
+      "label": "Segments per minute (segmentation density)",
+      "n": 10,
+      "mean": 7.053,
+      "std_ddof1": 3.5818,
+      "ci95_lo": 5.1392,
+      "ci95_hi": 9.2962,
+      "min": 3.435,
+      "max": 14.218
+    },
+    "overseg_ratio": {
+      "label": "Oversegmentation ratio (pred_segs / expected)",
+      "n": 10,
+      "mean": 0.5433,
+      "std_ddof1": 0.385,
+      "ci95_lo": 0.32,
+      "ci95_hi": 0.7766,
+      "min": 0.1,
+      "max": 1.1
+    },
+    "latency_s": {
+      "label": "End-to-end latency (s)",
+      "n": 10,
+      "mean": 45.922,
+      "std_ddof1": 26.5177,
+      "ci95_lo": 31.0698,
+      "ci95_hi": 62.6802,
+      "min": 18.21,
+      "max": 86.68
+    },
+    "n_segments": {
+      "label": "Segments per match (count)",
+      "n": 10,
+      "mean": 12.8,
+      "std_ddof1": 10.6019,
+      "ci95_lo": 6.9,
+      "ci95_hi": 19.4,
+      "min": 2.0,
+      "max": 30.0
+    }
+  },
+  "b_paired_ablation_deltas": {
+    "n_segments": {
+      "label": "Segments per match (count)",
+      "lower_is_better": false,
+      "n": 10,
+      "delta_mean_grounded_minus_ungrounded": -2.5,
+      "delta_std_ddof1": 11.5205,
+      "ci95_lo": -10.2,
+      "ci95_hi": 3.2,
+      "significant_at_95": false,
+      "ci_excludes_zero": false
+    },
+    "segs_per_min": {
+      "label": "Segments per minute",
+      "lower_is_better": false,
+      "n": 10,
+      "delta_mean_grounded_minus_ungrounded": -0.5834,
+      "delta_std_ddof1": 2.5346,
+      "ci95_lo": -2.2072,
+      "ci95_hi": 0.8046,
+      "significant_at_95": false,
+      "ci_excludes_zero": false
+    },
+    "overseg_ratio": {
+      "label": "Oversegmentation ratio",
+      "lower_is_better": true,
+      "n": 10,
+      "delta_mean_grounded_minus_ungrounded": -0.0867,
+      "delta_std_ddof1": 0.4128,
+      "ci95_lo": -0.3551,
+      "ci95_hi": 0.135,
+      "significant_at_95": false,
+      "ci_excludes_zero": false
+    },
+    "ontology_violation_rate": {
+      "label": "Ontology-violation rate",
+      "lower_is_better": true,
+      "n": 10,
+      "delta_mean_grounded_minus_ungrounded": 0.1809,
+      "delta_std_ddof1": 0.4428,
+      "ci95_lo": -0.07,
+      "ci95_hi": 0.4525,
+      "significant_at_95": false,
+      "ci_excludes_zero": false
+    },
+    "latency_s": {
+      "label": "Latency (s)",
+      "lower_is_better": true,
+      "n": 10,
+      "delta_mean_grounded_minus_ungrounded": 5.006,
+      "delta_std_ddof1": 7.447,
+      "ci95_lo": 0.885,
+      "ci95_hi": 9.676,
+      "significant_at_95": true,
+      "ci_excludes_zero": true
+    },
+    "cost_usd": {
+      "label": "Cost (USD)",
+      "lower_is_better": true,
+      "n": 10,
+      "delta_mean_grounded_minus_ungrounded": -0.0002,
+      "delta_std_ddof1": 0.0052,
+      "ci95_lo": -0.0037,
+      "ci95_hi": 0.0023,
+      "significant_at_95": false,
+      "ci_excludes_zero": false
+    },
+    "output_tokens": {
+      "label": "Output tokens",
+      "lower_is_better": true,
+      "n": 10,
+      "delta_mean_grounded_minus_ungrounded": -450.0,
+      "delta_std_ddof1": 2080.9803,
+      "ci95_lo": -1856.3,
+      "ci95_hi": 546.1225,
+      "significant_at_95": false,
+      "ci_excludes_zero": false
+    },
+    "coverage": {
+      "label": "Coverage fraction",
+      "lower_is_better": false,
+      "n": 10,
+      "delta_mean_grounded_minus_ungrounded": 0.0,
+      "delta_std_ddof1": 0.0,
+      "ci95_lo": 0.0,
+      "ci95_hi": 0.0,
+      "significant_at_95": false,
+      "ci_excludes_zero": false
+    }
+  },
+  "c_technique_id_accuracy": {
+    "n_total": 119,
+    "technique_match": {
+      "k": 68,
+      "n": 119,
+      "pct": 57.1,
+      "ci95_lo_pct": 48.2,
+      "ci95_hi_pct": 65.7,
+      "reported_headline_pct": 57.1
+    },
+    "position_top1": {
+      "k": 68,
+      "n": 119,
+      "pct": 57.1,
+      "ci95_lo_pct": 48.2,
+      "ci95_hi_pct": 65.7,
+      "reported_headline_pct": 57.1
+    },
+    "either_match": {
+      "k": 90,
+      "n": 119,
+      "pct": 75.6,
+      "ci95_lo_pct": 67.2,
+      "ci95_hi_pct": 82.5
+    },
+    "per_tag": {
+      "standing": {
+        "clips": 36,
+        "technique_match": {
+          "k_reconstructed": 28,
+          "n": 36,
+          "pct": 77.8,
+          "ci95_lo_pct": 61.9,
+          "ci95_hi_pct": 88.3,
+          "reported_pct": 77.8
+        },
+        "position_acc": {
+          "k_reconstructed": 15,
+          "n": 36,
+          "pct": 41.7,
+          "ci95_lo_pct": 27.1,
+          "ci95_hi_pct": 57.8,
+          "reported_pct": 41.7
+        }
+      },
+      "guardpass": {
+        "clips": 20,
+        "technique_match": {
+          "k_reconstructed": 8,
+          "n": 20,
+          "pct": 40.0,
+          "ci95_lo_pct": 21.9,
+          "ci95_hi_pct": 61.3,
+          "reported_pct": 40.0
+        },
+        "position_acc": {
+          "k_reconstructed": 14,
+          "n": 20,
+          "pct": 70.0,
+          "ci95_lo_pct": 48.1,
+          "ci95_hi_pct": 85.5,
+          "reported_pct": 70.0
+        }
+      },
+      "singleleg": {
+        "clips": 18,
+        "technique_match": {
+          "k_reconstructed": 13,
+          "n": 18,
+          "pct": 72.2,
+          "ci95_lo_pct": 49.1,
+          "ci95_hi_pct": 87.5,
+          "reported_pct": 72.2
+        },
+        "position_acc": {
+          "k_reconstructed": 9,
+          "n": 18,
+          "pct": 50.0,
+          "ci95_lo_pct": 29.0,
+          "ci95_hi_pct": 71.0,
+          "reported_pct": 50.0
+        }
+      },
+      "destabilization": {
+        "clips": 19,
+        "technique_match": {
+          "k_reconstructed": 14,
+          "n": 19,
+          "pct": 73.7,
+          "ci95_lo_pct": 51.2,
+          "ci95_hi_pct": 88.2,
+          "reported_pct": 73.7
+        },
+        "position_acc": {
+          "k_reconstructed": 10,
+          "n": 19,
+          "pct": 52.6,
+          "ci95_lo_pct": 31.7,
+          "ci95_hi_pct": 72.7,
+          "reported_pct": 52.6
+        }
+      },
+      "turtleentry": {
+        "clips": 19,
+        "technique_match": {
+          "k_reconstructed": 14,
+          "n": 19,
+          "pct": 73.7,
+          "ci95_lo_pct": 51.2,
+          "ci95_hi_pct": 88.2,
+          "reported_pct": 73.7
+        },
+        "position_acc": {
+          "k_reconstructed": 7,
+          "n": 19,
+          "pct": 36.8,
+          "ci95_lo_pct": 19.1,
+          "ci95_hi_pct": 59.0,
+          "reported_pct": 36.8
+        }
+      },
+      "underhook": {
+        "clips": 16,
+        "technique_match": {
+          "k_reconstructed": 9,
+          "n": 16,
+          "pct": 56.2,
+          "ci95_lo_pct": 33.2,
+          "ci95_hi_pct": 76.9,
+          "reported_pct": 56.2
+        },
+        "position_acc": {
+          "k_reconstructed": 12,
+          "n": 16,
+          "pct": 75.0,
+          "ci95_lo_pct": 50.5,
+          "ci95_hi_pct": 89.8,
+          "reported_pct": 75.0
+        }
+      },
+      "wrestling": {
+        "clips": 24,
+        "technique_match": {
+          "k_reconstructed": 21,
+          "n": 24,
+          "pct": 87.5,
+          "ci95_lo_pct": 69.0,
+          "ci95_hi_pct": 95.7,
+          "reported_pct": 87.5
+        },
+        "position_acc": {
+          "k_reconstructed": 8,
+          "n": 24,
+          "pct": 33.3,
+          "ci95_lo_pct": 18.0,
+          "ci95_hi_pct": 53.3,
+          "reported_pct": 33.3
+        }
+      },
+      "legentanglement": {
+        "clips": 14,
+        "technique_match": {
+          "k_reconstructed": 10,
+          "n": 14,
+          "pct": 71.4,
+          "ci95_lo_pct": 45.4,
+          "ci95_hi_pct": 88.3,
+          "reported_pct": 71.4
+        },
+        "position_acc": {
+          "k_reconstructed": 13,
+          "n": 14,
+          "pct": 92.9,
+          "ci95_lo_pct": 68.5,
+          "ci95_hi_pct": 98.7,
+          "reported_pct": 92.9
+        }
+      },
+      "takedown": {
+        "clips": 17,
+        "technique_match": {
+          "k_reconstructed": 16,
+          "n": 17,
+          "pct": 94.1,
+          "ci95_lo_pct": 73.0,
+          "ci95_hi_pct": 99.0,
+          "reported_pct": 94.1
+        },
+        "position_acc": {
+          "k_reconstructed": 8,
+          "n": 17,
+          "pct": 47.1,
+          "ci95_lo_pct": 26.2,
+          "ci95_hi_pct": 69.0,
+          "reported_pct": 47.1
+        }
+      },
+      "mount": {
+        "clips": 11,
+        "technique_match": {
+          "k_reconstructed": 4,
+          "n": 11,
+          "pct": 36.4,
+          "ci95_lo_pct": 15.2,
+          "ci95_hi_pct": 64.6,
+          "reported_pct": 36.4
+        },
+        "position_acc": {
+          "k_reconstructed": 6,
+          "n": 11,
+          "pct": 54.5,
+          "ci95_lo_pct": 28.0,
+          "ci95_hi_pct": 78.7,
+          "reported_pct": 54.5
+        }
+      },
+      "openguard": {
+        "clips": 13,
+        "technique_match": {
+          "k_reconstructed": 9,
+          "n": 13,
+          "pct": 69.2,
+          "ci95_lo_pct": 42.4,
+          "ci95_hi_pct": 87.3,
+          "reported_pct": 69.2
+        },
+        "position_acc": {
+          "k_reconstructed": 11,
+          "n": 13,
+          "pct": 84.6,
+          "ci95_lo_pct": 57.8,
+          "ci95_hi_pct": 95.7,
+          "reported_pct": 84.6
+        }
+      },
+      "backtake": {
+        "clips": 11,
+        "technique_match": {
+          "k_reconstructed": 5,
+          "n": 11,
+          "pct": 45.5,
+          "ci95_lo_pct": 21.3,
+          "ci95_hi_pct": 72.0,
+          "reported_pct": 45.5
+        },
+        "position_acc": {
+          "k_reconstructed": 7,
+          "n": 11,
+          "pct": 63.6,
+          "ci95_lo_pct": 35.4,
+          "ci95_hi_pct": 84.8,
+          "reported_pct": 63.6
+        }
+      },
+      "sweep": {
+        "clips": 12,
+        "technique_match": {
+          "k_reconstructed": 7,
+          "n": 12,
+          "pct": 58.3,
+          "ci95_lo_pct": 32.0,
+          "ci95_hi_pct": 80.7,
+          "reported_pct": 58.3
+        },
+        "position_acc": {
+          "k_reconstructed": 11,
+          "n": 12,
+          "pct": 91.7,
+          "ci95_lo_pct": 64.6,
+          "ci95_hi_pct": 98.5,
+          "reported_pct": 91.7
+        }
+      },
+      "submission": {
+        "clips": 12,
+        "technique_match": {
+          "k_reconstructed": 5,
+          "n": 12,
+          "pct": 41.7,
+          "ci95_lo_pct": 19.3,
+          "ci95_hi_pct": 68.0,
+          "reported_pct": 41.7
+        },
+        "position_acc": {
+          "k_reconstructed": 7,
+          "n": 12,
+          "pct": 58.3,
+          "ci95_lo_pct": 32.0,
+          "ci95_hi_pct": 80.7,
+          "reported_pct": 58.3
+        }
+      },
+      "gripfight": {
+        "clips": 15,
+        "technique_match": {
+          "k_reconstructed": 7,
+          "n": 15,
+          "pct": 46.7,
+          "ci95_lo_pct": 24.8,
+          "ci95_hi_pct": 69.9,
+          "reported_pct": 46.7
+        },
+        "position_acc": {
+          "k_reconstructed": 10,
+          "n": 15,
+          "pct": 66.7,
+          "ci95_lo_pct": 41.7,
+          "ci95_hi_pct": 84.8,
+          "reported_pct": 66.7
+        }
+      }
+    }
+  },
+  "d_v0_segment_match": {
+    "note": "v0 GT video has 32 macro-segments (n_samples=1 video). Matched-position rate is a binomial proportion -> Wilson 95% CI. Per-segment matched-IoU bootstrap is NOT computed: real_scores.json stores only the MEAN matched IoU, not the per-segment array, so resampling individual IoUs would require fabricating data.",
+    "best_cv_grounded": {
+      "system": "exp4_v2_skeleton_run2",
+      "matched_positions": "6/32",
+      "k": 6,
+      "n": 32,
+      "match_rate_pct": 18.8,
+      "ci95_lo_pct": 8.9,
+      "ci95_hi_pct": 35.3,
+      "mean_matched_iou_point": 0.5276,
+      "mean_matched_iou_ci": "not computable (per-segment IoUs not stored)"
+    },
+    "naive_single_pass": {
+      "matched_positions": "1/32",
+      "k": 1,
+      "n": 32,
+      "match_rate_pct": 3.1,
+      "ci95_lo_pct": 0.6,
+      "ci95_hi_pct": 15.7,
+      "mean_matched_iou_point": 0.875
+    }
+  }
+}
